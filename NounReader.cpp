@@ -5,7 +5,7 @@ NounReader::NounReader()
     createMap();
 }
 
-NounReader* NounReader::getInstance()
+NounReader *NounReader::getInstance()
 {
     if (instance == nullptr)
     {
@@ -58,7 +58,7 @@ vector<string> NounReader::getItem(char key)
     return nouns.at(key);
 }
 
-NounReader* NounReader::instance = nullptr;
+NounReader *NounReader::instance = nullptr;
 
 /*int main ()
 {

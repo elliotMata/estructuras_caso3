@@ -22,6 +22,7 @@ void NounReader::createMap()
         string noun;
         while (getline(file, noun))
         {
+            noun = noun.substr(0, noun.size() - 1);
             if (nouns.find(noun[0]) != nouns.end())
             {
                 nouns.at(noun[0]).push_back(noun);
@@ -44,7 +45,7 @@ bool NounReader::contains(string noun)
     {
         for (int i = 0; i < nounsList.size(); i++)
         {
-            if (nounsList.at(i).compare(noun))
+            if (nounsList.at(i).compare(noun) == 0)
             {
                 return true;
             }
@@ -66,8 +67,8 @@ NounReader *NounReader::instance = nullptr;
     vector<string> nouns = nounReader->getItem('a');
     for (int i = 0; i < nouns.size(); i++)
     {
-        cout << nouns.at(i) << endl;
+        cout << nouns.at(i) << " " << nouns.at(i).size() << endl;
     }
-    cout << nounReader->contains("love") << endl;
+    cout << nounReader->contains("abeja") << endl;
     return 0;
 }*/

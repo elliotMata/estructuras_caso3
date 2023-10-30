@@ -5,6 +5,9 @@
         "new": "cpp",
         "array": "cpp",
         "string_view": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "numbers": "cpp"
     }
 }

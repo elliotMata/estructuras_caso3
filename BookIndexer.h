@@ -1,3 +1,7 @@
+/* Clase para indexar los libros en el avl
+ * Se ayuda del JsonParser para obtener los sustantivos de cada libro
+ */
+
 #ifndef BOOKREADER_H
 #define BOOKREADER_H
 

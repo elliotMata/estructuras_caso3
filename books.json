@@ -5,152 +5,152 @@
     "Alice's-Adventures-in-Wonderland-by-Lewis-Carroll": {
       "Author": "Lewis Carroll",
       "Title": "Alice's Adventures in Wonderland",
-      "Keywords": ["Fantasy", "Adventure", "Imagination", "Nonsense", "Surreal", "Dream", "Rabbit", "Madness", "Tea Party", "Cheshire Cat"]
+      "Keywords": ["fantasy", "adventure", "imagination", "nonsense", "dream", "wonderland"]
     },
     "A-Study-in-Scarlet-by-Arthur-Conan-Doyle": {
       "Author": "Arthur Conan Doyle",
       "Title": "A Study in Scarlet",
-      "Keywords": ["Mystery", "Detective", "Sherlock Holmes", "Crime", "London", "Investigation", "Murder", "Watson", "Victorian"]
+      "Keywords": ["mystery", "detective", "crime", "investigation"]
     },
     "Crime-and-Punishment-by-Fyodor-Dostoyevsky": {
       "Author": "Fyodor Dostoyevsky",
       "Title": "Crime and Punishment",
-      "Keywords": ["Crime", "Guilt", "Redemption", "Psychology", "Murder", "Suffering", "Russian Literature", "Duality", "Existential", "Raskolnikov"]
+      "Keywords": ["psychological", "crime", "guilt", "suffering", "redemption", "morality", "poverty"]
     },
     "Don-Quijote-by-Miguel-de-Cervantes-Saavedra": {
       "Author": "Miguel de Cervantes Saavedra",
       "Title": "Don Quijote",
-      "Keywords": ["Chivalry", "Delusion", "Adventure", "Knight", "Windmills", "Satire", "Spanish Literature", "Quixotic", "Sancho Panza", "Idealism"]
+      "Keywords": ["adventure", "chivalry", "madness", "illusion"]
     },
     "Dracula-by-Bram-Stoker": {
       "Author": "Bram Stoker",
       "Title": "Dracula",
-      "Keywords": ["Vampire", "Gothic", "Horror", "Count Dracula", "Transylvania", "Bram Stoker", "Van Helsing", "Undead", "Victorian", "Blood"]
+      "Keywords": ["horror", "vampire", "gothic", "blood"]
     },
     "Emma-by-Jane-Austen": {
       "Author": "Jane Austen",
       "Title": "Emma",
-      "Keywords": ["Romance", "Matchmaking", "Regency", "Social Class", "Relationships", "Character Study", "Marriage", "Humor", "Matchmaker", "Sisters"]
+      "Keywords": ["romance", "society", "comedy", "marriage", "relationships"]
     },
     "Five-Weeks-in-a-Balloon-by-Jules-Verne": {
       "Author": "Jules Verne",
       "Title": "Five Weeks in a Balloon",
-      "Keywords": ["Adventure", "Exploration", "Ballooning", "Africa", "Expedition", "Invention", "Travel", "Aerial", "Explorers"]
+      "Keywords": ["adventure", "exploration", "journey", "invention", "expedition", "suspense"]
     },
     "Frankenstein-Or-The-Modern-Prometheus-by-Mary-Shelley": {
       "Author": "Mary Shelley",
-      "Title": "Frankenstein; Or, The Modern Prometheus",
-      "Keywords": ["Science Fiction", "Frankenstein", "Monster", "Prometheus", "Gothic", "Creation", "Tragedy", "Experiment", "Human Nature"]
+      "Title": "Frankenstein",
+      "Keywords": ["gothic", "science", "monster", "creation", "tragedy", "madness", "morality"]
     },
     "Little-Women-by-Louisa-May-Alcott": {
       "Author": "Louisa May Alcott",
       "Title": "Little Women",
-      "Keywords": ["Family", "Coming of Age", "Civil War", "Feminism", "Domestic", "American Literature", "Sisterhood", "Morality"]
+      "Keywords": ["family", "sisters", "war", "love", "feminism", "friendship"]
     },
     "Moby-Dick-Or-The-Whale-by-Herman-Melville": {
       "Author": "Herman Melville",
-      "Title": "Moby-Dick; Or, The Whale",
-      "Keywords": ["Whaling", "Adventure", "Sperm Whale", "Nautical", "Symbolism"]
+      "Title": "Moby Dick",
+      "Keywords": ["whaling", "obsession", "revenge", "ship", "sailor", "epic", "symbolism"]
     },
     "Pride-and-Prejudice-by-Jane-Austen": {
       "Author": "Jane Austen",
       "Title": "Pride and Prejudice",
-      "Keywords": ["Romance", "Social Class", "Prejudice", "Marriage", "Society", "Relationships", "Love", "Regency", "Sisters"]
+      "Keywords": ["romance", "society", "prejudice", "class", "courtship", "regency"]
     },
     "Romeo-and-Juliet-by-William-Shakespeare": {
       "Author": "William Shakespeare",
       "Title": "Romeo and Juliet",
-      "Keywords": ["Tragedy", "Love", "Feud", "Romeo", "Juliet", "Verona", "Fate", "Family", "Forbidden"]
+      "Keywords": ["tragedy", "love", "feud", "fate", "family"]
     },
     "The-Adventures-of-Sherlock-Holmes-by-Arthur-Conan-Doyle": {
       "Author": "Arthur Conan Doyle",
       "Title": "The Adventures of Sherlock Holmes",
-      "Keywords": ["Mystery", "Detective", "Sherlock Holmes", "Investigation", "Crime", "Victorian", "Watson", "Sleuth", "London"]
+      "Keywords": ["mystery", "detective", "investigation", "logic", "deduction", "intrigue"]
     },
     "The-Adventures-of-Tom-Sawyer-by-Mark-Twain": {
       "Author": "Mark Twain",
       "Title": "The Adventures of Tom Sawyer",
-      "Keywords": ["Adventure", "Mississippi River", "Childhood", "Huckleberry Finn", "Mischief", "Humor", "Coming of Age", "Aunt Polly"]
+      "Keywords": ["adventure", "boyhood", "childhood", "mischief", "freedom", "friendship"]
     },
     "The-Count-of-Monte-Cristo-by-Alexander-Dumas-and-Auguste-Maquet": {
       "Author": "Alexander Dumas and Auguste Maquet",
       "Title": "The Count of Monte Cristo",
-      "Keywords": ["Revenge", "Adventure", "Injustice", "Betrayal", "France", "Justice", "Conspiracy"]
+      "Keywords": ["revenge", "adventure", "betrayal", "imprisonment", "wealth", "justice", "france"]
     },
     "The-Divine-Comedy-by-Dante-Alighieri": {
       "Author": "Dante Alighieri",
       "Title": "The Divine Comedy",
-      "Keywords": ["Epic", "Inferno", "Hell", "Heaven", "Purgatory", "Divine", "Allegory", "Journey"]
+      "Keywords": ["epic", "journey", "soul", "sin", "spirituality"]
     },
     "The-Dunwich-Horror-by-H-P-Lovecraft": {
       "Author": "H.P. Lovecraft",
       "Title": "The Dunwich Horror",
-      "Keywords": ["Horror", "Cthulhu Mythos", "Cosmic Horror", "Eldritch", "Necronomicon", "New England", "Unspeakable", "Monstrosity"]
+      "Keywords": ["horror", "cosmic", "eldritch", "cult", "abomination"]
     },
     "The-Great-Gatsby-by-Scott-Fitzgerald": {
       "Author": "F. Scott Fitzgerald",
       "Title": "The Great Gatsby",
-      "Keywords": ["Roaring Twenties", "American Dream", "Gatsby", "Jazz Age", "Wealth", "Obsession", "Decadence", "Society", "Illusion"]
+      "Keywords": ["wealth", "love", "illusion", "obsession", "society"]
     },
     "The-Hound-of-the-Baskervilles-by-Arthur-Conan-Doyle": {
       "Author": "Arthur Conan Doyle",
       "Title": "The Hound of the Baskervilles",
-      "Keywords": ["Mystery", "Detective", "Sherlock Holmes", "Moors", "Curse", "Baskerville Hall", "Hound", "Suspense", "Gothic"]
+      "Keywords": ["mystery", "detective", "hound", "curse", "moor", "suspense"]
     },
     "The-Iliad-by-Homer": {
       "Author": "Homer",
       "Title": "The Iliad",
-      "Keywords": ["Epic", "Trojan War", "Achilles", "Hector", "Greek Mythology", "Warfare", "Heroes", "Ancient Greece", "Tragedy"]
+      "Keywords": ["epic", "war", "mythology", "gods", "hero"]
     },
     "The-Life-and-Adventures-of-Robinson-Crusoe-by-Daniel-Defoe": {
       "Author": "Daniel Defoe",
       "Title": "The Life and Adventures of Robinson Crusoe",
-      "Keywords": ["Survival", "Isolation", "Adventure", "Castaway", "Shipwreck", "Desert Island", "Colonialism", "Solitude", "Exploration"]
+      "Keywords": ["adventure", "castaway", "island", "survival", "exploration"]
     },
     "The-Odyssey-by-Homer": {
       "Author": "Homer",
       "Title": "The Odyssey",
-      "Keywords": ["Epic", "Odysseus", "Greek Mythology", "Adventure", "Journey", "Heroic", "Homecoming", "Ancient Greece", "Mythical"]
+      "Keywords": ["epic", "journey", "mythology", "hero"]
     },
     "The-Picture-of-Dorian-Gray-by-Oscar-Wilde": {
       "Author": "Oscar Wilde",
       "Title": "The Picture of Dorian Gray",
-      "Keywords": ["Aestheticism", "Moral Corruption", "Art", "Beauty", "Dorian Gray", "Decadence", "Portrait", "Vanity"]
+      "Keywords": ["gothic", "moral", "vanity", "art", "corruption", "society"]
     },
     "The-Plymouth-Express-Affair-by-Agatha-Christie": {
       "Author": "Agatha Christie",
       "Title": "The Plymouth Express Affair",
-      "Keywords": ["Mystery", "Hercule Poirot", "Detective", "Murder", "Crime", "Investigation", "Plymouth Express", "Railway", "Suspense"]
+      "Keywords": ["mystery", "detective", "murder", "investigation", "train", "suspense"]
     },
     "The-Prince-by-Niccolo-Machiavelli": {
-      "Author": "Niccolò Machiavelli",
+      "Author": "Niccolo Machiavelli",
       "Title": "The Prince",
-      "Keywords": ["Political Philosophy", "Machiavellian", "Power", "Politics", "Leadership", "Strategy", "Rulership", "Pragmatism", "Italian Renaissance", "Morality"]
+      "Keywords": ["political", "philosophy", "power", "leadership", "strategy", "politics", "ambition", "statecraft"]
     },
     "The-Strange-Case-of-Dr-Jekyll-and-Mr-Hyde-by-Robert-Stevenson": {
       "Author": "Robert Louis Stevenson",
       "Title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
-      "Keywords": ["Duality", "Victorian", "Science", "Good and Evil", "Identity", "Transformation", "Hyde", "Mystery", "Morality"]
+      "Keywords": ["gothic", "morality", "experiment", "transformation", "darkness"]
     },
     "Treasure-Island-by-Robert-Louis-Stevenson": {
       "Author": "Robert Louis Stevenson",
       "Title": "Treasure Island",
-      "Keywords": ["Adventure", "Pirates", "Treasure", "Buccaneers", "X marks the spot", "Island", "Long John Silver", "Classic", "Mutiny"]
+      "Keywords": ["adventure", "pirates", "treasure", "island", "mutiny", "sea"]
     },
     "Twenty-Thousand-Leagues-Under-the-Seas-An-Underwater-Tour-of-the-World-by-Jules-Verne": {
       "Author": "Jules Verne",
       "Title": "Twenty Thousand Leagues Under the Seas: An Underwater Tour of the World",
-      "Keywords": ["Adventure", "Submarine", "Underwater", "Science Fiction", "Captain Nemo", "Exploration", "Ocean", "Nautilus", "Technology"]
+      "Keywords": ["adventure", "underwater", "ocean", "science", "fiction", "marine"]
     },
     "War-and-Peace-by-Leo-Tolstoy": {
       "Author": "Leo Tolstoy",
       "Title": "War and Peace",
-      "Keywords": ["Historical Novel", "Napoleonic Wars", "Russian Literature", "Epic", "Society", "War", "Peace", "Love"]
+      "Keywords": ["historical", "epic", "russia", "war", "peace", "family", "love"]
     },
     "Winnie-the-Pooh-by-A-A-Milne": {
-      "Author": "A. A. Milne",
+      "Author": "A.A. Milne",
       "Title": "Winnie the Pooh",
-      "Keywords": ["Children's Literature", "Pooh Bear", "Hundred Acre Wood", "Friends", "Imagination", "Innocence", "Adventures", "Honey", "Nostalgia"]
+      "Keywords": ["children", "bear", "friends", "honey", "adventures", "imagination"]
     }
   }
 }

@@ -43,6 +43,11 @@ vector<string> JsonParser::getNouns(string bookName)
     return nouns.at(bookName);
 }
 
+unordered_map<string, vector<string>> JsonParser::getNounsHash()
+{
+    return this->nouns;
+}
+
 JsonParser *JsonParser::instance = nullptr;
 
 /*int main()

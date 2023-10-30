@@ -1,3 +1,6 @@
+#ifndef AVL_H
+#define AVL_H
+
 #include <iostream>
 
 template <typename T>
@@ -8,8 +11,12 @@ public:
     AVLTreeNode *left;
     AVLTreeNode *right;
     int height;
+    std::vector<std::string> filenames; // Store associated filenames
 
-    AVLTreeNode(T value) : data(value), left(nullptr), right(nullptr), height(1) {}
+    AVLTreeNode(T value, const std::string &filename) : data(value), left(nullptr), right(nullptr), height(1)
+    {
+        filenames.push_back(filename); // Initialize the filenames list with the first filename
+    }
 };
 
 template <typename T>
@@ -89,17 +96,29 @@ private:
         return node;
     }
 
-    AVLTreeNode<T> *insert(AVLTreeNode<T> *node, T value)
+    AVLTreeNode<T> *insert(AVLTreeNode<T> *node, T value, const std::string &filename)
     {
         if (node == nullptr)
-            return new AVLTreeNode<T>(value);
+        {
+            AVLTreeNode<T> *newNode = new AVLTreeNode<T>(value, filename);
+            // newNode->filenames.push_back(filename);
+            return newNode;
+        }
 
         if (value < node->data)
-            node->left = insert(node->left, value);
+        {
+            node->left = insert(node->left, value, filename);
+        }
         else if (value > node->data)
-            node->right = insert(node->right, value);
+        {
+            node->right = insert(node->right, value, filename);
+        }
         else
+        {
+            // Keyword already exists, add the filename to the list
+            node->filenames.push_back(filename);
             return node; // Duplicates not allowed
+        }
 
         return balance(node);
     }
@@ -109,7 +128,15 @@ private:
         if (node != nullptr)
         {
             inOrderTraversal(node->left);
-            std::cout << node->data << " ";
+
+            std::cout << "Keyword: " << node->data << std::endl;
+            std::cout << "Filenames: ";
+            for (const std::string &filename : node->filenames)
+            {
+                std::cout << filename << " ";
+            }
+            std::cout << std::endl;
+
             inOrderTraversal(node->right);
         }
     }
@@ -117,9 +144,9 @@ private:
 public:
     AVLTree() : root(nullptr) {}
 
-    void insert(T value)
+    void insert(T value, string filename)
     {
-        root = insert(root, value);
+        root = insert(root, value, filename);
     }
 
     void inOrderTraversal()
@@ -127,3 +154,5 @@ public:
         inOrderTraversal(root);
     }
 };
+
+#endif

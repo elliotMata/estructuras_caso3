@@ -32,6 +32,7 @@ public:
     static JsonParser *getInstance();         // retorna la instancia de la clase
     string getAuthor(string bookName);        // retorna el autor de un libro
     vector<string> getNouns(string bookName); // retorna la lista de sustantivos de un libro
+    unordered_map<string, vector<string>> getNounsHash();
 };
 
 #endif

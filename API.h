@@ -1,3 +1,6 @@
+#ifndef API_H
+#define API_H
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -147,3 +150,5 @@ int main()
 
     return 0;
 }
+
+#endif

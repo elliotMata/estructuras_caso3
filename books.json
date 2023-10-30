@@ -1,32 +1,152 @@
 {
-    "Alice's-Adventures-in-Wonderland-by-Lewis-Carroll": ["Fantasy", "Adventure", "Imagination", "Nonsense", "Surreal", "Dream", "Rabbit", "Madness", "Tea Party", "Cheshire Cat"],
-    "A-Study-in-Scarlet-by-Arthur-Conan-Doyle": ["Mystery", "Detective", "Sherlock Holmes", "Crime", "London", "Investigation", "Murder", "Watson", "A Study in Scarlet", "Victorian"],
-    "Crime-and-Punishment-by-Fyodor-Dostoyevsky": ["Crime", "Guilt", "Redemption", "Psychology", "Murder", "Suffering", "Russian Literature", "Duality", "Existential", "Raskolnikov"],
-    "Don-Quijote-by-Miguel-de-Cervantes-Saavedra": ["Chivalry", "Delusion", "Adventure", "Knight", "Windmills", "Satire", "Spanish Literature", "Quixotic", "Sancho Panza", "Idealism"],
-    "Dracula-by-Bram-Stoker": ["Vampire", "Gothic", "Horror", "Count Dracula", "Transylvania", "Bram Stoker", "Van Helsing", "Undead", "Victorian", "Blood"],
-    "Emma-by-Jane-Austen": ["Romance", "Matchmaking", "Regency", "Social Class", "Jane Austen", "Relationships", "Character Study", "Marriage", "Humor", "Matchmaker"],
-    "Five-Weeks-in-a-Balloon-by-Jules-Verne": ["Adventure", "Exploration", "Jules Verne", "Ballooning", "Africa", "Expedition", "Invention", "Travel", "Aerial", "Explorers"],
-    "Frankenstein-Or-The-Modern-Prometheus-by-Mary-Shelley": ["Science Fiction", "Frankenstein", "Monster", "Prometheus", "Gothic", "Creation", "Tragedy", "Mary Shelley", "Experiment", "Human Nature"],
-    "Little-Women-by-Louisa-May-Alcott": ["Family", "Sisters", "Coming of Age", "Louisa May Alcott", "Civil War", "Feminism", "Domestic", "American Literature", "Sisterhood", "Morality"],
-    "Moby-Dick-Or-The-Whale-by-Herman-Melville": ["Whaling", "Adventure", "Moby Dick", "Captain Ahab", "Sea", "Obsession", "Revenge", "Nautical", "Sperm Whale", "Symbolism"],
-    "Pride-and-Prejudice-by-Jane-Austen": ["Romance", "Social Class", "Jane Austen", "Prejudice", "Marriage", "Society", "Relationships", "Love", "Regency", "Sisters"],
-    "Romeo-and-Juliet-by-William-Shakespeare": ["Tragedy", "Shakespeare", "Love", "Feud", "Romeo", "Juliet", "Verona", "Fate", "Family", "Forbidden"],
-    "The-Adventures-of-Sherlock-Holmes-by-Arthur-Conan-Doyle": ["Mystery", "Sherlock Holmes", "Detective", "Arthur Conan Doyle", "Investigation", "Crime", "Victorian", "Watson", "Sleuth", "London"],
-    "The-Adventures-of-Tom-Sawyer-by-Mark-Twain": ["Adventure", "Tom Sawyer", "Mark Twain", "Mississippi River", "Childhood", "Huckleberry Finn", "Mischief", "Humor", "Coming of Age", "Aunt Polly"],
-    "The-Count-of-Monte-Cristo-by-Alexander-Dumas-and-Auguste-Maquet": ["Revenge", "Adventure", "Dumas", "Monte Cristo", "Injustice", "Betrayal", "France", "Count", "Justice", "Conspiracy"],
-    "The-Divine-Comedy-by-Dante-Alighieri": ["Epic", "Dante Alighieri", "Inferno", "Hell", "Heaven", "Purgatory", "Divine", "Allegory", "Journey", "The Divine Comedy"],
-    "The-Dunwich-Horror-by-H-P-Lovecraft": ["Horror", "Lovecraft", "Cthulhu Mythos", "Cosmic Horror", "Eldritch", "Necronomicon", "New England", "Unspeakable", "Monstrosity", "H.P. Lovecraft"],
-    "The-Great-Gatsby-by-Scott-Fitzgerald": ["Roaring Twenties", "American Dream", "Gatsby", "Fitzgerald", "Jazz Age", "Wealth", "Obsession", "Decadence", "Society", "Illusion"],
-    "The-Hound-of-the-Baskervilles-by-Arthur-Conan-Doyle": ["Mystery", "Sherlock Holmes", "Detective", "Arthur Conan Doyle", "Moors", "Curse", "Baskerville Hall", "Hound", "Suspense", "Gothic"],
-    "The-Iliad-by-Homer": ["Epic", "Homer", "Trojan War", "Achilles", "Hector", "Greek Mythology", "Warfare", "Heroes", "Ancient Greece", "Tragedy"],
-    "The-Life-and-Adventures-of-Robinson-Crusoe-by-Daniel-Defoe": ["Survival", "Isolation", "Adventure", "Castaway", "Shipwreck", "Desert Island", "Colonialism", "Robinson Crusoe", "Solitude", "Exploration"],
-    "The-Odyssey-by-Homer": ["Epic", "Homer", "Odysseus", "Greek Mythology", "Adventure", "Journey", "Heroic", "Homecoming", "Ancient Greece", "Mythical"],
-    "The-Picture-of-Dorian-Gray-by-Oscar-Wilde": ["Aestheticism", "Moral Corruption", "Oscar Wilde", "Art", "Beauty", "Dorian Gray", "Decadence", "Portrait", "Vanity", "Wilde"],
-    "The-Plymouth-Express-Affair-by-Agatha-Christie": ["Mystery", "Agatha Christie", "Hercule Poirot", "Detective", "Murder", "Crime", "Investigation", "Plymouth Express", "Railway", "Suspense"],
-    "The-Prince-by-Niccolo-Machiavelli": ["Political Philosophy", "Machiavellian", "Power", "Politics", "Leadership", "Strategy", "Rulership", "Pragmatism", "Italian Renaissance", "Morality"],
-    "The-Strange-Case-of-Dr-Jekyll-and-Mr-Hyde-by-Robert-Stevenson": ["Duality", "Victorian", "Robert Louis Stevenson", "Science", "Good and Evil", "Identity", "Transformation", "Hyde", "Mystery", "Morality"],
-    "Treasure-Island-by-Robert-Louis-Stevenson": ["Adventure", "Pirates", "Treasure", "Robert Louis Stevenson", "Buccaneers", "X marks the spot", "Island", "Long John Silver", "Classic", "Mutiny"],
-    "Twenty-Thousand-Leagues-Under-the-Seas-An-Underwater-Tour-of-the-World-by-Jules-Verne": ["Adventure", "Jules Verne", "Submarine", "Underwater", "Science Fiction", "Captain Nemo", "Exploration", "Ocean", "Nautilus", "Technology"],
-    "War-and-Peace-by-Leo-Tolstoy": ["Historical Novel", "Tolstoy", "Napoleonic Wars", "Russian Literature", "Epic", "Society", "War", "Peace", "Love", "Tolstoyan"],
-    "Winnie-the-Pooh-by-A-A-Milne": ["Children's Literature", "Pooh Bear", "Hundred Acre Wood", "Friends", "Imagination", "Innocence", "Adventures", "Honey", "Classic", "Nostalgia"]
+    "Alice's-Adventures-in-Wonderland-by-Lewis-Carroll": {
+      "Author": "Lewis Carroll",
+      "Title": "Alice's Adventures in Wonderland",
+      "Keywords": ["Fantasy", "Adventure", "Imagination", "Nonsense", "Surreal", "Dream", "Rabbit", "Madness", "Tea Party", "Cheshire Cat"]
+    },
+    "A-Study-in-Scarlet-by-Arthur-Conan-Doyle": {
+      "Author": "Arthur Conan Doyle",
+      "Title": "A Study in Scarlet",
+      "Keywords": ["Mystery", "Detective", "Sherlock Holmes", "Crime", "London", "Investigation", "Murder", "Watson", "Victorian"]
+    },
+    "Crime-and-Punishment-by-Fyodor-Dostoyevsky": {
+      "Author": "Fyodor Dostoyevsky",
+      "Title": "Crime and Punishment",
+      "Keywords": ["Crime", "Guilt", "Redemption", "Psychology", "Murder", "Suffering", "Russian Literature", "Duality", "Existential", "Raskolnikov"]
+    },
+    "Don-Quijote-by-Miguel-de-Cervantes-Saavedra": {
+      "Author": "Miguel de Cervantes Saavedra",
+      "Title": "Don Quijote",
+      "Keywords": ["Chivalry", "Delusion", "Adventure", "Knight", "Windmills", "Satire", "Spanish Literature", "Quixotic", "Sancho Panza", "Idealism"]
+    },
+    "Dracula-by-Bram-Stoker": {
+      "Author": "Bram Stoker",
+      "Title": "Dracula",
+      "Keywords": ["Vampire", "Gothic", "Horror", "Count Dracula", "Transylvania", "Bram Stoker", "Van Helsing", "Undead", "Victorian", "Blood"]
+    },
+    "Emma-by-Jane-Austen": {
+      "Author": "Jane Austen",
+      "Title": "Emma",
+      "Keywords": ["Romance", "Matchmaking", "Regency", "Social Class", "Relationships", "Character Study", "Marriage", "Humor", "Matchmaker", "Sisters"]
+    },
+    "Five-Weeks-in-a-Balloon-by-Jules-Verne": {
+      "Author": "Jules Verne",
+      "Title": "Five Weeks in a Balloon",
+      "Keywords": ["Adventure", "Exploration", "Ballooning", "Africa", "Expedition", "Invention", "Travel", "Aerial", "Explorers"]
+    },
+    "Frankenstein-Or-The-Modern-Prometheus-by-Mary-Shelley": {
+      "Author": "Mary Shelley",
+      "Title": "Frankenstein; Or, The Modern Prometheus",
+      "Keywords": ["Science Fiction", "Frankenstein", "Monster", "Prometheus", "Gothic", "Creation", "Tragedy", "Experiment", "Human Nature"]
+    },
+    "Little-Women-by-Louisa-May-Alcott": {
+      "Author": "Louisa May Alcott",
+      "Title": "Little Women",
+      "Keywords": ["Family", "Coming of Age", "Civil War", "Feminism", "Domestic", "American Literature", "Sisterhood", "Morality"]
+    },
+    "Moby-Dick-Or-The-Whale-by-Herman-Melville": {
+      "Author": "Herman Melville",
+      "Title": "Moby-Dick; Or, The Whale",
+      "Keywords": ["Whaling", "Adventure", "Sperm Whale", "Nautical", "Symbolism"]
+    },
+    "Pride-and-Prejudice-by-Jane-Austen": {
+      "Author": "Jane Austen",
+      "Title": "Pride and Prejudice",
+      "Keywords": ["Romance", "Social Class", "Prejudice", "Marriage", "Society", "Relationships", "Love", "Regency", "Sisters"]
+    },
+    "Romeo-and-Juliet-by-William-Shakespeare": {
+      "Author": "William Shakespeare",
+      "Title": "Romeo and Juliet",
+      "Keywords": ["Tragedy", "Love", "Feud", "Romeo", "Juliet", "Verona", "Fate", "Family", "Forbidden"]
+    },
+    "The-Adventures-of-Sherlock-Holmes-by-Arthur-Conan-Doyle": {
+      "Author": "Arthur Conan Doyle",
+      "Title": "The Adventures of Sherlock Holmes",
+      "Keywords": ["Mystery", "Detective", "Sherlock Holmes", "Investigation", "Crime", "Victorian", "Watson", "Sleuth", "London"]
+    },
+    "The-Adventures-of-Tom-Sawyer-by-Mark-Twain": {
+      "Author": "Mark Twain",
+      "Title": "The Adventures of Tom Sawyer",
+      "Keywords": ["Adventure", "Mississippi River", "Childhood", "Huckleberry Finn", "Mischief", "Humor", "Coming of Age", "Aunt Polly"]
+    },
+    "The-Count-of-Monte-Cristo-by-Alexander-Dumas-and-Auguste-Maquet": {
+      "Author": "Alexander Dumas and Auguste Maquet",
+      "Title": "The Count of Monte Cristo",
+      "Keywords": ["Revenge", "Adventure", "Injustice", "Betrayal", "France", "Justice", "Conspiracy"]
+    },
+    "The-Divine-Comedy-by-Dante-Alighieri": {
+      "Author": "Dante Alighieri",
+      "Title": "The Divine Comedy",
+      "Keywords": ["Epic", "Inferno", "Hell", "Heaven", "Purgatory", "Divine", "Allegory", "Journey"]
+    },
+    "The-Dunwich-Horror-by-H-P-Lovecraft": {
+      "Author": "H.P. Lovecraft",
+      "Title": "The Dunwich Horror",
+      "Keywords": ["Horror", "Cthulhu Mythos", "Cosmic Horror", "Eldritch", "Necronomicon", "New England", "Unspeakable", "Monstrosity"]
+    },
+    "The-Great-Gatsby-by-Scott-Fitzgerald": {
+      "Author": "F. Scott Fitzgerald",
+      "Title": "The Great Gatsby",
+      "Keywords": ["Roaring Twenties", "American Dream", "Gatsby", "Jazz Age", "Wealth", "Obsession", "Decadence", "Society", "Illusion"]
+    },
+    "The-Hound-of-the-Baskervilles-by-Arthur-Conan-Doyle": {
+      "Author": "Arthur Conan Doyle",
+      "Title": "The Hound of the Baskervilles",
+      "Keywords": ["Mystery", "Detective", "Sherlock Holmes", "Moors", "Curse", "Baskerville Hall", "Hound", "Suspense", "Gothic"]
+    },
+    "The-Iliad-by-Homer": {
+      "Author": "Homer",
+      "Title": "The Iliad",
+      "Keywords": ["Epic", "Trojan War", "Achilles", "Hector", "Greek Mythology", "Warfare", "Heroes", "Ancient Greece", "Tragedy"]
+    },
+    "The-Life-and-Adventures-of-Robinson-Crusoe-by-Daniel-Defoe": {
+      "Author": "Daniel Defoe",
+      "Title": "The Life and Adventures of Robinson Crusoe",
+      "Keywords": ["Survival", "Isolation", "Adventure", "Castaway", "Shipwreck", "Desert Island", "Colonialism", "Solitude", "Exploration"]
+    },
+    "The-Odyssey-by-Homer": {
+      "Author": "Homer",
+      "Title": "The Odyssey",
+      "Keywords": ["Epic", "Odysseus", "Greek Mythology", "Adventure", "Journey", "Heroic", "Homecoming", "Ancient Greece", "Mythical"]
+    },
+    "The-Picture-of-Dorian-Gray-by-Oscar-Wilde": {
+      "Author": "Oscar Wilde",
+      "Title": "The Picture of Dorian Gray",
+      "Keywords": ["Aestheticism", "Moral Corruption", "Art", "Beauty", "Dorian Gray", "Decadence", "Portrait", "Vanity"]
+    },
+    "The-Plymouth-Express-Affair-by-Agatha-Christie": {
+      "Author": "Agatha Christie",
+      "Title": "The Plymouth Express Affair",
+      "Keywords": ["Mystery", "Hercule Poirot", "Detective", "Murder", "Crime", "Investigation", "Plymouth Express", "Railway", "Suspense"]
+    },
+    "The-Prince-by-Niccolo-Machiavelli": {
+      "Author": "Niccolò Machiavelli",
+      "Title": "The Prince",
+      "Keywords": ["Political Philosophy", "Machiavellian", "Power", "Politics", "Leadership", "Strategy", "Rulership", "Pragmatism", "Italian Renaissance", "Morality"]
+    },
+    "The-Strange-Case-of-Dr-Jekyll-and-Mr-Hyde-by-Robert-Stevenson": {
+      "Author": "Robert Louis Stevenson",
+      "Title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+      "Keywords": ["Duality", "Victorian", "Science", "Good and Evil", "Identity", "Transformation", "Hyde", "Mystery", "Morality"]
+    },
+    "Treasure-Island-by-Robert-Louis-Stevenson": {
+      "Author": "Robert Louis Stevenson",
+      "Title": "Treasure Island",
+      "Keywords": ["Adventure", "Pirates", "Treasure", "Buccaneers", "X marks the spot", "Island", "Long John Silver", "Classic", "Mutiny"]
+    },
+    "Twenty-Thousand-Leagues-Under-the-Seas-An-Underwater-Tour-of-the-World-by-Jules-Verne": {
+      "Author": "Jules Verne",
+      "Title": "Twenty Thousand Leagues Under the Seas: An Underwater Tour of the World",
+      "Keywords": ["Adventure", "Submarine", "Underwater", "Science Fiction", "Captain Nemo", "Exploration", "Ocean", "Nautilus", "Technology"]
+    },
+    "War-and-Peace-by-Leo-Tolstoy": {
+      "Author": "Leo Tolstoy",
+      "Title": "War and Peace",
+      "Keywords": ["Historical Novel", "Napoleonic Wars", "Russian Literature", "Epic", "Society", "War", "Peace", "Love"]
+    },
+    "Winnie-the-Pooh-by-A-A-Milne": {
+      "Author": "A. A. Milne",
+      "Title": "Winnie the Pooh",
+      "Keywords": ["Children's Literature", "Pooh Bear", "Hundred Acre Wood", "Friends", "Imagination", "Innocence", "Adventures", "Honey", "Nostalgia"]
+    }
   }

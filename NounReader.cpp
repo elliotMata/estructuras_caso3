@@ -16,7 +16,7 @@ NounReader *NounReader::getInstance()
 
 void NounReader::createMap()
 {
-    file.open("/home/steph/Documents/estructuras/caso03/estructuras_caso3/lista-sustantivos.txt");
+    file.open("lista-sustantivos.txt");
     if (file.is_open())
     {
         string noun;
@@ -60,9 +60,9 @@ vector<string> NounReader::getItem(char key)
 
 NounReader *NounReader::instance = nullptr;
 
-/*int main ()
+/*int main()
 {
-    NounReader* nounReader = NounReader::getInstance();
+    NounReader *nounReader = NounReader::getInstance();
     vector<string> nouns = nounReader->getItem('a');
     for (int i = 0; i < nouns.size(); i++)
     {

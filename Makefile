@@ -1,2 +1,2 @@
 all:
-	g++ NounReader.cpp -o main
+	g++ NounReader.cpp JsonParser.cpp -o main

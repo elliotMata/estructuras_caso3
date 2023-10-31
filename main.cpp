@@ -33,6 +33,5 @@ int main()
     {
         cout << (i + 1) << ". " << replace(topThree.at(i), '-', ' ') << endl;
     }
-    cout << topThree.size() << endl;
     return 0;
 }

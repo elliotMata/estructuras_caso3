@@ -45,15 +45,26 @@ public:
         }
     }
 
+    void printMap()
+    {
+        multimap<double, string>::iterator iterator;
+        for (iterator = ranking.begin(); iterator != ranking.end(); iterator++)
+        {
+            cout << "(" << iterator->first << ", " << iterator->second << ")" << endl;
+        }
+    }
+
     vector<string> getTopThree()
     {
         multimap<double, string>::iterator iterator;
         vector<string> topThree;
-        int count = 0;
-        for (iterator = ranking.begin(); iterator != ranking.end() && count < 3; iterator++)
+        for (iterator = ranking.begin(); iterator != ranking.end(); iterator++)
         {
             topThree.push_back(iterator->second);
-            count++;
+            if (topThree.size() == 3)
+            {
+                return topThree;
+            }
         }
         return topThree;
     }

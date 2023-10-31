@@ -22,10 +22,11 @@ string replace(string s, char current, char replace)
 
 int main()
 {
-    MatchMaker *matchMaker = new MatchMaker("love flower relationship and morning");
+    MatchMaker *matchMaker = new MatchMaker("love flower relationship dream");
     vector<string> topThree;
 
     matchMaker->findSimilarities();
+    // matchMaker->printMap();
     topThree = matchMaker->getTopThree();
 
     for (int i = 0; i < topThree.size(); i++)

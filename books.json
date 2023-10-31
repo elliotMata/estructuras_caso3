@@ -100,7 +100,7 @@
     "The-Iliad-by-Homer": {
       "Author": "Homer",
       "Title": "The Iliad",
-      "Keywords": ["epic", "war", "mythology", "gods", "hero"]
+      "Keywords": ["epic", "war", "mythology", "god", "hero"]
     },
     "The-Life-and-Adventures-of-Robinson-Crusoe-by-Daniel-Defoe": {
       "Author": "Daniel Defoe",
@@ -150,7 +150,7 @@
     "Winnie-the-Pooh-by-A-A-Milne": {
       "Author": "A.A. Milne",
       "Title": "Winnie the Pooh",
-      "Keywords": ["children", "bear", "friends", "honey", "adventures", "imagination"]
+      "Keywords": ["children", "bear", "friendship", "honey", "adventures", "imagination"]
     }
   }
 }

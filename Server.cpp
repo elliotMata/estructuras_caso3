@@ -13,17 +13,7 @@ int main()
 
     try
     {
-        if (server.listen("localhost", 65000))
-        {
-            std::cout << "Server is running. Press Enter to stop it." << std::endl;
-            std::string line;
-            std::getline(std::cin, line);
-            server.stop();
-        }
-        else
-        {
-            std::cerr << "Error: Server failed to start" << std::endl;
-        }
+        server.listen("0.0.0.0", 65000);
     }
     catch (const std::exception &e)
     {

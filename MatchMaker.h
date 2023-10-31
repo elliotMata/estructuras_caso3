@@ -1,6 +1,8 @@
 #ifndef MATCH_MAKER_H_
 #define MATCH_MAKER_H_
 
+#include <bits/stdc++.h>
+
 #include "BookIndexer.h"
 #include "PhraseParser.h"
 #include "Comparator.h"
@@ -8,6 +10,8 @@
 class MatchMaker
 {
 private:
+    multimap<double, string, greater<int>> ranking;
+
     BookIndexer<string> indexer;
     Comparator *comparator;
     PhraseParser *parser;
@@ -27,28 +31,31 @@ public:
     void findSimilarities()
     {
         vector<string> books;
+
         for (string noun : nouns)
         {
             books = indexer.getBooks(noun);
-
-            cout << "Current noun : " << noun << "\n\n";
-            cout << "Checking the following books" << endl;
-            for (string book : books)
-            {
-                cout << book << endl;
-            }
-
-            cout << endl;
 
             vector<string> bookNouns;
             for (string book : books)
             {
                 comparator->compareVectors(nouns, jsonParser->getNouns(book));
-                cout << "Similarity with " + book << " is : " << comparator->getSimilarity() << endl;
+                ranking.insert(make_pair(comparator->getSimilarity(), book));
             }
-
-            cout << "\n--------------------------------------\n\n";
         }
+    }
+
+    vector<string> getTopThree()
+    {
+        multimap<double, string>::iterator iterator;
+        vector<string> topThree;
+        int count = 0;
+        for (iterator = ranking.begin(); iterator != ranking.end() && count < 3; iterator++)
+        {
+            topThree.push_back(iterator->second);
+            count++;
+        }
+        return topThree;
     }
 };
 

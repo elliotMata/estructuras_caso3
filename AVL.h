@@ -141,6 +141,27 @@ private:
         }
     }
 
+    vector<string> search(AVLTreeNode<T> *node, T value)
+    {
+        if (node == nullptr)
+        {
+            return vector<string>();
+        }
+
+        if (value < node->data)
+        {
+            return search(node->left, value);
+        }
+        else if (value > node->data)
+        {
+            return search(node->right, value);
+        }
+        else
+        {
+            return node->filenames;
+        }
+    }
+
 public:
     AVLTree() : root(nullptr) {}
 
@@ -152,6 +173,11 @@ public:
     void inOrderTraversal()
     {
         inOrderTraversal(root);
+    }
+
+    vector<string> search(T value)
+    {
+        return search(root, value);
     }
 };
 

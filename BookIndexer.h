@@ -7,8 +7,12 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
+
 #include "JsonParser.h"
 #include "AVL.h"
+
+using namespace std;
 
 template <typename T>
 class BookIndexer
@@ -44,6 +48,11 @@ public:
     void inOrderTraversal()
     {
         avlTree.inOrderTraversal();
+    }
+
+    vector<string> getBooks(string noun)
+    {
+        return avlTree.search(noun);
     }
 };
 

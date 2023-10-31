@@ -4,7 +4,7 @@
 #include "PhraseParser.h"
 #include "NounReader.h"
 
-void PhraseParser::mincePhrase()
+void PhraseParser::mincePhrase(string phrase)
 {
     NounReader *nouns = NounReader::getInstance();
     istringstream ss(phrase);
@@ -19,14 +19,9 @@ void PhraseParser::mincePhrase()
     }
 }
 
-PhraseParser::PhraseParser(string phrase)
+vector<string> PhraseParser::getKeywords(string phrase)
 {
-    this->phrase = phrase;
-    mincePhrase();
-}
-
-vector<string> PhraseParser::getKeywords()
-{
+    mincePhrase(phrase);
     return this->keywords;
 }
 

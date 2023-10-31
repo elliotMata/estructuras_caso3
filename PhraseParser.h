@@ -17,11 +17,10 @@ private:
     string phrase;
     vector<string> keywords;
 
-    void mincePhrase();
+    void mincePhrase(string phrase);
 
 public:
-    PhraseParser(string phrase);  // recibe la frase del usuario
-    vector<string> getKeywords(); // retona las palabras importantes de la frase
+    vector<string> getKeywords(string phrase); // retona las palabras importantes de la frase
 };
 
 #endif

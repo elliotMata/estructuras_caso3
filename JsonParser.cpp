@@ -4,7 +4,7 @@
 
 JsonParser::JsonParser()
 {
-    ifstream jsonFile("books.json");
+    ifstream jsonFile("./books.json");
     json file;
     jsonFile >> file;
     jsonFile.close();

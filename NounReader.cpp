@@ -16,7 +16,7 @@ NounReader *NounReader::getInstance()
 
 void NounReader::createMap()
 {
-    file.open("lista-sustantivos.txt");
+    file.open("./lista-sustantivos.txt");
     if (file.is_open())
     {
         string noun;

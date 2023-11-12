@@ -40,10 +40,6 @@ void PhraseParser::mincePhrase(string phrase)
 
     while (ss >> word)
     {
-        for (auto &letter : word)
-        {
-            letter = tolower(letter); // put the whole word in lowercase letters
-        }
         if (nouns->contains(word))
         {
             auto it = find_if(keywords->begin(), keywords->end(), [word](const pair<string, int> &p)
@@ -95,10 +91,10 @@ int main()
     reader.processParagraphs(filename);
     vector<pair<int, string>> *paragraphs = reader.getParagraphs();
 
-    for (int i = 0; i < 5; i++)
+    for (auto p : *paragraphs)
     {
-        cout << paragraphs->at(i).second << endl;
-        parser->mincePhrase(paragraphs->at(i).second);
+        cout << p.second << endl;
+        parser->mincePhrase(p.second);
     }
     vector<pair<string, int>> *keywords = parser->getKeywords();
     printKeywords(keywords);

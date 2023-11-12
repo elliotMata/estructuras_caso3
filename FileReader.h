@@ -21,6 +21,7 @@ private:
 
     void calculateTotalParagraphs();
     void calculatePositions();
+    string paragraphCleaner(const string &sentence);
 
 public:
     void processParagraphs(const string &filename);

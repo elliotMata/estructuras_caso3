@@ -33,6 +33,16 @@ void FileReader::calculatePositions()
     }
 }
 
+string FileReader::paragraphCleaner(const string &paragraph)
+{
+    string cleanedParagraph = paragraph;
+    transform(cleanedParagraph.begin(), cleanedParagraph.end(), cleanedParagraph.begin(), ::tolower);
+    cleanedParagraph.erase(std::remove_if(cleanedParagraph.begin(), cleanedParagraph.end(), ::ispunct), cleanedParagraph.end());
+    cleanedParagraph.erase(std::remove_if(cleanedParagraph.begin(), cleanedParagraph.end(), ::isdigit), cleanedParagraph.end());
+
+    return cleanedParagraph;
+}
+
 void FileReader::processParagraphs(const string &filename)
 {
     file.open(filename);
@@ -55,6 +65,7 @@ void FileReader::processParagraphs(const string &filename)
             }
         }
         string paragraph(buffer);
+        paragraph = paragraphCleaner(paragraph);
         paragraphs->push_back({paragraphPositions->at(i), paragraph});
     }
     file.close();

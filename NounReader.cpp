@@ -2,6 +2,7 @@
 
 NounReader::NounReader()
 {
+    nouns = new unordered_map<char, vector<string> *>();
     createMap();
 }
 
@@ -22,16 +23,15 @@ void NounReader::createMap()
         string noun;
         while (getline(file, noun))
         {
-            noun = noun.substr(0, noun.size() - 1);
-            if (nouns.find(noun[0]) != nouns.end())
+            if (nouns->find(noun[0]) != nouns->end())
             {
-                nouns.at(noun[0]).push_back(noun);
+                nouns->at(noun[0])->push_back(noun);
             }
             else
             {
-                vector<string> nounsList;
-                nounsList.push_back(noun);
-                nouns.insert(make_pair(noun[0], nounsList));
+                vector<string> *nounsList = new vector<string>();
+                nounsList->push_back(noun);
+                nouns->insert(make_pair(noun[0], nounsList));
             }
         }
         file.close();
@@ -40,12 +40,12 @@ void NounReader::createMap()
 
 bool NounReader::contains(string noun)
 {
-    vector<string> nounsList = getItem(noun[0]);
-    if (!nounsList.empty())
+    vector<string> *nounsList = getItem(noun[0]);
+    if (!nounsList->empty())
     {
-        for (int i = 0; i < nounsList.size(); i++)
+        for (const string &item : *nounsList)
         {
-            if (nounsList.at(i).compare(noun) == 0)
+            if (item.compare(noun) == 0)
             {
                 return true;
             }
@@ -54,9 +54,9 @@ bool NounReader::contains(string noun)
     return false;
 }
 
-vector<string> NounReader::getItem(char key)
+vector<string> *NounReader::getItem(char key)
 {
-    return nouns.at(key);
+    return nouns->at(key);
 }
 
 NounReader *NounReader::instance = nullptr;
@@ -64,10 +64,10 @@ NounReader *NounReader::instance = nullptr;
 /*int main()
 {
     NounReader *nounReader = NounReader::getInstance();
-    vector<string> nouns = nounReader->getItem('a');
-    for (int i = 0; i < nouns.size(); i++)
+    vector<string> *nouns = nounReader->getItem('a');
+    for (int i = 0; i < nouns->size(); i++)
     {
-        cout << nouns.at(i) << " " << nouns.at(i).size() << endl;
+        cout << nouns->at(i) << " " << nouns->at(i).size() << endl;
     }
     cout << nounReader->contains("abeja") << endl;
     return 0;

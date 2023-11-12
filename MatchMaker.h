@@ -16,7 +16,7 @@ private:
     Comparator *comparator;
     PhraseParser *parser;
     JsonParser *jsonParser;
-    vector<string> nouns;
+    vector<string> *nouns;
 
 public:
     MatchMaker(string phrase)
@@ -32,14 +32,14 @@ public:
     {
         vector<string> books;
 
-        for (string noun : nouns)
+        for (string noun : *nouns)
         {
             books = indexer.getBooks(noun);
 
             vector<string> bookNouns;
             for (string book : books)
             {
-                comparator->compareVectors(nouns, jsonParser->getNouns(book));
+                comparator->compareVectors(*nouns, *jsonParser->getNouns(book));
                 ranking.insert(make_pair(comparator->getSimilarity(), book));
             }
         }

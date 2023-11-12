@@ -27,7 +27,7 @@ public:
 
         // Get the list of books
         std::vector<std::string> books;
-        for (const auto &pair : jsonParser->getNounsHash())
+        for (const auto &pair : jsonParser->getNounsHash()) // ?
         {
             books.push_back(pair.first);
         }
@@ -58,13 +58,13 @@ public:
 
 #endif
 
-/* int main()
+/*int main()
 {
-    AVLTreeBuilder<std::string> builder;
+    BookIndexer<std::string> builder;
     builder.buildTree();
 
     std::cout << "In-order traversal of AVL tree based on keywords:\n";
     builder.inOrderTraversal();
 
     return 0;
-} */
+}*/

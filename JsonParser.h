@@ -21,18 +21,18 @@ class JsonParser
 private:
     json books;
     json bookInfo;
-    static JsonParser *instance;                 // no acepta mas de una instancia de la clase
-    unordered_map<string, string> authors;       // hash de autores <libro, autor>
-    unordered_map<string, vector<string>> nouns; // hash de sustantivos <libro, sustantivos>
+    static JsonParser *instance;                    // no acepta mas de una instancia de la clase
+    unordered_map<string, string> *authors;         // hash de autores <libro, autor>
+    unordered_map<string, vector<string> *> *nouns; // hash de sustantivos <libro, sustantivos>
 
     JsonParser();
     void createMaps();
 
 public:
-    static JsonParser *getInstance();         // retorna la instancia de la clase
-    string getAuthor(string bookName);        // retorna el autor de un libro
-    vector<string> getNouns(string bookName); // retorna la lista de sustantivos de un libro
-    unordered_map<string, vector<string>> getNounsHash();
+    static JsonParser *getInstance();                        // retorna la instancia de la clase
+    string getAuthor(string bookName);                       // retorna el autor de un libro
+    vector<string> *getNouns(string bookName);               // retorna la lista de sustantivos de un libro
+    unordered_map<string, vector<string> *> *getNounsHash(); // retorna el mapa de sustantivos
 };
 
 #endif

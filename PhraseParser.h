@@ -15,12 +15,12 @@ class PhraseParser
 {
 private:
     string phrase;
-    vector<string> keywords;
+    vector<string> *keywords;
 
     void mincePhrase(string phrase);
 
 public:
-    vector<string> getKeywords(string phrase); // retona las palabras importantes de la frase
+    vector<string> *getKeywords(string phrase); // retona las palabras importantes de la frase
 };
 
 #endif

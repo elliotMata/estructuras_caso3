@@ -12,26 +12,27 @@ void PhraseParser::mincePhrase(string phrase)
 
     while (ss >> word)
     {
-        if (nouns->contains(word) && !(find(keywords.begin(), keywords.end(), word) != keywords.end()))
+        if (nouns->contains(word) && !(find(keywords->begin(), keywords->end(), word) != keywords->end()))
         {
-            keywords.push_back(word);
+            keywords->push_back(word);
         }
     }
 }
 
-vector<string> PhraseParser::getKeywords(string phrase)
+vector<string> *PhraseParser::getKeywords(string phrase)
 {
+    keywords = new vector<string>();
     mincePhrase(phrase);
     return this->keywords;
 }
 
 /*int main()
 {
-    PhraseParser *pp = new PhraseParser("the cat is black, the black cat is mine");
-    vector<string> keywords = pp->getKeywords();
-    for (int i = 0; i < keywords.size(); i++)
+    PhraseParser pp;
+    vector<string> *keywords = pp.getKeywords("the cat is black, the black cat is mine");
+    for (int i = 0; i < keywords->size(); i++)
     {
-        cout << keywords[i] << endl;
+        cout << keywords->at(i) << endl;
     }
     return 0;
 }*/

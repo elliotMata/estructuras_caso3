@@ -33,48 +33,29 @@ void FileReader::calculatePositions()
     }
 }
 
-void FileReader::processParagraphs()
-{
-    calculatePositions();
-
-    file.seekg(paragraphPositions->at(0), std::ios::beg);
-    char buffer[PARAGRAPH_SIZE + 1];
-    file.read(buffer, PARAGRAPH_SIZE);
-    buffer[file.gcount()] = '\0';
-
-    for (int i = 0; i < file.gcount(); i++)
-    {
-        if (buffer[i] == '\n')
-        {
-            buffer[i] = ' ';
-        }
-    }
-
-    cout << "Read data: " << buffer << endl;
-    file.close();
-}
-
-FileReader::FileReader(const string &filename)
+void FileReader::processParagraphs(const string &filename)
 {
     file.open(filename);
-    if (!file.is_open())
-    {
-        cout << "Error opening file!" << endl;
-    }
-}
+    calculatePositions();
 
-FileReader::~FileReader()
-{
-    if (file.is_open())
+    for (int i = 0; i < paragraphPositions->size(); i++)
     {
-        file.close();
-    }
-}
+        file.seekg(paragraphPositions->at(i), std::ios::beg);
+        char buffer[PARAGRAPH_SIZE + 1];
+        file.read(buffer, PARAGRAPH_SIZE);
+        buffer[file.gcount()] = '\0';
 
-int FileReader::getTotalParagraphs()
-{
-    calculateTotalParagraphs();
-    return this->numberParagraphs;
+        for (int i = 0; i < file.gcount(); i++)
+        {
+            if (buffer[i] == '\n')
+            {
+                buffer[i] = ' ';
+            }
+        }
+        cout << "Read data: " << buffer << endl;
+        cout << '\n';
+    }
+    file.close();
 }
 
 vector<int> *FileReader::getPositions()
@@ -85,15 +66,8 @@ vector<int> *FileReader::getPositions()
 
 int main()
 {
-    FileReader reader("./libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt");
-    /*vector<int> *positions = reader.getPositions();
-
-    for (int i = 0; i < positions->size(); i++)
-    {
-        cout << positions->at(i) << " ";
-    }
-    cout << "\n\n";*/
-    reader.processParagraphs();
+    FileReader reader;
+    reader.processParagraphs("./libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt");
 
     return 0;
 }

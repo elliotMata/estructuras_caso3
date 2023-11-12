@@ -22,11 +22,7 @@ private:
     void calculatePositions();
 
 public:
-    FileReader(const string &filename);
-    ~FileReader();
-    void processParagraphs();
-
-    int getTotalParagraphs();
+    void processParagraphs(const string &filename);
     vector<int> *getPositions();
 };
 

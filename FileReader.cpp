@@ -9,7 +9,7 @@ void FileReader::calculateTotalParagraphs()
         return;
     }
     file.seekg(0, std::ios::end);
-    int fileSize = file.tellg();
+    fileSize = file.tellg();
     file.seekg(0, std::ios::beg);
 
     amountToCheck = (fileSize * PERCENTAGE) / PARAGRAPH_SIZE;
@@ -25,7 +25,7 @@ void FileReader::calculatePositions()
     while (count != 0)
     {
         int position = rand() % numberParagraphs;
-        if (!(find(paragraphPositions->begin(), paragraphPositions->end(), position) != paragraphPositions->end()))
+        if (!(find(paragraphPositions->begin(), paragraphPositions->end(), position) != paragraphPositions->end()) && position * PARAGRAPH_SIZE <= fileSize)
         {
             paragraphPositions->push_back(position);
             count--;
@@ -33,14 +33,18 @@ void FileReader::calculatePositions()
     }
 }
 
-string FileReader::paragraphCleaner(const string &paragraph)
+string FileReader::paragraphCleaner(const string &input)
 {
-    string cleanedParagraph = paragraph;
-    transform(cleanedParagraph.begin(), cleanedParagraph.end(), cleanedParagraph.begin(), ::tolower);
-    cleanedParagraph.erase(std::remove_if(cleanedParagraph.begin(), cleanedParagraph.end(), ::ispunct), cleanedParagraph.end());
-    cleanedParagraph.erase(std::remove_if(cleanedParagraph.begin(), cleanedParagraph.end(), ::isdigit), cleanedParagraph.end());
+    string result;
+    for (char letter : input)
+    {
+        if (isalpha(letter) || letter == ' ')
+        {
+            result += tolower(letter);
+        }
+    }
 
-    return cleanedParagraph;
+    return result;
 }
 
 void FileReader::processParagraphs(const string &filename)
@@ -52,7 +56,7 @@ void FileReader::processParagraphs(const string &filename)
 
     for (int i = 0; i < paragraphPositions->size(); i++)
     {
-        file.seekg(paragraphPositions->at(i), std::ios::beg);
+        file.seekg(paragraphPositions->at(i) * PARAGRAPH_SIZE);
         char buffer[PARAGRAPH_SIZE + 1];
         file.read(buffer, PARAGRAPH_SIZE);
         buffer[file.gcount()] = '\0';

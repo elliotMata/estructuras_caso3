@@ -15,7 +15,7 @@ class FileReader
 {
 private:
     fstream file;
-    int numberParagraphs, amountToCheck;
+    int fileSize, numberParagraphs, amountToCheck;
     vector<pair<int, string>> *paragraphs;
     vector<int> *paragraphPositions;
 

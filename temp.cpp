@@ -34,12 +34,19 @@ PhraseParser::PhraseParser()
 
 void PhraseParser::mincePhrase(string phrase)
 {
+    cout << "here 1" << endl;
     NounReader *nouns = NounReader::getInstance();
+    cout << "here 2" << endl;
     istringstream ss(phrase);
+    cout << "here 3" << endl;
     string word;
+
+    cout << "*** PHRASE ***\n"
+         << phrase << "\n\n";
 
     while (ss >> word)
     {
+        cout << word << endl;
         if (nouns->contains(word))
         {
             auto it = find_if(keywords->begin(), keywords->end(), [word](const pair<string, int> &p)
@@ -86,14 +93,13 @@ int main()
 {
     PhraseParser *parser = new PhraseParser();
     FileReader reader;
-    string filename = "libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt";
 
-    reader.processParagraphs(filename);
+    reader.processParagraphs("./libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt");
     vector<pair<int, string>> *paragraphs = reader.getParagraphs();
 
     for (auto p : *paragraphs)
     {
-        cout << p.second << endl;
+        cout << p.first << ". " << p.second << endl;
         parser->mincePhrase(p.second);
     }
     vector<pair<string, int>> *keywords = parser->getKeywords();

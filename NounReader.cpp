@@ -23,7 +23,7 @@ void NounReader::createMap()
         string noun;
         while (getline(file, noun))
         {
-            if (nouns->find(noun[0]) != nouns->end())
+            if (!isdigit(noun[0]) && nouns->find(noun[0]) != nouns->end())
             {
                 nouns->at(noun[0])->push_back(noun);
             }

@@ -7,6 +7,7 @@
 #include "json.hpp"
 
 #include "NounReader.h"
+#include "FileReader.h"
 
 using namespace std;
 using json = nlohmann::json;
@@ -17,14 +18,19 @@ private:
     string phrase;
     vector<pair<string, int>> *keywords; // pair of keyword and count
 
-    void mincePhrase(string phrase);
-
 public:
-    vector<pair<string, int>> *getKeywords(string phrase); // returns the keywords and their count
+    PhraseParser();
+    void mincePhrase(string phrase);
+    vector<pair<string, int>> *getKeywords(); // returns the keywords and their count
     void saveToJson(const string &filename);
 };
 
 /* -------------------------------------------------------- */
+
+PhraseParser::PhraseParser()
+{
+    keywords = new vector<pair<string, int>>();
+}
 
 void PhraseParser::mincePhrase(string phrase)
 {
@@ -54,10 +60,8 @@ void PhraseParser::mincePhrase(string phrase)
     }
 }
 
-vector<pair<string, int>> *PhraseParser::getKeywords(string phrase)
+vector<pair<string, int>> *PhraseParser::getKeywords()
 {
-    keywords = new vector<pair<string, int>>();
-    mincePhrase(phrase);
     return this->keywords;
 }
 
@@ -73,20 +77,31 @@ void PhraseParser::saveToJson(const string &filename)
     outputFile << j.dump(2); // pretty print with indentation
 }
 
+void printKeywords(vector<pair<string, int>> *keywords)
+{
+    for (auto p : *keywords)
+    {
+        cout << p.first << " -> " << p.second << endl;
+    }
+    cout << "\n\n";
+}
+
 int main()
 {
-    PhraseParser pp;
-    ifstream inputFile("libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt");
-    string fileContent;
-    if (inputFile.is_open())
+    PhraseParser *parser = new PhraseParser();
+    FileReader reader;
+    string filename = "libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt";
+
+    reader.processParagraphs(filename);
+    vector<pair<int, string>> *paragraphs = reader.getParagraphs();
+
+    for (int i = 0; i < 5; i++)
     {
-        getline(inputFile, fileContent);
-        inputFile.close();
+        cout << paragraphs->at(i).second << endl;
+        parser->mincePhrase(paragraphs->at(i).second);
     }
-    cout << fileContent << endl;
-    vector<pair<string, int>> *keywords = pp.getKeywords(fileContent);
-    cout << keywords->size() << endl;
-    pp.saveToJson("output.json");
+    vector<pair<string, int>> *keywords = parser->getKeywords();
+    printKeywords(keywords);
 
     return 0;
 }

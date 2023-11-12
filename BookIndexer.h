@@ -27,7 +27,7 @@ public:
 
         // Get the list of books
         std::vector<std::string> books;
-        for (const auto &pair : jsonParser->getNounsHash()) // ?
+        for (const auto &pair : *(jsonParser->getNounsHash()))
         {
             books.push_back(pair.first);
         }
@@ -35,9 +35,9 @@ public:
         for (const std::string &book : books)
         {
             // Get the list of keywords for the book
-            std::vector<std::string> keywords = jsonParser->getNouns(book);
+            std::vector<std::string> *keywords = jsonParser->getNouns(book);
 
-            for (const std::string &keyword : keywords)
+            for (const std::string &keyword : *keywords)
             {
                 // Insert keyword as the key and associate the book name with it
                 avlTree.insert(keyword, book);

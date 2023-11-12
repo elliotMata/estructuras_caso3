@@ -19,9 +19,20 @@ void PhraseParser::mincePhrase(string phrase)
     }
 }
 
+string PhraseParser::phraseCleaner(const string &phrase)
+{
+    string cleanedPhrase = phrase;
+    transform(cleanedPhrase.begin(), cleanedPhrase.end(), cleanedPhrase.begin(), ::tolower);
+    cleanedPhrase.erase(std::remove_if(cleanedPhrase.begin(), cleanedPhrase.end(), ::ispunct), cleanedPhrase.end());
+    cleanedPhrase.erase(std::remove_if(cleanedPhrase.begin(), cleanedPhrase.end(), ::isdigit), cleanedPhrase.end());
+
+    return cleanedPhrase;
+}
+
 vector<string> *PhraseParser::getKeywords(string phrase)
 {
     keywords = new vector<string>();
+    phrase = phraseCleaner(phrase);
     mincePhrase(phrase);
     return this->keywords;
 }

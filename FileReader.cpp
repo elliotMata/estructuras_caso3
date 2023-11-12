@@ -38,6 +38,8 @@ void FileReader::processParagraphs(const string &filename)
     file.open(filename);
     calculatePositions();
 
+    paragraphs = new vector<pair<int, string>>();
+
     for (int i = 0; i < paragraphPositions->size(); i++)
     {
         file.seekg(paragraphPositions->at(i), std::ios::beg);
@@ -52,8 +54,8 @@ void FileReader::processParagraphs(const string &filename)
                 buffer[i] = ' ';
             }
         }
-        cout << "Read data: " << buffer << endl;
-        cout << '\n';
+        string paragraph(buffer);
+        paragraphs->push_back({paragraphPositions->at(i), paragraph});
     }
     file.close();
 }
@@ -64,10 +66,21 @@ vector<int> *FileReader::getPositions()
     return this->paragraphPositions;
 }
 
-int main()
+vector<pair<int, string>> *FileReader::getParagraphs()
+{
+    return this->paragraphs;
+}
+
+/*int main()
 {
     FileReader reader;
     reader.processParagraphs("./libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt");
+    vector<pair<int, string>> *paragraphs = reader.getParagraphs();
+
+    for (auto p : *paragraphs)
+    {
+        cout << p.first << ". " << p.second << endl;
+    }
 
     return 0;
-}
+}*/

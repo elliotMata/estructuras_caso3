@@ -16,6 +16,7 @@ class FileReader
 private:
     fstream file;
     int numberParagraphs, amountToCheck;
+    vector<pair<int, string>> *paragraphs;
     vector<int> *paragraphPositions;
 
     void calculateTotalParagraphs();
@@ -24,6 +25,7 @@ private:
 public:
     void processParagraphs(const string &filename);
     vector<int> *getPositions();
+    vector<pair<int, string>> *getParagraphs();
 };
 
 #endif

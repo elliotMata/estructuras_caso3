@@ -24,6 +24,8 @@ public:
     void saveToJson(const string &filename);
 };
 
+/* -------------------------------------------------------- */
+
 void PhraseParser::mincePhrase(string phrase)
 {
     NounReader *nouns = NounReader::getInstance();
@@ -32,19 +34,21 @@ void PhraseParser::mincePhrase(string phrase)
 
     while (ss >> word)
     {
+        for (auto &letter : word)
+        {
+            letter = tolower(letter); // put the whole word in lowercase letters
+        }
         if (nouns->contains(word))
         {
             auto it = find_if(keywords->begin(), keywords->end(), [word](const pair<string, int> &p)
                               { return p.first == word; });
             if (it != keywords->end())
             {
-                // Increment count if the keyword already exists
-                it->second++;
+                it->second++; // Increment count if the keyword already exists
             }
             else
             {
-                // Add a new keyword with count 1
-                keywords->push_back({word, 1});
+                keywords->push_back({word, 1}); // Add a new keyword with count 1
             }
         }
     }
@@ -72,14 +76,15 @@ void PhraseParser::saveToJson(const string &filename)
 int main()
 {
     PhraseParser pp;
-    /*ifstream inputFile("libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt");
+    ifstream inputFile("libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt");
     string fileContent;
     if (inputFile.is_open())
     {
         getline(inputFile, fileContent);
         inputFile.close();
-    }*/
-    vector<pair<string, int>> *keywords = pp.getKeywords("the cat is black, the black cat is mine");
+    }
+    cout << fileContent << endl;
+    vector<pair<string, int>> *keywords = pp.getKeywords(fileContent);
     cout << keywords->size() << endl;
     pp.saveToJson("output.json");
 

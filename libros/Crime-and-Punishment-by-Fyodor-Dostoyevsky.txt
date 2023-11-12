@@ -1,139 +1,3 @@
-The Project Gutenberg eBook of Crime and Punishment
-    
-This ebook is for the use of anyone anywhere in the United States and
-most other parts of the world at no cost and with almost no restrictions
-whatsoever. You may copy it, give it away or re-use it under the terms
-of the Project Gutenberg License included with this ebook or online
-at www.gutenberg.org. If you are not located in the United States,
-you will have to check the laws of the country where you are located
-before using this eBook.
-
-Title: Crime and Punishment
-
-
-Author: Fyodor Dostoyevsky
-
-Translator: Constance Garnett
-
-Release date: March 28, 2006 [eBook #2554]
-                Most recently updated: August 5, 2021
-
-Language: English
-
-
-
-*** START OF THE PROJECT GUTENBERG EBOOK CRIME AND PUNISHMENT ***
-
-
-
-CRIME AND PUNISHMENT
-
-By Fyodor Dostoevsky
-
-
-
-Translated By Constance Garnett
-
-
-
-
-TRANSLATOR’S PREFACE
-
-A few words about Dostoevsky himself may help the English reader to
-understand his work.
-
-Dostoevsky was the son of a doctor. His parents were very hard-working
-and deeply religious people, but so poor that they lived with their five
-children in only two rooms. The father and mother spent their evenings
-in reading aloud to their children, generally from books of a serious
-character.
-
-Though always sickly and delicate Dostoevsky came out third in the
-final examination of the Petersburg school of Engineering. There he had
-already begun his first work, “Poor Folk.”
-
-This story was published by the poet Nekrassov in his review and
-was received with acclamations. The shy, unknown youth found himself
-instantly something of a celebrity. A brilliant and successful career
-seemed to open before him, but those hopes were soon dashed. In 1849 he
-was arrested.
-
-Though neither by temperament nor conviction a revolutionist, Dostoevsky
-was one of a little group of young men who met together to read Fourier
-and Proudhon. He was accused of “taking part in conversations against
-the censorship, of reading a letter from Byelinsky to Gogol, and of
-knowing of the intention to set up a printing press.” Under Nicholas
-I. (that “stern and just man,” as Maurice Baring calls him) this was
-enough, and he was condemned to death. After eight months’ imprisonment
-he was with twenty-one others taken out to the Semyonovsky Square to
-be shot. Writing to his brother Mihail, Dostoevsky says: “They snapped
-words over our heads, and they made us put on the white shirts worn by
-persons condemned to death. Thereupon we were bound in threes to stakes,
-to suffer execution. Being the third in the row, I concluded I had only
-a few minutes of life before me. I thought of you and your dear ones and
-I contrived to kiss Plestcheiev and Dourov, who were next to me, and to
-bid them farewell. Suddenly the troops beat a tattoo, we were unbound,
-brought back upon the scaffold, and informed that his Majesty had spared
-us our lives.” The sentence was commuted to hard labour.
-
-One of the prisoners, Grigoryev, went mad as soon as he was untied, and
-never regained his sanity.
-
-The intense suffering of this experience left a lasting stamp on
-Dostoevsky’s mind. Though his religious temper led him in the end to
-accept every suffering with resignation and to regard it as a blessing
-in his own case, he constantly recurs to the subject in his writings.
-He describes the awful agony of the condemned man and insists on the
-cruelty of inflicting such torture. Then followed four years of penal
-servitude, spent in the company of common criminals in Siberia, where
-he began the “Dead House,” and some years of service in a disciplinary
-battalion.
-
-He had shown signs of some obscure nervous disease before his arrest
-and this now developed into violent attacks of epilepsy, from which he
-suffered for the rest of his life. The fits occurred three or four times
-a year and were more frequent in periods of great strain. In 1859 he was
-allowed to return to Russia. He started a journal--“Vremya,” which was
-forbidden by the Censorship through a misunderstanding. In 1864 he lost
-his first wife and his brother Mihail. He was in terrible poverty, yet
-he took upon himself the payment of his brother’s debts. He started
-another journal--“The Epoch,” which within a few months was also
-prohibited. He was weighed down by debt, his brother’s family was
-dependent on him, he was forced to write at heart-breaking speed, and is
-said never to have corrected his work. The later years of his life were
-much softened by the tenderness and devotion of his second wife.
-
-In June 1880 he made his famous speech at the unveiling of the
-monument to Pushkin in Moscow and he was received with extraordinary
-demonstrations of love and honour.
-
-A few months later Dostoevsky died. He was followed to the grave by a
-vast multitude of mourners, who “gave the hapless man the funeral of a
-king.” He is still probably the most widely read writer in Russia.
-
-In the words of a Russian critic, who seeks to explain the feeling
-inspired by Dostoevsky: “He was one of ourselves, a man of our blood and
-our bone, but one who has suffered and has seen so much more deeply than
-we have his insight impresses us as wisdom... that wisdom of the heart
-which we seek that we may learn from it how to live. All his other
-gifts came to him from nature, this he won for himself and through it he
-became great.”
-
-
-
-
-
-CRIME AND PUNISHMENT
-
-
-
-
-PART I
-
-
-
-CHAPTER I
-
 On an exceptionally hot evening early in July a young man came out of
 the garret in which he lodged in S. Place and walked slowly, as though
 in hesitation, towards K. bridge.
@@ -471,10 +335,6 @@ positive hostility and mistrust at all these manifestations. There was
 another man in the room who looked somewhat like a retired government
 clerk. He was sitting apart, now and then sipping from his pot and
 looking round at the company. He, too, appeared to be in some agitation.
-
-
-
-CHAPTER II
 
 Raskolnikov was not used to crowds, and, as we said before, he avoided
 society of every sort, more especially of late. But now all at once he
@@ -1125,10 +985,6 @@ He sank into thought.
 whole race of mankind--then all the rest is prejudice, simply artificial
 terrors and there are no barriers and it’s all as it should be.”
 
-
-
-CHAPTER III
-
 He waked up late next day after a broken sleep. But his sleep had not
 refreshed him; he waked up bilious, irritable, ill-tempered, and looked
 with hatred at his room. It was a tiny cupboard of a room about six
@@ -1617,10 +1473,6 @@ hastening on some business, but he walked, as his habit was, without
 noticing his way, muttering and even speaking aloud to himself, to the
 astonishment of the passers-by. Many of them took him to be drunk.
 
-
-
-CHAPTER IV
-
 His mother’s letter had been a torture to him, but as regards the chief
 fact in it, he had felt not one moment’s hesitation, even whilst he was
 reading the letter. The essential question was settled, and irrevocably
@@ -2092,10 +1944,6 @@ but Raskolnikov had turned away and even crossed to the other side that
 he might not be observed. And though Razumihin noticed him, he passed
 him by, as he did not want to annoy him.
 
-
-
-CHAPTER V
-
 “Of course, I’ve been meaning lately to go to Razumihin’s to ask for
 work, to ask him to get me lessons or something...” Raskolnikov thought,
 “but what help can he be to me now? Suppose he gets me lessons, suppose
@@ -2530,10 +2378,6 @@ been difficult to find out beforehand and with certainty, with
 greater exactness and less risk, and without dangerous inquiries and
 investigations, that next day at a certain time an old woman, on whose
 life an attempt was contemplated, would be at home and entirely alone.
-
-
-
-CHAPTER VI
 
 Later on Raskolnikov happened to find out why the huckster and his
 wife had invited Lizaveta. It was a very ordinary matter and there was
@@ -3019,10 +2863,6 @@ in his mind vividly, distinctly, for ever; he could not make out how he
 had had such cunning, for his mind was as it were clouded at moments and
 he was almost unconscious of his body.... An instant later he heard the
 latch unfastened.
-
-
-
-CHAPTER VII
 
 The door was as before opened a tiny crack, and again two sharp and
 suspicious eyes stared at him out of the darkness. Then Raskolnikov lost
@@ -3523,15 +3363,6 @@ forgetfulness. If anyone had come into his room then, he would have
 jumped up at once and screamed. Scraps and shreds of thoughts were
 simply swarming in his brain, but he could not catch at one, he could
 not rest on one, in spite of all his efforts....
-
-
-
-
-PART II
-
-
-
-CHAPTER I
 
 So he lay a very long while. Now and then he seemed to wake up, and at
 such moments he noticed that it was far into the night, but it did not
@@ -4313,10 +4144,6 @@ hurrying home. “The brutes! they suspect.”
 
 His former terror mastered him completely again.
 
-
-
-CHAPTER II
-
 “And what if there has been a search already? What if I find them in my
 room?”
 
@@ -4742,10 +4569,6 @@ He made no answer. Nastasya still stood over him, watching him.
 She went downstairs and returned with a white earthenware jug of water.
 He remembered only swallowing one sip of the cold water and spilling
 some on his neck. Then followed forgetfulness.
-
-
-
-CHAPTER III
 
 He was not completely unconscious, however, all the time he was ill; he
 was in a feverish state, sometimes delirious, sometimes half conscious.
@@ -5341,10 +5164,6 @@ Razumihin looked at him, frowning and uneasy.
 The door opened and a tall, stout man whose appearance seemed familiar
 to Raskolnikov came in.
 
-
-
-CHAPTER IV
-
 Zossimov was a tall, fat man with a puffy, colourless, clean-shaven face
 and straight flaxen hair. He wore spectacles, and a big gold ring on
 his fat finger. He was twenty-seven. He had on a light grey fashionable
@@ -5776,10 +5595,6 @@ he did stand there.... That’s how I explain it.”
 
 “A-ach!” Razumihin was exclaiming, but at that moment the door opened
 and a personage came in who was a stranger to all present.
-
-
-
-CHAPTER V
 
 This was a gentleman no longer young, of a stiff and portly appearance,
 and a cautious and sour countenance. He began by stopping short in the
@@ -6283,10 +6098,6 @@ but she still lingered.
 “Later! I am sleepy! Leave me.”
 
 He turned abruptly to the wall; Nastasya went out.
-
-
-
-CHAPTER VI
 
 But as soon as she went out, he got up, latched the door, undid the
 parcel which Razumihin had brought in that evening and had tied up again
@@ -7194,10 +7005,6 @@ and went up to the crowd. He seemed to clutch at everything and smiled
 coldly when he recognised it, for he had fully made up his mind to go to
 the police station and knew that it would all soon be over.
 
-
-
-CHAPTER VII
-
 An elegant carriage stood in the middle of the road with a pair of
 spirited grey horses; there was no one in it, and the coachman had got
 off his box and stood by; the horses were being held by the bridle....
@@ -7975,15 +7782,6 @@ during his illness, by this “very competent young man,” as Pulcheria
 Alexandrovna Raskolnikov called him that evening in conversation with
 Dounia.
 
-
-
-
-PART III
-
-
-
-CHAPTER I
-
 Raskolnikov got up, and sat down on the sofa. He waved his hand weakly
 to Razumihin to cut short the flow of warm and incoherent consolations
 he was addressing to his mother and sister, took them both by the hand
@@ -8524,10 +8322,6 @@ him. But there’s no need, it’s all right. Don’t you worry yourself,
 yet if you like, you might just look in once, too. But if you notice
 anything--delirium or fever--wake me at once. But there can’t be....”
 
-
-
-CHAPTER II
-
 Razumihin waked up next morning at eight o’clock, troubled and serious.
 He found himself confronted with many new and unlooked-for perplexities.
 He had never expected that he would ever wake up feeling like that. He
@@ -9009,10 +8803,6 @@ door was a tiny crack open and that two keen black eyes were watching
 them from the darkness within. When their eyes met, the door was
 suddenly shut with such a slam that Pulcheria Alexandrovna almost cried
 out.
-
-
-
-CHAPTER III
 
 “He is well, quite well!” Zossimov cried cheerfully as they entered.
 
@@ -9613,10 +9403,6 @@ Alexandrovna, “so be it. I shall feel easier myself. I do not like
 concealment and deception. Better let us have the whole truth.... Pyotr
 Petrovitch may be angry or not, now!”
 
-
-
-CHAPTER IV
-
 At that moment the door was softly opened, and a young girl walked into
 the room, looking timidly about her. Everyone turned towards her with
 surprise and curiosity. At first sight, Raskolnikov did not recognise
@@ -10140,10 +9926,6 @@ came in, still guffawing in the passage.
 
 “Not a word here or I’ll... brain you!” Razumihin whispered furiously,
 seizing Raskolnikov by the shoulder.
-
-
-
-CHAPTER V
 
 Raskolnikov was already entering the room. He came in looking as though
 he had the utmost difficulty not to burst out laughing again. Behind him
@@ -10960,10 +10742,6 @@ to the door with excessive politeness.
 They went out into the street gloomy and sullen, and for some steps they
 did not say a word. Raskolnikov drew a deep breath.
 
-
-
-CHAPTER VI
-
 “I don’t believe it, I can’t believe it!” repeated Razumihin, trying in
 perplexity to refute Raskolnikov’s arguments.
 
@@ -11402,15 +11180,6 @@ unbearable at last. Raskolnikov suddenly got up and sat on the sofa.
 “I knew you were not asleep, but only pretending,” the stranger answered
 oddly, laughing calmly. “Arkady Ivanovitch Svidrigaïlov, allow me to
 introduce myself....”
-
-
-
-
-PART IV
-
-
-
-CHAPTER I
 
 “Can this be still a dream?” Raskolnikov thought once more.
 
@@ -11989,10 +11758,6 @@ in two or three weeks.”
 
 As he went out, Svidrigaïlov ran up against Razumihin in the doorway.
 
-
-
-CHAPTER II
-
 It was nearly eight o’clock. The two young men hurried to Bakaleyev’s,
 to arrive before Luzhin.
 
@@ -12526,10 +12291,6 @@ noteworthy that as he went downstairs he still imagined that his case
 was perhaps not utterly lost, and that, so far as the ladies were
 concerned, all might “very well indeed” be set right again.
 
-
-
-CHAPTER III
-
 The fact was that up to the last moment he had never expected such an
 ending; he had been overbearing to the last degree, never dreaming that
 two destitute and defenceless women could escape from his control. This
@@ -12858,10 +12619,6 @@ day, that he was very, very much upset, that he must not be irritated,
 that he, Razumihin, would watch over him, would get him a doctor, the
 best doctor, a consultation.... In fact from that evening Razumihin took
 his place with them as a son and a brother.
-
-
-
-CHAPTER IV
 
 Raskolnikov went straight to the house on the canal bank where Sonia
 lived. It was an old green house of three storeys. He found the
@@ -13651,10 +13408,6 @@ that he brought a chair that he might not in the future, to-morrow, for
 instance, have to endure the inconvenience of standing a whole hour, but
 might listen in comfort.
 
-
-
-CHAPTER V
-
 When next morning at eleven o’clock punctually Raskolnikov went into the
 department of the investigation of criminal causes and sent his name in
 to Porfiry Petrovitch, he was surprised at being kept waiting so long:
@@ -14364,10 +14117,6 @@ But at this moment a strange incident occurred, something so unexpected
 that neither Raskolnikov nor Porfiry Petrovitch could have looked for
 such a conclusion to their interview.
 
-
-
-CHAPTER VI
-
 When he remembered the scene afterwards, this is how Raskolnikov saw it.
 
 The noise behind the door increased, and suddenly the door was opened a
@@ -14738,15 +14487,6 @@ Raskolnikov, and he went out more confident than ever.
 “Now we’ll make a fight for it,” he said, with a malicious smile, as he
 went down the stairs. His malice was aimed at himself; with shame and
 contempt he recollected his “cowardice.”
-
-
-
-
-PART V
-
-
-
-CHAPTER I
 
 The morning that followed the fateful interview with Dounia and
 her mother brought sobering influences to bear on Pyotr Petrovitch.
@@ -15384,10 +15124,6 @@ even Lebeziatnikov at last noticed it. Pyotr Petrovitch seemed excited
 and rubbed his hands. Lebeziatnikov remembered all this and reflected
 upon it afterwards.
 
-
-
-CHAPTER II
-
 It would be difficult to explain exactly what could have originated the
 idea of that senseless dinner in Katerina Ivanovna’s disordered brain.
 Nearly ten of the twenty roubles, given by Raskolnikov for Marmeladov’s
@@ -15854,10 +15590,6 @@ away, and rushed at the landlady to carry out her threat.
 At that minute the door opened, and Pyotr Petrovitch Luzhin appeared
 on the threshold. He stood scanning the party with severe and vigilant
 eyes. Katerina Ivanovna rushed to him.
-
-
-
-CHAPTER III
 
 “Pyotr Petrovitch,” she cried, “protect me... you at least! Make this
 foolish woman understand that she can’t behave like this to a lady in
@@ -16424,10 +16156,6 @@ struck up a song....
 Semyonovna, we shall see what you’ll say now!”
 
 And he set off in the direction of Sonia’s lodgings.
-
-
-
-CHAPTER IV
 
 Raskolnikov had been a vigorous and active champion of Sonia against
 Luzhin, although he had such a load of horror and anguish in his own
@@ -17179,10 +16907,6 @@ polite voice.
 Sonia rushed to the door in a fright. The flaxen head of Mr.
 Lebeziatnikov appeared at the door.
 
-
-
-CHAPTER V
-
 Lebeziatnikov looked perturbed.
 
 “I’ve come to you, Sofya Semyonovna,” he began. “Excuse me... I thought
@@ -17751,15 +17475,6 @@ enormously. I told you we should become friends, I foretold it. Well,
 here we have. And you will see what an accommodating person I am. You’ll
 see that you can get on with me!”
 
-
-
-
-PART VI
-
-
-
-CHAPTER I
-
 A strange period began for Raskolnikov: it was as though a fog had
 fallen upon him and wrapped him in a dreary solitude from which there
 was no escape. Recalling that period long after, he believed that his
@@ -18162,10 +17877,6 @@ cigarette.
 
 “Speak, speak,” seemed as though it would burst from Raskolnikov’s
 heart. “Come, why don’t you speak?”
-
-
-
-CHAPTER II
 
 “Ah these cigarettes!” Porfiry Petrovitch ejaculated at last, having
 lighted one. “They are pernicious, positively pernicious, and yet I
@@ -18706,10 +18417,6 @@ latter went to the window and waited with irritable impatience till he
 calculated that Porfiry had reached the street and moved away. Then he
 too went hurriedly out of the room.
 
-
-
-CHAPTER III
-
 He hurried to Svidrigaïlov’s. What he had to hope from that man he
 did not know. But that man had some hidden power over him. Having once
 recognised this, he could not rest, and now the time had come.
@@ -19121,10 +18828,6 @@ you? It will help to spend the time.”
 “Oh, don’t be uneasy. Besides, even in a worthless low fellow like me,
 Avdotya Romanovna can only excite the deepest respect.”
 
-
-
-CHAPTER IV
-
 “You know perhaps--yes, I told you myself,” began Svidrigaïlov, “that
 I was in the debtors’ prison here, for an immense sum, and had not
 any expectation of being able to pay it. There’s no need to go into
@@ -19527,10 +19230,6 @@ They came out on to the pavement.
 Only _adieu, mon plaisir_, may we meet again.”
 
 And he walked to the right towards the Hay Market.
-
-
-
-CHAPTER V
 
 Raskolnikov walked after him.
 
@@ -20146,10 +19845,6 @@ two charges and one capsule left in it. It could be fired again. He
 thought a little, put the revolver in his pocket, took his hat and went
 out.
 
-
-
-CHAPTER VI
-
 He spent that evening till ten o’clock going from one low haunt to
 another. Katia too turned up and sang another gutter song, how a certain
 
@@ -20675,10 +20370,6 @@ himself, his eyes growing bigger and bigger.
 
 Svidrigaïlov pulled the trigger.
 
-
-
-CHAPTER VII
-
 The same day, about seven o’clock in the evening, Raskolnikov was on
 his way to his mother’s and sister’s lodging--the lodging in Bakaleyev’s
 house which Razumihin had found for them. The stairs went up from
@@ -21065,10 +20756,6 @@ bondage crush him utterly? Water wears out a stone. And why, why should
 he live after that? Why should he go now when he knew that it would be
 so? It was the hundredth time perhaps that he had asked himself that
 question since the previous evening, but still he went.
-
-
-
-CHAPTER VIII
 
 When he went into Sonia’s room, it was already getting dark. All day
 Sonia had been waiting for him in terrible anxiety. Dounia had been
@@ -22087,361 +21774,3 @@ renewal of a man, the story of his gradual regeneration, of his passing
 from one world into another, of his initiation into a new unknown life.
 That might be the subject of a new story, but our present story is
 ended.
-
-
-
-
-
-        
-            *** END OF THE PROJECT GUTENBERG EBOOK CRIME AND PUNISHMENT ***
-        
-
-    
-
-Updated editions will replace the previous one—the old editions will
-be renamed.
-
-Creating the works from print editions not protected by U.S. copyright
-law means that no one owns a United States copyright in these works,
-so the Foundation (and you!) can copy and distribute it in the United
-States without permission and without paying copyright
-royalties. Special rules, set forth in the General Terms of Use part
-of this license, apply to copying and distributing Project
-Gutenberg™ electronic works to protect the PROJECT GUTENBERG™
-concept and trademark. Project Gutenberg is a registered trademark,
-and may not be used if you charge for an eBook, except by following
-the terms of the trademark license, including paying royalties for use
-of the Project Gutenberg trademark. If you do not charge anything for
-copies of this eBook, complying with the trademark license is very
-easy. You may use this eBook for nearly any purpose such as creation
-of derivative works, reports, performances and research. Project
-Gutenberg eBooks may be modified and printed and given away—you may
-do practically ANYTHING in the United States with eBooks not protected
-by U.S. copyright law. Redistribution is subject to the trademark
-license, especially commercial redistribution.
-
-
-START: FULL LICENSE
-
-THE FULL PROJECT GUTENBERG LICENSE
-
-PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
-
-To protect the Project Gutenberg™ mission of promoting the free
-distribution of electronic works, by using or distributing this work
-(or any other work associated in any way with the phrase “Project
-Gutenberg”), you agree to comply with all the terms of the Full
-Project Gutenberg™ License available with this file or online at
-www.gutenberg.org/license.
-
-Section 1. General Terms of Use and Redistributing Project Gutenberg™
-electronic works
-
-1.A. By reading or using any part of this Project Gutenberg™
-electronic work, you indicate that you have read, understand, agree to
-and accept all the terms of this license and intellectual property
-(trademark/copyright) agreement. If you do not agree to abide by all
-the terms of this agreement, you must cease using and return or
-destroy all copies of Project Gutenberg™ electronic works in your
-possession. If you paid a fee for obtaining a copy of or access to a
-Project Gutenberg™ electronic work and you do not agree to be bound
-by the terms of this agreement, you may obtain a refund from the person
-or entity to whom you paid the fee as set forth in paragraph 1.E.8.
-
-1.B. “Project Gutenberg” is a registered trademark. It may only be
-used on or associated in any way with an electronic work by people who
-agree to be bound by the terms of this agreement. There are a few
-things that you can do with most Project Gutenberg™ electronic works
-even without complying with the full terms of this agreement. See
-paragraph 1.C below. There are a lot of things you can do with Project
-Gutenberg™ electronic works if you follow the terms of this
-agreement and help preserve free future access to Project Gutenberg™
-electronic works. See paragraph 1.E below.
-
-1.C. The Project Gutenberg Literary Archive Foundation (“the
-Foundation” or PGLAF), owns a compilation copyright in the collection
-of Project Gutenberg™ electronic works. Nearly all the individual
-works in the collection are in the public domain in the United
-States. If an individual work is unprotected by copyright law in the
-United States and you are located in the United States, we do not
-claim a right to prevent you from copying, distributing, performing,
-displaying or creating derivative works based on the work as long as
-all references to Project Gutenberg are removed. Of course, we hope
-that you will support the Project Gutenberg™ mission of promoting
-free access to electronic works by freely sharing Project Gutenberg™
-works in compliance with the terms of this agreement for keeping the
-Project Gutenberg™ name associated with the work. You can easily
-comply with the terms of this agreement by keeping this work in the
-same format with its attached full Project Gutenberg™ License when
-you share it without charge with others.
-
-1.D. The copyright laws of the place where you are located also govern
-what you can do with this work. Copyright laws in most countries are
-in a constant state of change. If you are outside the United States,
-check the laws of your country in addition to the terms of this
-agreement before downloading, copying, displaying, performing,
-distributing or creating derivative works based on this work or any
-other Project Gutenberg™ work. The Foundation makes no
-representations concerning the copyright status of any work in any
-country other than the United States.
-
-1.E. Unless you have removed all references to Project Gutenberg:
-
-1.E.1. The following sentence, with active links to, or other
-immediate access to, the full Project Gutenberg™ License must appear
-prominently whenever any copy of a Project Gutenberg™ work (any work
-on which the phrase “Project Gutenberg” appears, or with which the
-phrase “Project Gutenberg” is associated) is accessed, displayed,
-performed, viewed, copied or distributed:
-
-    This eBook is for the use of anyone anywhere in the United States and most
-    other parts of the world at no cost and with almost no restrictions
-    whatsoever. You may copy it, give it away or re-use it under the terms
-    of the Project Gutenberg License included with this eBook or online
-    at www.gutenberg.org. If you
-    are not located in the United States, you will have to check the laws
-    of the country where you are located before using this eBook.
-  
-1.E.2. If an individual Project Gutenberg™ electronic work is
-derived from texts not protected by U.S. copyright law (does not
-contain a notice indicating that it is posted with permission of the
-copyright holder), the work can be copied and distributed to anyone in
-the United States without paying any fees or charges. If you are
-redistributing or providing access to a work with the phrase “Project
-Gutenberg” associated with or appearing on the work, you must comply
-either with the requirements of paragraphs 1.E.1 through 1.E.7 or
-obtain permission for the use of the work and the Project Gutenberg™
-trademark as set forth in paragraphs 1.E.8 or 1.E.9.
-
-1.E.3. If an individual Project Gutenberg™ electronic work is posted
-with the permission of the copyright holder, your use and distribution
-must comply with both paragraphs 1.E.1 through 1.E.7 and any
-additional terms imposed by the copyright holder. Additional terms
-will be linked to the Project Gutenberg™ License for all works
-posted with the permission of the copyright holder found at the
-beginning of this work.
-
-1.E.4. Do not unlink or detach or remove the full Project Gutenberg™
-License terms from this work, or any files containing a part of this
-work or any other work associated with Project Gutenberg™.
-
-1.E.5. Do not copy, display, perform, distribute or redistribute this
-electronic work, or any part of this electronic work, without
-prominently displaying the sentence set forth in paragraph 1.E.1 with
-active links or immediate access to the full terms of the Project
-Gutenberg™ License.
-
-1.E.6. You may convert to and distribute this work in any binary,
-compressed, marked up, nonproprietary or proprietary form, including
-any word processing or hypertext form. However, if you provide access
-to or distribute copies of a Project Gutenberg™ work in a format
-other than “Plain Vanilla ASCII” or other format used in the official
-version posted on the official Project Gutenberg™ website
-(www.gutenberg.org), you must, at no additional cost, fee or expense
-to the user, provide a copy, a means of exporting a copy, or a means
-of obtaining a copy upon request, of the work in its original “Plain
-Vanilla ASCII” or other form. Any alternate format must include the
-full Project Gutenberg™ License as specified in paragraph 1.E.1.
-
-1.E.7. Do not charge a fee for access to, viewing, displaying,
-performing, copying or distributing any Project Gutenberg™ works
-unless you comply with paragraph 1.E.8 or 1.E.9.
-
-1.E.8. You may charge a reasonable fee for copies of or providing
-access to or distributing Project Gutenberg™ electronic works
-provided that:
-
-    • You pay a royalty fee of 20% of the gross profits you derive from
-        the use of Project Gutenberg™ works calculated using the method
-        you already use to calculate your applicable taxes. The fee is owed
-        to the owner of the Project Gutenberg™ trademark, but he has
-        agreed to donate royalties under this paragraph to the Project
-        Gutenberg Literary Archive Foundation. Royalty payments must be paid
-        within 60 days following each date on which you prepare (or are
-        legally required to prepare) your periodic tax returns. Royalty
-        payments should be clearly marked as such and sent to the Project
-        Gutenberg Literary Archive Foundation at the address specified in
-        Section 4, “Information about donations to the Project Gutenberg
-        Literary Archive Foundation.”
-    
-    • You provide a full refund of any money paid by a user who notifies
-        you in writing (or by e-mail) within 30 days of receipt that s/he
-        does not agree to the terms of the full Project Gutenberg™
-        License. You must require such a user to return or destroy all
-        copies of the works possessed in a physical medium and discontinue
-        all use of and all access to other copies of Project Gutenberg™
-        works.
-    
-    • You provide, in accordance with paragraph 1.F.3, a full refund of
-        any money paid for a work or a replacement copy, if a defect in the
-        electronic work is discovered and reported to you within 90 days of
-        receipt of the work.
-    
-    • You comply with all other terms of this agreement for free
-        distribution of Project Gutenberg™ works.
-    
-
-1.E.9. If you wish to charge a fee or distribute a Project
-Gutenberg™ electronic work or group of works on different terms than
-are set forth in this agreement, you must obtain permission in writing
-from the Project Gutenberg Literary Archive Foundation, the manager of
-the Project Gutenberg™ trademark. Contact the Foundation as set
-forth in Section 3 below.
-
-1.F.
-
-1.F.1. Project Gutenberg volunteers and employees expend considerable
-effort to identify, do copyright research on, transcribe and proofread
-works not protected by U.S. copyright law in creating the Project
-Gutenberg™ collection. Despite these efforts, Project Gutenberg™
-electronic works, and the medium on which they may be stored, may
-contain “Defects,” such as, but not limited to, incomplete, inaccurate
-or corrupt data, transcription errors, a copyright or other
-intellectual property infringement, a defective or damaged disk or
-other medium, a computer virus, or computer codes that damage or
-cannot be read by your equipment.
-
-1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the “Right
-of Replacement or Refund” described in paragraph 1.F.3, the Project
-Gutenberg Literary Archive Foundation, the owner of the Project
-Gutenberg™ trademark, and any other party distributing a Project
-Gutenberg™ electronic work under this agreement, disclaim all
-liability to you for damages, costs and expenses, including legal
-fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
-LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
-PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
-TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
-LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
-INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
-DAMAGE.
-
-1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
-defect in this electronic work within 90 days of receiving it, you can
-receive a refund of the money (if any) you paid for it by sending a
-written explanation to the person you received the work from. If you
-received the work on a physical medium, you must return the medium
-with your written explanation. The person or entity that provided you
-with the defective work may elect to provide a replacement copy in
-lieu of a refund. If you received the work electronically, the person
-or entity providing it to you may choose to give you a second
-opportunity to receive the work electronically in lieu of a refund. If
-the second copy is also defective, you may demand a refund in writing
-without further opportunities to fix the problem.
-
-1.F.4. Except for the limited right of replacement or refund set forth
-in paragraph 1.F.3, this work is provided to you ‘AS-IS’, WITH NO
-OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
-
-1.F.5. Some states do not allow disclaimers of certain implied
-warranties or the exclusion or limitation of certain types of
-damages. If any disclaimer or limitation set forth in this agreement
-violates the law of the state applicable to this agreement, the
-agreement shall be interpreted to make the maximum disclaimer or
-limitation permitted by the applicable state law. The invalidity or
-unenforceability of any provision of this agreement shall not void the
-remaining provisions.
-
-1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
-trademark owner, any agent or employee of the Foundation, anyone
-providing copies of Project Gutenberg™ electronic works in
-accordance with this agreement, and any volunteers associated with the
-production, promotion and distribution of Project Gutenberg™
-electronic works, harmless from all liability, costs and expenses,
-including legal fees, that arise directly or indirectly from any of
-the following which you do or cause to occur: (a) distribution of this
-or any Project Gutenberg™ work, (b) alteration, modification, or
-additions or deletions to any Project Gutenberg™ work, and (c) any
-Defect you cause.
-
-Section 2. Information about the Mission of Project Gutenberg™
-
-Project Gutenberg™ is synonymous with the free distribution of
-electronic works in formats readable by the widest variety of
-computers including obsolete, old, middle-aged and new computers. It
-exists because of the efforts of hundreds of volunteers and donations
-from people in all walks of life.
-
-Volunteers and financial support to provide volunteers with the
-assistance they need are critical to reaching Project Gutenberg™’s
-goals and ensuring that the Project Gutenberg™ collection will
-remain freely available for generations to come. In 2001, the Project
-Gutenberg Literary Archive Foundation was created to provide a secure
-and permanent future for Project Gutenberg™ and future
-generations. To learn more about the Project Gutenberg Literary
-Archive Foundation and how your efforts and donations can help, see
-Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
-
-Section 3. Information about the Project Gutenberg Literary Archive Foundation
-
-The Project Gutenberg Literary Archive Foundation is a non-profit
-501(c)(3) educational corporation organized under the laws of the
-state of Mississippi and granted tax exempt status by the Internal
-Revenue Service. The Foundation’s EIN or federal tax identification
-number is 64-6221541. Contributions to the Project Gutenberg Literary
-Archive Foundation are tax deductible to the full extent permitted by
-U.S. federal laws and your state’s laws.
-
-The Foundation’s business office is located at 809 North 1500 West,
-Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
-to date contact information can be found at the Foundation’s website
-and official page at www.gutenberg.org/contact
-
-Section 4. Information about Donations to the Project Gutenberg
-Literary Archive Foundation
-
-Project Gutenberg™ depends upon and cannot survive without widespread
-public support and donations to carry out its mission of
-increasing the number of public domain and licensed works that can be
-freely distributed in machine-readable form accessible by the widest
-array of equipment including outdated equipment. Many small donations
-($1 to $5,000) are particularly important to maintaining tax exempt
-status with the IRS.
-
-The Foundation is committed to complying with the laws regulating
-charities and charitable donations in all 50 states of the United
-States. Compliance requirements are not uniform and it takes a
-considerable effort, much paperwork and many fees to meet and keep up
-with these requirements. We do not solicit donations in locations
-where we have not received written confirmation of compliance. To SEND
-DONATIONS or determine the status of compliance for any particular state
-visit www.gutenberg.org/donate.
-
-While we cannot and do not solicit contributions from states where we
-have not met the solicitation requirements, we know of no prohibition
-against accepting unsolicited donations from donors in such states who
-approach us with offers to donate.
-
-International donations are gratefully accepted, but we cannot make
-any statements concerning tax treatment of donations received from
-outside the United States. U.S. laws alone swamp our small staff.
-
-Please check the Project Gutenberg web pages for current donation
-methods and addresses. Donations are accepted in a number of other
-ways including checks, online payments and credit card donations. To
-donate, please visit: www.gutenberg.org/donate.
-
-Section 5. General Information About Project Gutenberg™ electronic works
-
-Professor Michael S. Hart was the originator of the Project
-Gutenberg™ concept of a library of electronic works that could be
-freely shared with anyone. For forty years, he produced and
-distributed Project Gutenberg™ eBooks with only a loose network of
-volunteer support.
-
-Project Gutenberg™ eBooks are often created from several printed
-editions, all of which are confirmed as not protected by copyright in
-the U.S. unless a copyright notice is included. Thus, we do not
-necessarily keep eBooks in compliance with any particular paper
-edition.
-
-Most people start at our website which has the main PG search
-facility: www.gutenberg.org.
-
-This website includes information about Project Gutenberg™,
-including how to make donations to the Project Gutenberg Literary
-Archive Foundation, how to help produce our new eBooks, and how to
-subscribe to our email newsletter to hear about new eBooks.
-
-
-

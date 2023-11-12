@@ -1,151 +1,3 @@
-The Project Gutenberg eBook of Treasure Island
-    
-This ebook is for the use of anyone anywhere in the United States and
-most other parts of the world at no cost and with almost no restrictions
-whatsoever. You may copy it, give it away or re-use it under the terms
-of the Project Gutenberg License included with this ebook or online
-at www.gutenberg.org. If you are not located in the United States,
-you will have to check the laws of the country where you are located
-before using this eBook.
-
-Title: Treasure Island
-
-
-Author: Robert Louis Stevenson
-
-Illustrator: Louis Rhead
-
-Release date: February 26, 2006 [eBook #120]
-                Most recently updated: June 20, 2022
-
-Language: English
-
-
-
-*** START OF THE PROJECT GUTENBERG EBOOK TREASURE ISLAND ***
-
-
-
-TREASURE ISLAND
-
-by Robert Louis Stevenson
-
-
-
-
-TREASURE ISLAND
-
-To S.L.O., an American gentleman in accordance with whose classic taste
-the following narrative has been designed, it is now, in return for
-numerous delightful hours, and with the kindest wishes, dedicated by his
-affectionate friend, the author.
-
-
-
-               TO THE HESITATING PURCHASER
-
-               If sailor tales to sailor tunes,
-                  Storm and adventure, heat and cold,
-               If schooners, islands, and maroons,
-                  And buccaneers, and buried gold,
-               And all the old romance, retold
-                  Exactly in the ancient way,
-               Can please, as me they pleased of old,
-                  The wiser youngsters of today:
-
-               --So be it, and fall on!  If not,
-                  If studious youth no longer crave,
-               His ancient appetites forgot,
-                  Kingston, or Ballantyne the brave,
-               Or Cooper of the wood and wave:
-                  So be it, also!  And may I
-               And all my pirates share the grave
-                  Where these and their creations lie!
-
-
-     CONTENTS
-
-     PART ONE
-     The Old Buccaneer
-
-     1.  THE OLD SEA-DOG AT THE ADMIRAL BENBOW     11
-     2.  BLACK DOG APPEARS AND DISAPPEARS . . . .  17
-     3.  THE BLACK SPOT . . . . . . . . . . . . .  24
-     4.  THE SEA-CHEST  . . . . . . . . . . . . .  30
-     5.  THE LAST OF THE BLIND MAN  . . . . . . .  36
-     6.  THE CAPTAIN’S PAPERS . . . . . . . . . .  41
-
-     PART TWO
-     The Sea Cook
-
-     7.  I GO TO BRISTOL  . . . . . . . . . . . . . 48
-     8.  AT THE SIGN OF THE SPY-GLASS . . . . . . . 54
-     9.  POWDER AND ARMS  . . . . . . . . . . . . . 59
-     10.  THE VOYAGE . . . . . . . . . . . . . . .  64
-     11.  WHAT I HEARD IN THE APPLE BARREL . . . .  70
-     12.  COUNCIL OF WAR . . . . . . . . . . . . .  76
-
-     PART THREE
-     My Shore Adventure
-
-     13.  HOW MY SHORE ADVENTURE BEGAN . . . . . .  82
-     14.  THE FIRST BLOW . . . . . . . . . . . . .  87
-     15.  THE MAN OF THE ISLAND. . . . . . . . . .  93
-
-     PART FOUR
-     The Stockade
-
-     16.  NARRATIVE CONTINUED BY THE DOCTOR:
-            HOW THE SHIP WAS ABANDONED . . . . . . 100
-     17.  NARRATIVE CONTINUED BY THE DOCTOR:
-            THE JOLLY-BOAT’S LAST TRIP . . . . . . 105
-     18.  NARRATIVE CONTINUED BY THE DOCTOR:
-            END OF THE FIRST DAY’S FIGHTING  . . . 109
-     19.  NARRATIVE RESUMED BY JIM HAWKINS:
-            THE GARRISON IN THE STOCKADE . . . . . 114
-     20.  SILVER’S EMBASSY . . . . . . . . . . . . 120
-     21.  THE ATTACK . . . . . . . . . . . . . . . 125
-
-     PART FIVE
-     My Sea Adventure
-
-     22.  HOW MY SEA ADVENTURE BEGAN . . . . . . . 132
-     23.  THE EBB-TIDE RUNS  . . . . . . . . . . . 138
-     24.  THE CRUISE OF THE CORACLE  . . . . . . . 143
-     25.  I STRIKE THE JOLLY ROGER . . . . . . . . 148
-     26.  ISRAEL HANDS . . . . . . . . . . . . . . 153
-     27.  “PIECES OF EIGHT”  . . . . . . . . . . . 161
-
-     PART SIX
-     Captain Silver
-
-     28.  IN THE ENEMY’S CAMP  . . . . . . . . . . 168
-     29.  THE BLACK SPOT AGAIN . . . . . . . . . . 176
-     30.  ON PAROLE  . . . . . . . . . . . . . . . 182
-     31.  THE TREASURE-HUNT--FLINT’S POINTER . . . 189
-     32.  THE TREASURE-HUNT--THE VOICE AMONG
-            THE TREES  . . . . . . . . . . . . . . 195
-     33.  THE FALL OF A CHIEFTAIN  . . . . . . . . 201
-     34.  AND LAST . . . . . . . . . . . . . . . . 207
-
-
-
-
-TREASURE ISLAND
-
-
-
-
-PART ONE--The Old Buccaneer
-
-
-
-
-1
-
-The Old Sea-dog at the Admiral Benbow
-
-
 SQUIRE TRELAWNEY, Dr. Livesey, and the rest of these gentlemen having
 asked me to write down the whole particulars about Treasure Island, from
 the beginning to the end, keeping nothing back but the bearings of the
@@ -341,14 +193,6 @@ out of this. Let that suffice.”
 
 Soon after, Dr. Livesey’s horse came to the door and he rode away, but
 the captain held his peace that evening, and for many evenings to come.
-
-
-
-
-2
-
-Black Dog Appears and Disappears
-
 
 IT was not very long after this that there occurred the first of the
 mysterious events that rid us at last of the captain, though not, as you
@@ -586,13 +430,6 @@ drawn blood enough to keep him quiet awhile; he should lie for a week
 where he is--that is the best thing for him and you; but another stroke
 would settle him.”
 
-
-
-
-3
-
-The Black Spot
-
 ABOUT noon I stopped at the captain’s door with some cooling drinks
 and medicines. He was lying very much as we had left him, only a little
 higher, and he seemed both weak and excited.
@@ -802,13 +639,6 @@ late I had begun to pity him, but as soon as I saw that he was dead, I
 burst into a flood of tears. It was the second death I had known, and
 the sorrow of the first was still fresh in my heart.
 
-
-
-
-4
-
-The Sea-chest
-
 I LOST no time, of course, in telling my mother all that I knew, and
 perhaps should have told her long before, and we saw ourselves at once
 in a difficult and dangerous position. Some of the man’s money--if
@@ -1008,13 +838,6 @@ down the bank and a little way under the arch. Farther I could not move
 her, for the bridge was too low to let me do more than crawl below it.
 So there we had to stay--my mother almost entirely exposed and both of
 us within earshot of the inn.
-
-
-
-
-5
-
-The Last of the Blind Man
 
 MY curiosity, in a sense, was stronger than my fear, for I could not
 remain where I was, but crept back to the bank again, whence, sheltering
@@ -1217,13 +1040,6 @@ behind you.”
 As soon as I was mounted, holding on to Dogger’s belt, the supervisor
 gave the word, and the party struck out at a bouncing trot on the road
 to Dr. Livesey’s house.
-
-
-
-
-6
-
-The Captain’s Papers
 
 WE rode hard all the way till we drew up before Dr. Livesey’s door. The
 house was all dark to the front.
@@ -1453,20 +1269,6 @@ found.”
 “Livesey,” returned the squire, “you are always in the right of it. I’ll
 be as silent as the grave.”
 
-
-
-
-
-
-PART TWO--The Sea-cook
-
-
-
-
-7
-
-I Go to Bristol
-
 IT was longer than the squire imagined ere we were ready for the sea,
 and none of our first plans--not even Dr. Livesey’s, of keeping me
 beside him--could be carried out as we intended. The doctor had to go
@@ -1682,13 +1484,6 @@ Bravo! The ship’s company complete!”
 
 “Sail!” says he. “We sail tomorrow!”
 
-
-
-
-8
-
-At the Sign of the Spy-glass
-
 WHEN I had done breakfasting the squire gave me a note addressed to John
 Silver, at the sign of the Spy-glass, and told me I should easily
 find the place by following the line of the docks and keeping a bright
@@ -1888,13 +1683,6 @@ not?”
 
 “To be sure he may,” says squire. “Take your hat, Hawkins, and we’ll see
 the ship.”
-
-
-
-
-9
-
-Powder and Arms
 
 THE HISPANIOLA lay some way out, and we went under the figureheads and
 round the sterns of many other ships, and their cables sometimes grated
@@ -2111,13 +1899,6 @@ doctor, “I’ll have no favourites on my ship.”
 I assure you I was quite of the squire’s way of thinking, and hated the
 captain deeply.
 
-
-
-
-10
-
-The Voyage
-
 ALL that night we were in a great bustle getting things stowed in their
 place, and boatfuls of the squire’s friends, Mr. Blandly and the like,
 coming off to wish him a good voyage and a safe return. We never had
@@ -2312,13 +2093,6 @@ not have shown myself for all the world, but lay there, trembling and
 listening, in the extreme of fear and curiosity, for from these dozen
 words I understood that the lives of all the honest men aboard depended
 upon me alone.
-
-
-
-
-11
-
-What I Heard in the Apple Barrel
 
 “NO, not I,” said Silver. “Flint was cap’n; I was quartermaster, along
 of my timber leg. The same broadside I lost my leg, old Pew lost his
@@ -2530,13 +2304,6 @@ up, I found the moon had risen and was silvering the mizzen-top and
 shining white on the luff of the fore-sail; and almost at the same time
 the voice of the lookout shouted, “Land ho!”
 
-
-
-
-12
-
-Council of War
-
 THERE was a great rush of feet across the deck. I could hear people
 tumbling up from the cabin and the forecastle, and slipping in an
 instant outside my barrel, I dived behind the fore-sail, made a double
@@ -2738,20 +2505,6 @@ were only seven out of the twenty-six on whom we knew we could rely; and
 out of these seven one was a boy, so that the grown men on our side were
 six to their nineteen.
 
-
-
-
-
-
-PART THREE--My Shore Adventure
-
-
-
-
-13
-
-How My Shore Adventure Began
-
 THE appearance of the island when I came on deck next morning was
 altogether changed. Although the breeze had now utterly ceased, we had
 made a great deal of way during the night and were now lying becalmed
@@ -2926,13 +2679,6 @@ thicket while Silver and the rest were still a hundred yards behind.
 
 But you may suppose I paid no heed; jumping, ducking, and breaking
 through, I ran straight before my nose till I could run no longer.
-
-
-
-
-14
-
-The First Blow
 
 I WAS so pleased at having given the slip to Long John that I began to
 enjoy myself and look around me with some interest on the strange land
@@ -3120,13 +2866,6 @@ some nearer seventy, feet high. The air too smelt more freshly than down
 beside the marsh.
 
 And here a fresh alarm brought me to a standstill with a thumping heart.
-
-
-
-
-15
-
-The Man of the Island
 
 FROM the side of the hill, which was here steep and stony, a spout of
 gravel was dislodged and fell rattling and bounding through the trees.
@@ -3378,20 +3117,6 @@ of small arms.
 Another pause, and then, not a quarter of a mile in front of me, I
 beheld the Union Jack flutter in the air above a wood.
 
-
-
-
-
-
-PART FOUR--The Stockade
-
-
-
-
-16
-
-Narrative Continued by the Doctor: How the Ship Was Abandoned
-
 IT was about half past one--three bells in the sea phrase--that the two
 boats went ashore from the HISPANIOLA. The captain, the squire, and I
 were talking matters over in the cabin. Had there been a breath of wind,
@@ -3568,13 +3293,6 @@ had shoved off and given way.
 
 We were clear out of the ship, but not yet ashore in our stockade.
 
-
-
-
-17
-
-Narrative Continued by the Doctor: The Jolly-boat’s Last Trip
-
 THIS fifth trip was quite different from any of the others. In the
 first place, the little gallipot of a boat that we were in was gravely
 overloaded. Five grown men, and three of them--Trelawney, Redruth, and
@@ -3741,13 +3459,6 @@ one’s clothes, but not entirely fitted for a man of war.
 With all this in our minds, we waded ashore as fast as we could, leaving
 behind us the poor jolly-boat and a good half of all our powder and
 provisions.
-
-
-
-
-18
-
-Narrative Continued by the Doctor: End of the First Day’s Fighting
 
 WE made our best speed across the strip of wood that now divided us from
 the stockade, and at every step we took the voices of the buccaneers
@@ -3923,13 +3634,6 @@ A hail on the land side.
 
 And I ran to the door in time to see Jim Hawkins, safe and sound, come
 climbing over the stockade.
-
-
-
-
-19
-
-Narrative Resumed by Jim Hawkins: The Garrison in the Stockade
 
 AS soon as Ben Gunn saw the colours he came to a halt, stopped me by the
 arm, and sat down.
@@ -4142,13 +3846,6 @@ a cry of surprise, “Silver himself!”
 And at that, up I jumped, and rubbing my eyes, ran to a loophole in the
 wall.
 
-
-
-
-20
-
-Silver’s Embassy
-
 SURE enough, there were two men just outside the stockade, one of them
 waving a white cloth, the other, no less a person than Silver himself,
 standing placidly by.
@@ -4358,13 +4055,6 @@ And with a dreadful oath he stumbled off, ploughed down the sand, was
 helped across the stockade, after four or five failures, by the man with
 the flag of truce, and disappeared in an instant afterwards among the
 trees.
-
-
-
-
-21
-
-The Attack
 
 AS soon as Silver disappeared, the captain, who had been closely
 watching him, turned towards the interior of the house and found not a
@@ -4594,20 +4284,6 @@ bear.” *
 Trelawney on board the schooner died that same evening of his wound. But
 this was, of course, not known till after by the faithful party.
 
-
-
-
-
-
-PART FIVE--My Sea Adventure
-
-
-
-
-22
-
-How My Sea Adventure Began
-
 THERE was no return of the mutineers--not so much as another shot out of
 the woods. They had “got their rations for that day,” as the captain put
 it, and we had the place to ourselves and a quiet time to overhaul the
@@ -4809,13 +4485,6 @@ came to the edge of the retreating water, and wading a little way in,
 with some strength and dexterity, set my coracle, keel downwards, on the
 surface.
 
-
-
-
-23
-
-The Ebb-tide Runs
-
 THE coracle--as I had ample reason to know before I was done with
 her--was a very safe boat for a person of my height and weight, both
 buoyant and clever in a seaway; but she was the most cross-grained,
@@ -4976,13 +4645,6 @@ expect death at the next plunge. Gradually weariness grew upon me; a
 numbness, an occasional stupor, fell upon my mind even in the midst of
 my terrors, until sleep at last supervened and in my sea-tossed coracle
 I lay and dreamed of home and the old Admiral Benbow.
-
-
-
-
-24
-
-The Cruise of the Coracle
 
 IT was broad day when I awoke and found myself tossing at the south-west
 end of Treasure Island. The sun was up but was still hid from me behind
@@ -5175,13 +4837,6 @@ between the stay and the brace; and as I still clung there panting, a
 dull blow told me that the schooner had charged down upon and struck the
 coracle and that I was left without retreat on the HISPANIOLA.
 
-
-
-
-25
-
-I Strike the Jolly Roger
-
 I HAD scarce gained a position on the bowsprit when the flying jib
 flapped and filled upon the other tack, with a report like a gun. The
 schooner trembled to her keel under the reverse, but next moment, the
@@ -5358,13 +5013,6 @@ that had in it something both of pain and weakness--a haggard old man’s
 smile; but there was, besides that, a grain of derision, a shadow of
 treachery, in his expression as he craftily watched, and watched, and
 watched me at my work.
-
-
-
-
-26
-
-Israel Hands
 
 THE wind, serving us to a desire, now hauled into the west. We could run
 so much the easier from the north-east corner of the island to the mouth
@@ -5641,13 +5289,6 @@ aim--both my pistols went off, and both escaped out of my hands. They
 did not fall alone; with a choked cry, the coxswain loosed his grasp
 upon the shrouds and plunged head first into the water.
 
-
-
-
-27
-
-“Pieces of Eight”
-
 OWING to the cant of the vessel, the masts hung far out over the water,
 and from my perch on the cross-trees I had nothing below me but the
 surface of the bay. Hands, who was not so far up, was in consequence
@@ -5856,20 +5497,6 @@ tight.
 
 And one of the men left the log-house and presently returned with a
 lighted brand.
-
-
-
-
-
-
-PART SIX--Captain Silver
-
-
-
-
-28
-
-In the Enemy’s Camp
 
 THE red glare of the torch, lighting up the interior of the block house,
 showed me the worst of my apprehensions realized. The pirates were in
@@ -6154,13 +5781,6 @@ no doubt--something, surely, under that, Jim--bad or good.”
 And he took another swallow of the brandy, shaking his great fair head
 like a man who looks forward to the worst.
 
-
-
-
-29
-
-The Black Spot Again
-
 THE council of buccaneers had lasted some time, when one of them
 re-entered the house, and with a repetition of the same salute, which
 had in my eyes an ironical air, begged for a moment’s loan of the torch.
@@ -6384,13 +6004,6 @@ to make his peace and save his miserable life. He himself slept
 peacefully and snored aloud, yet my heart was sore for him, wicked as he
 was, to think on the dark perils that environed and the shameful gibbet
 that awaited him.
-
-
-
-
-30
-
-On Parole
 
 I WAS wakened--indeed, we were all wakened, for I could see even the
 sentinel shake himself together from where he had fallen against the
@@ -6645,13 +6258,6 @@ speak at random. Good-bye, Jim.”
 And Dr. Livesey shook hands with me through the stockade, nodded to
 Silver, and set off at a brisk pace into the wood.
 
-
-
-
-31
-
-The Treasure-hunt--Flint’s Pointer
-
 “JIM,” said Silver when we were alone, “if I saved your life, you saved
 mine; and I’ll not forget it. I seen the doctor waving you to run for
 it--with the tail of my eye, I did; and I seen you say no, as plain as
@@ -6880,13 +6486,6 @@ daylight, the pirates no longer ran separate and shouting through the
 wood, but kept side by side and spoke with bated breath. The terror of
 the dead buccaneer had fallen on their spirits.
 
-
-
-
-32
-
-The Treasure-hunt--The Voice Among the Trees
-
 PARTLY from the damping influence of this alarm, partly to rest Silver
 and the sick folk, the whole party sat down as soon as they had gained
 the brow of the ascent.
@@ -7109,13 +6708,6 @@ WALRUS--the name of Flint’s ship.
 All was clear to probation. The CACHE had been found and rifled; the
 seven hundred thousand pounds were gone!
 
-
-
-
-33
-
-The Fall of a Chieftain
-
 THERE never was such an overturn in this world. Each of these six men
 was as though he had been struck. But with Silver the blow passed almost
 instantly. Every thought of his soul had been set full-stretch, like a
@@ -7330,13 +6922,6 @@ firelight, but eating heartily, prompt to spring forward when anything
 was wanted, even joining quietly in our laughter--the same bland,
 polite, obsequious seaman of the voyage out.
 
-
-
-
-34
-
-And Last
-
 THE next morning we fell early to work, for the transportation of this
 great mass of gold near a mile by land to the beach, and thence three
 miles by boat to the HISPANIOLA, was a considerable task for so small
@@ -7517,361 +7102,3 @@ wain-ropes would not bring me back again to that accursed island; and
 the worst dreams that ever I have are when I hear the surf booming about
 its coasts or start upright in bed with the sharp voice of Captain Flint
 still ringing in my ears: “Pieces of eight! Pieces of eight!”
-
-
-
-
-
-        
-            *** END OF THE PROJECT GUTENBERG EBOOK TREASURE ISLAND ***
-        
-
-    
-
-Updated editions will replace the previous one—the old editions will
-be renamed.
-
-Creating the works from print editions not protected by U.S. copyright
-law means that no one owns a United States copyright in these works,
-so the Foundation (and you!) can copy and distribute it in the United
-States without permission and without paying copyright
-royalties. Special rules, set forth in the General Terms of Use part
-of this license, apply to copying and distributing Project
-Gutenberg™ electronic works to protect the PROJECT GUTENBERG™
-concept and trademark. Project Gutenberg is a registered trademark,
-and may not be used if you charge for an eBook, except by following
-the terms of the trademark license, including paying royalties for use
-of the Project Gutenberg trademark. If you do not charge anything for
-copies of this eBook, complying with the trademark license is very
-easy. You may use this eBook for nearly any purpose such as creation
-of derivative works, reports, performances and research. Project
-Gutenberg eBooks may be modified and printed and given away—you may
-do practically ANYTHING in the United States with eBooks not protected
-by U.S. copyright law. Redistribution is subject to the trademark
-license, especially commercial redistribution.
-
-
-START: FULL LICENSE
-
-THE FULL PROJECT GUTENBERG LICENSE
-
-PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
-
-To protect the Project Gutenberg™ mission of promoting the free
-distribution of electronic works, by using or distributing this work
-(or any other work associated in any way with the phrase “Project
-Gutenberg”), you agree to comply with all the terms of the Full
-Project Gutenberg™ License available with this file or online at
-www.gutenberg.org/license.
-
-Section 1. General Terms of Use and Redistributing Project Gutenberg™
-electronic works
-
-1.A. By reading or using any part of this Project Gutenberg™
-electronic work, you indicate that you have read, understand, agree to
-and accept all the terms of this license and intellectual property
-(trademark/copyright) agreement. If you do not agree to abide by all
-the terms of this agreement, you must cease using and return or
-destroy all copies of Project Gutenberg™ electronic works in your
-possession. If you paid a fee for obtaining a copy of or access to a
-Project Gutenberg™ electronic work and you do not agree to be bound
-by the terms of this agreement, you may obtain a refund from the person
-or entity to whom you paid the fee as set forth in paragraph 1.E.8.
-
-1.B. “Project Gutenberg” is a registered trademark. It may only be
-used on or associated in any way with an electronic work by people who
-agree to be bound by the terms of this agreement. There are a few
-things that you can do with most Project Gutenberg™ electronic works
-even without complying with the full terms of this agreement. See
-paragraph 1.C below. There are a lot of things you can do with Project
-Gutenberg™ electronic works if you follow the terms of this
-agreement and help preserve free future access to Project Gutenberg™
-electronic works. See paragraph 1.E below.
-
-1.C. The Project Gutenberg Literary Archive Foundation (“the
-Foundation” or PGLAF), owns a compilation copyright in the collection
-of Project Gutenberg™ electronic works. Nearly all the individual
-works in the collection are in the public domain in the United
-States. If an individual work is unprotected by copyright law in the
-United States and you are located in the United States, we do not
-claim a right to prevent you from copying, distributing, performing,
-displaying or creating derivative works based on the work as long as
-all references to Project Gutenberg are removed. Of course, we hope
-that you will support the Project Gutenberg™ mission of promoting
-free access to electronic works by freely sharing Project Gutenberg™
-works in compliance with the terms of this agreement for keeping the
-Project Gutenberg™ name associated with the work. You can easily
-comply with the terms of this agreement by keeping this work in the
-same format with its attached full Project Gutenberg™ License when
-you share it without charge with others.
-
-1.D. The copyright laws of the place where you are located also govern
-what you can do with this work. Copyright laws in most countries are
-in a constant state of change. If you are outside the United States,
-check the laws of your country in addition to the terms of this
-agreement before downloading, copying, displaying, performing,
-distributing or creating derivative works based on this work or any
-other Project Gutenberg™ work. The Foundation makes no
-representations concerning the copyright status of any work in any
-country other than the United States.
-
-1.E. Unless you have removed all references to Project Gutenberg:
-
-1.E.1. The following sentence, with active links to, or other
-immediate access to, the full Project Gutenberg™ License must appear
-prominently whenever any copy of a Project Gutenberg™ work (any work
-on which the phrase “Project Gutenberg” appears, or with which the
-phrase “Project Gutenberg” is associated) is accessed, displayed,
-performed, viewed, copied or distributed:
-
-    This eBook is for the use of anyone anywhere in the United States and most
-    other parts of the world at no cost and with almost no restrictions
-    whatsoever. You may copy it, give it away or re-use it under the terms
-    of the Project Gutenberg License included with this eBook or online
-    at www.gutenberg.org. If you
-    are not located in the United States, you will have to check the laws
-    of the country where you are located before using this eBook.
-  
-1.E.2. If an individual Project Gutenberg™ electronic work is
-derived from texts not protected by U.S. copyright law (does not
-contain a notice indicating that it is posted with permission of the
-copyright holder), the work can be copied and distributed to anyone in
-the United States without paying any fees or charges. If you are
-redistributing or providing access to a work with the phrase “Project
-Gutenberg” associated with or appearing on the work, you must comply
-either with the requirements of paragraphs 1.E.1 through 1.E.7 or
-obtain permission for the use of the work and the Project Gutenberg™
-trademark as set forth in paragraphs 1.E.8 or 1.E.9.
-
-1.E.3. If an individual Project Gutenberg™ electronic work is posted
-with the permission of the copyright holder, your use and distribution
-must comply with both paragraphs 1.E.1 through 1.E.7 and any
-additional terms imposed by the copyright holder. Additional terms
-will be linked to the Project Gutenberg™ License for all works
-posted with the permission of the copyright holder found at the
-beginning of this work.
-
-1.E.4. Do not unlink or detach or remove the full Project Gutenberg™
-License terms from this work, or any files containing a part of this
-work or any other work associated with Project Gutenberg™.
-
-1.E.5. Do not copy, display, perform, distribute or redistribute this
-electronic work, or any part of this electronic work, without
-prominently displaying the sentence set forth in paragraph 1.E.1 with
-active links or immediate access to the full terms of the Project
-Gutenberg™ License.
-
-1.E.6. You may convert to and distribute this work in any binary,
-compressed, marked up, nonproprietary or proprietary form, including
-any word processing or hypertext form. However, if you provide access
-to or distribute copies of a Project Gutenberg™ work in a format
-other than “Plain Vanilla ASCII” or other format used in the official
-version posted on the official Project Gutenberg™ website
-(www.gutenberg.org), you must, at no additional cost, fee or expense
-to the user, provide a copy, a means of exporting a copy, or a means
-of obtaining a copy upon request, of the work in its original “Plain
-Vanilla ASCII” or other form. Any alternate format must include the
-full Project Gutenberg™ License as specified in paragraph 1.E.1.
-
-1.E.7. Do not charge a fee for access to, viewing, displaying,
-performing, copying or distributing any Project Gutenberg™ works
-unless you comply with paragraph 1.E.8 or 1.E.9.
-
-1.E.8. You may charge a reasonable fee for copies of or providing
-access to or distributing Project Gutenberg™ electronic works
-provided that:
-
-    • You pay a royalty fee of 20% of the gross profits you derive from
-        the use of Project Gutenberg™ works calculated using the method
-        you already use to calculate your applicable taxes. The fee is owed
-        to the owner of the Project Gutenberg™ trademark, but he has
-        agreed to donate royalties under this paragraph to the Project
-        Gutenberg Literary Archive Foundation. Royalty payments must be paid
-        within 60 days following each date on which you prepare (or are
-        legally required to prepare) your periodic tax returns. Royalty
-        payments should be clearly marked as such and sent to the Project
-        Gutenberg Literary Archive Foundation at the address specified in
-        Section 4, “Information about donations to the Project Gutenberg
-        Literary Archive Foundation.”
-    
-    • You provide a full refund of any money paid by a user who notifies
-        you in writing (or by e-mail) within 30 days of receipt that s/he
-        does not agree to the terms of the full Project Gutenberg™
-        License. You must require such a user to return or destroy all
-        copies of the works possessed in a physical medium and discontinue
-        all use of and all access to other copies of Project Gutenberg™
-        works.
-    
-    • You provide, in accordance with paragraph 1.F.3, a full refund of
-        any money paid for a work or a replacement copy, if a defect in the
-        electronic work is discovered and reported to you within 90 days of
-        receipt of the work.
-    
-    • You comply with all other terms of this agreement for free
-        distribution of Project Gutenberg™ works.
-    
-
-1.E.9. If you wish to charge a fee or distribute a Project
-Gutenberg™ electronic work or group of works on different terms than
-are set forth in this agreement, you must obtain permission in writing
-from the Project Gutenberg Literary Archive Foundation, the manager of
-the Project Gutenberg™ trademark. Contact the Foundation as set
-forth in Section 3 below.
-
-1.F.
-
-1.F.1. Project Gutenberg volunteers and employees expend considerable
-effort to identify, do copyright research on, transcribe and proofread
-works not protected by U.S. copyright law in creating the Project
-Gutenberg™ collection. Despite these efforts, Project Gutenberg™
-electronic works, and the medium on which they may be stored, may
-contain “Defects,” such as, but not limited to, incomplete, inaccurate
-or corrupt data, transcription errors, a copyright or other
-intellectual property infringement, a defective or damaged disk or
-other medium, a computer virus, or computer codes that damage or
-cannot be read by your equipment.
-
-1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the “Right
-of Replacement or Refund” described in paragraph 1.F.3, the Project
-Gutenberg Literary Archive Foundation, the owner of the Project
-Gutenberg™ trademark, and any other party distributing a Project
-Gutenberg™ electronic work under this agreement, disclaim all
-liability to you for damages, costs and expenses, including legal
-fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
-LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
-PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
-TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
-LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
-INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
-DAMAGE.
-
-1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
-defect in this electronic work within 90 days of receiving it, you can
-receive a refund of the money (if any) you paid for it by sending a
-written explanation to the person you received the work from. If you
-received the work on a physical medium, you must return the medium
-with your written explanation. The person or entity that provided you
-with the defective work may elect to provide a replacement copy in
-lieu of a refund. If you received the work electronically, the person
-or entity providing it to you may choose to give you a second
-opportunity to receive the work electronically in lieu of a refund. If
-the second copy is also defective, you may demand a refund in writing
-without further opportunities to fix the problem.
-
-1.F.4. Except for the limited right of replacement or refund set forth
-in paragraph 1.F.3, this work is provided to you ‘AS-IS’, WITH NO
-OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
-
-1.F.5. Some states do not allow disclaimers of certain implied
-warranties or the exclusion or limitation of certain types of
-damages. If any disclaimer or limitation set forth in this agreement
-violates the law of the state applicable to this agreement, the
-agreement shall be interpreted to make the maximum disclaimer or
-limitation permitted by the applicable state law. The invalidity or
-unenforceability of any provision of this agreement shall not void the
-remaining provisions.
-
-1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
-trademark owner, any agent or employee of the Foundation, anyone
-providing copies of Project Gutenberg™ electronic works in
-accordance with this agreement, and any volunteers associated with the
-production, promotion and distribution of Project Gutenberg™
-electronic works, harmless from all liability, costs and expenses,
-including legal fees, that arise directly or indirectly from any of
-the following which you do or cause to occur: (a) distribution of this
-or any Project Gutenberg™ work, (b) alteration, modification, or
-additions or deletions to any Project Gutenberg™ work, and (c) any
-Defect you cause.
-
-Section 2. Information about the Mission of Project Gutenberg™
-
-Project Gutenberg™ is synonymous with the free distribution of
-electronic works in formats readable by the widest variety of
-computers including obsolete, old, middle-aged and new computers. It
-exists because of the efforts of hundreds of volunteers and donations
-from people in all walks of life.
-
-Volunteers and financial support to provide volunteers with the
-assistance they need are critical to reaching Project Gutenberg™’s
-goals and ensuring that the Project Gutenberg™ collection will
-remain freely available for generations to come. In 2001, the Project
-Gutenberg Literary Archive Foundation was created to provide a secure
-and permanent future for Project Gutenberg™ and future
-generations. To learn more about the Project Gutenberg Literary
-Archive Foundation and how your efforts and donations can help, see
-Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
-
-Section 3. Information about the Project Gutenberg Literary Archive Foundation
-
-The Project Gutenberg Literary Archive Foundation is a non-profit
-501(c)(3) educational corporation organized under the laws of the
-state of Mississippi and granted tax exempt status by the Internal
-Revenue Service. The Foundation’s EIN or federal tax identification
-number is 64-6221541. Contributions to the Project Gutenberg Literary
-Archive Foundation are tax deductible to the full extent permitted by
-U.S. federal laws and your state’s laws.
-
-The Foundation’s business office is located at 809 North 1500 West,
-Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
-to date contact information can be found at the Foundation’s website
-and official page at www.gutenberg.org/contact
-
-Section 4. Information about Donations to the Project Gutenberg
-Literary Archive Foundation
-
-Project Gutenberg™ depends upon and cannot survive without widespread
-public support and donations to carry out its mission of
-increasing the number of public domain and licensed works that can be
-freely distributed in machine-readable form accessible by the widest
-array of equipment including outdated equipment. Many small donations
-($1 to $5,000) are particularly important to maintaining tax exempt
-status with the IRS.
-
-The Foundation is committed to complying with the laws regulating
-charities and charitable donations in all 50 states of the United
-States. Compliance requirements are not uniform and it takes a
-considerable effort, much paperwork and many fees to meet and keep up
-with these requirements. We do not solicit donations in locations
-where we have not received written confirmation of compliance. To SEND
-DONATIONS or determine the status of compliance for any particular state
-visit www.gutenberg.org/donate.
-
-While we cannot and do not solicit contributions from states where we
-have not met the solicitation requirements, we know of no prohibition
-against accepting unsolicited donations from donors in such states who
-approach us with offers to donate.
-
-International donations are gratefully accepted, but we cannot make
-any statements concerning tax treatment of donations received from
-outside the United States. U.S. laws alone swamp our small staff.
-
-Please check the Project Gutenberg web pages for current donation
-methods and addresses. Donations are accepted in a number of other
-ways including checks, online payments and credit card donations. To
-donate, please visit: www.gutenberg.org/donate.
-
-Section 5. General Information About Project Gutenberg™ electronic works
-
-Professor Michael S. Hart was the originator of the Project
-Gutenberg™ concept of a library of electronic works that could be
-freely shared with anyone. For forty years, he produced and
-distributed Project Gutenberg™ eBooks with only a loose network of
-volunteer support.
-
-Project Gutenberg™ eBooks are often created from several printed
-editions, all of which are confirmed as not protected by copyright in
-the U.S. unless a copyright notice is included. Thus, we do not
-necessarily keep eBooks in compliance with any particular paper
-edition.
-
-Most people start at our website which has the main PG search
-facility: www.gutenberg.org.
-
-This website includes information about Project Gutenberg™,
-including how to make donations to the Project Gutenberg Literary
-Archive Foundation, how to help produce our new eBooks, and how to
-subscribe to our email newsletter to hear about new eBooks.
-
-
-

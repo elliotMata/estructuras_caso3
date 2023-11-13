@@ -104,6 +104,27 @@ vector<pair<int, vector<string> *>> *FileReader::getParagraphKeywords()
     return this->paragraphKeywords;
 }
 
+string FileReader::readParagraph(const int &pos, const string &filename)
+{
+    file.open(filename);
+    file.seekg(pos * PARAGRAPH_SIZE, std::ios::beg);
+    char buffer[PARAGRAPH_SIZE + 1];
+    file.read(buffer, PARAGRAPH_SIZE);
+    buffer[file.gcount()] = '\0';
+
+    for (int i = 0; i < file.gcount(); i++)
+    {
+        if (buffer[i] == '\n')
+        {
+            buffer[i] = ' ';
+        }
+    }
+    string paragraph(buffer);
+    paragraph = paragraphCleaner(paragraph);
+    file.close();
+    return paragraph;
+}
+
 /*int main()
 {
     FileReader reader;

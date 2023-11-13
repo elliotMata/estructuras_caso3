@@ -53,14 +53,14 @@ private:
 
         for (const string &item : base)
         {
-            if (find(target.begin(), target.end(), item) != target.end())
+            if (find(paragraphTarget.begin(), paragraphTarget.end(), item) != paragraphTarget.end())
             {
                 matches++;
             }
         }
 
         matchPercentage = 0.0;
-        if (target.size() > 0)
+        if (paragraphTarget.size() > 0)
         {
             matchPercentage = (static_cast<double>(matches) / base.size()) * 100.0;
         }

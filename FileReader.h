@@ -30,6 +30,7 @@ public:
     vector<int> *getPositions();
     vector<pair<int, string>> *getParagraphs();
     vector<pair<int, vector<string> *>> *getParagraphKeywords();
+    string readParagraph(const int &pos, const string &filename);
 };
 
 #endif

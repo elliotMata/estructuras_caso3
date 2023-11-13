@@ -29,7 +29,9 @@ public:
     void insertNonFull(const Key &k);
     void splitChild(int i, TreeNode *y);
     void traverse();
-    TreeNode *search(const Key &k);
+    TreeNode *search(const string &filename);
+    vector<string> *getKeywords() { return this->keys->keywords; }
+    int *getPosition() { return this->keys->position; }
     friend class BTree;
 };
 
@@ -51,9 +53,9 @@ public:
             root->traverse();
     }
 
-    TreeNode *search(const Key &k)
+    TreeNode *search(const string &filename)
     {
-        return (root == NULL) ? NULL : root->search(k);
+        return (root == NULL) ? NULL : root->search(filename);
     }
 
     void insert(const Key &k);
@@ -84,19 +86,19 @@ void TreeNode::traverse()
         C[i]->traverse();
 }
 
-TreeNode *TreeNode::search(const Key &k)
+TreeNode *TreeNode::search(const string &filename)
 {
     int i = 0;
-    while (i < n && (*k.position > *keys[i].position || (*k.position == *keys[i].position && *k.filename > *keys[i].filename)))
+    while (i < n && (filename > *keys[i].filename))
         i++;
 
-    if (i < n && *keys[i].position == *k.position && *keys[i].filename == *k.filename)
+    if (i < n && *keys[i].filename == filename)
         return this;
 
     if (leaf == true)
         return NULL;
 
-    return C[i]->search(k);
+    return C[i]->search(filename);
 }
 
 void BTree::insert(const Key &k)
@@ -135,7 +137,7 @@ void TreeNode::insertNonFull(const Key &k)
 
     if (leaf == true)
     {
-        while (i >= 0 && (keys[i].position > k.position || (keys[i].position == k.position && keys[i].filename > k.filename)))
+        while (i >= 0 && (*keys[i].filename > *k.filename || (*keys[i].filename == *k.filename && *keys[i].position > *k.position)))
         {
             keys[i + 1] = keys[i];
             i--;
@@ -146,14 +148,14 @@ void TreeNode::insertNonFull(const Key &k)
     }
     else
     {
-        while (i >= 0 && (keys[i].position > k.position || (keys[i].position == k.position && keys[i].filename > k.filename)))
+        while (i >= 0 && (*keys[i].filename > *k.filename || (*keys[i].filename == *k.filename && *keys[i].position > *k.position)))
             i--;
 
         if (C[i + 1]->n == 2 * t - 1)
         {
             splitChild(i + 1, C[i + 1]);
 
-            if ((keys[i + 1].position < k.position) || (keys[i + 1].position == k.position && keys[i + 1].filename < k.filename))
+            if (*keys[i + 1].filename < *k.filename || (*keys[i + 1].filename == *k.filename && *keys[i + 1].position < *k.position))
                 i++;
         }
         C[i + 1]->insertNonFull(k);

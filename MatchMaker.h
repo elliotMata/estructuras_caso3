@@ -3,6 +3,7 @@
 
 #include <bits/stdc++.h>
 #include <algorithm>
+#include <unordered_map>
 
 #include "BookIndexer.h"
 #include "PhraseParser.h"
@@ -15,7 +16,7 @@ class MatchMaker
 {
 private:
     multimap<double, string, greater<int>> ranking;
-
+    unordered_map<string, multimap<double, string, greater<int>>> paragraphRanking;
     BookIndexer<string> indexer;
     BTree *bTree;
     Comparator *comparator;
@@ -63,6 +64,9 @@ public:
             {
                 comparator->compareVectors(*nouns, *jsonParser->getNouns(book));
                 ranking.insert(make_pair(comparator->getSimilarity(), book));
+                TreeNode *node = bTree->search(book);
+                comparator->compareVectors(*nouns, *node->getKeywords());
+                paragraphRanking[book].insert(make_pair(comparator->getSimilarity(), fileReader.readParagraph(*node->getPosition(), book)));
             }
         }
     }

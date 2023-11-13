@@ -1,5 +1,5 @@
 all:
-	g++ main.cpp NounReader.cpp JsonParser.cpp PhraseParser.cpp -o main
+	g++ main.cpp NounReader.cpp JsonParser.cpp PhraseParser.cpp FileReader.cpp -o main
 
 server:
 	g++ Server.cpp PhraseParser.cpp JsonParser.cpp NounReader.cpp -o server

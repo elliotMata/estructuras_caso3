@@ -77,7 +77,7 @@ void TreeNode::traverse()
     {
         if (leaf == false)
             C[i]->traverse();
-        cout << " (" << *keys[i].position << ", " << *keys[i].filename << ")";
+        cout << " (" << *keys[i].position << ", " << *keys[i].filename << ")" << endl;
     }
 
     if (leaf == false)

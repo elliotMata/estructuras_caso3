@@ -1,4 +1,5 @@
 #include "FileReader.h"
+#include "PhraseParser.h"
 #include <algorithm>
 
 void FileReader::calculateTotalParagraphs()
@@ -55,6 +56,7 @@ void FileReader::processParagraphs(const string &filename)
     calculatePositions();
 
     paragraphs = new vector<pair<int, string>>();
+    paragraphKeywords = new vector<pair<int, vector<string> *>>();
 
     for (int i = 0; i < paragraphPositions->size(); i++)
     {
@@ -72,9 +74,18 @@ void FileReader::processParagraphs(const string &filename)
         }
         string paragraph(buffer);
         paragraph = paragraphCleaner(paragraph);
+        addKeywords(paragraphPositions->at(i), paragraph);
         paragraphs->push_back({paragraphPositions->at(i), paragraph});
     }
     file.close();
+}
+
+void FileReader::addKeywords(int position, string paragraph)
+{
+    PhraseParser parser;
+    position = position * PARAGRAPH_SIZE;
+    vector<string> *keywords = parser.getKeywords(paragraph);
+    paragraphKeywords->push_back({position, keywords});
 }
 
 vector<int> *FileReader::getPositions()
@@ -86,6 +97,11 @@ vector<int> *FileReader::getPositions()
 vector<pair<int, string>> *FileReader::getParagraphs()
 {
     return this->paragraphs;
+}
+
+vector<pair<int, vector<string> *>> *FileReader::getParagraphKeywords()
+{
+    return this->paragraphKeywords;
 }
 
 /*int main()

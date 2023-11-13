@@ -13,7 +13,7 @@ struct Key
     vector<string> *keywords;
 
     Key(int intValue, const string &strValue, vector<string> keysValue) : position(new int(intValue)), filename(new string(strValue)), keywords(new vector<string>(keysValue)) {}
-    Key() : position(0), filename(""), keywords(new vector<string>()) {}
+    Key() : position(0), filename(new string()), keywords(new vector<string>()) {}
 };
 
 class TreeNode
@@ -77,7 +77,7 @@ void TreeNode::traverse()
     {
         if (leaf == false)
             C[i]->traverse();
-        cout << " (" << keys[i].position << ", " << keys[i].filename << ")";
+        cout << " (" << *keys[i].position << ", " << *keys[i].filename << ")";
     }
 
     if (leaf == false)
@@ -87,10 +87,10 @@ void TreeNode::traverse()
 TreeNode *TreeNode::search(const Key &k)
 {
     int i = 0;
-    while (i < n && (k.position > keys[i].position || (k.position == keys[i].position && k.filename > keys[i].filename)))
+    while (i < n && (*k.position > *keys[i].position || (*k.position == *keys[i].position && *k.filename > *keys[i].filename)))
         i++;
 
-    if (i < n && keys[i].position == k.position && keys[i].filename == k.filename)
+    if (i < n && *keys[i].position == *k.position && *keys[i].filename == *k.filename)
         return this;
 
     if (leaf == true)
@@ -186,36 +186,5 @@ void TreeNode::splitChild(int i, TreeNode *y)
     keys[i] = y->keys[t - 1];
     n = n + 1;
 }
-
-/* int main()
-{
-    BTree t(3);
-    t.insert(Key(8, "Eight"));
-    t.insert(Key(9, "Nine"));
-    t.insert(Key(10, "Ten"));
-    t.insert(Key(11, "Eleven"));
-    t.insert(Key(15, "Fifteen"));
-    t.insert(Key(16, "Sixteen"));
-    t.insert(Key(17, "Seventeen"));
-    t.insert(Key(18, "Eighteen"));
-    t.insert(Key(20, "Twenty"));
-    t.insert(Key(23, "Twenty-Three"));
-
-    cout << "The B-tree is: ";
-    t.traverse();
-
-    Key k1(10, "Ten");
-    (t.search(k1) != NULL) ? cout << endl
-                                  << "(" << k1.position << ", " << k1.filename << ") is found"
-                           : cout << endl
-                                  << "(" << k1.position << ", " << k1.filename << ") is not Found";
-
-    Key k2(2, "Two");
-    (t.search(k2) != NULL) ? cout << endl
-                                  << "(" << k2.position << ", " << k2.filename << ") is found"
-                           : cout << endl
-                                  << "(" << k2.position << ", " << k2.filename << ") is not Found\n";
-}
- */
 
 #endif

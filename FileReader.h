@@ -18,15 +18,18 @@ private:
     int fileSize, numberParagraphs, amountToCheck;
     vector<pair<int, string>> *paragraphs;
     vector<int> *paragraphPositions;
+    vector<pair<int, vector<string> *>> *paragraphKeywords;
 
     void calculateTotalParagraphs();
     void calculatePositions();
     string paragraphCleaner(const string &sentence);
+    void addKeywords(int position, string paragraph);
 
 public:
     void processParagraphs(const string &filename);
     vector<int> *getPositions();
     vector<pair<int, string>> *getParagraphs();
+    vector<pair<int, vector<string> *>> *getParagraphKeywords();
 };
 
 #endif

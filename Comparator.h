@@ -50,7 +50,6 @@ private:
     void compareParagraphs()
     {
         matches = 0;
-
         for (const string &item : base)
         {
             if (find(paragraphTarget.begin(), paragraphTarget.end(), item) != paragraphTarget.end())
@@ -62,7 +61,7 @@ private:
         matchPercentage = 0.0;
         if (paragraphTarget.size() > 0)
         {
-            matchPercentage = (static_cast<double>(matches) / base.size()) * 100.0;
+            matchPercentage = (static_cast<double>(matches) / paragraphTarget.size()) * 100.0;
         }
     }
 

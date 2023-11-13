@@ -144,37 +144,21 @@ int main()
 
     vector<string> *filenames = creator->getFilenames();
 
-    string file = folder + "/" + filenames->at(0);
-
-    cout << file << endl;
-
-    reader.processParagraphs(file);
-    vector<pair<int, string>> *paragraphs = reader.getParagraphs();
-
-    for (auto &paragraph : *paragraphs)
+    for (string file : *filenames)
     {
-        cout << paragraph.first << ". " << paragraph.second << "\n\n";
-        creator->minceParagraph(paragraph.second);
-    }
-    vector<pair<string, int>> *keywords = creator->getKeywords();
-    printKeywords(keywords);
-
-    /*for (string &file : *filenames)
-    {
-        file = folder + "/" + file;
-        reader.processParagraphs(file);
+        string path = folder + "/" + file;
+        reader.processParagraphs(path);
         vector<pair<int, string>> *paragraphs = reader.getParagraphs();
 
-        for (auto &paragraph : *paragraphs)
+        for (auto p : *paragraphs)
         {
-            cout << paragraph.first << ". " << paragraph.second << "\n\n";
-            creator->minceParagraph(paragraph.second);
+            cout << p.second << endl;
+            creator->minceParagraph(p.second);
             // creator->saveToJson(file);
         }
-
         vector<pair<string, int>> *keywords = creator->getKeywords();
         printKeywords(keywords);
         creator->reset();
-    }*/
+    }
     // creator->createJson(outputFile);
 }

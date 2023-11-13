@@ -1,127 +1,3 @@
-The Project Gutenberg eBook of Twenty Thousand Leagues Under the Seas: An Underwater Tour of the World
-    
-This ebook is for the use of anyone anywhere in the United States and
-most other parts of the world at no cost and with almost no restrictions
-whatsoever. You may copy it, give it away or re-use it under the terms
-of the Project Gutenberg License included with this ebook or online
-at www.gutenberg.org. If you are not located in the United States,
-you will have to check the laws of the country where you are located
-before using this eBook.
-
-*** This is a COPYRIGHTED Project Gutenberg eBook. Details Below. ***
-***     Please follow the copyright guidelines in this file.      ***
-
-
-Title: Twenty Thousand Leagues Under the Seas: An Underwater Tour of the World
-
-
-Author: Jules Verne
-
-Illustrator: Milo Winter
-
-Translator: Frederick Paul Walter
-
-Release date: January 1, 2001 [eBook #2488]
-                Most recently updated: August 9, 2021
-
-Language: English
-
-
-
-*** START OF THE PROJECT GUTENBERG EBOOK TWENTY THOUSAND LEAGUES UNDER THE SEAS: AN UNDERWATER TOUR OF THE WORLD ***
-
-
-
-Twenty Thousand Leagues Under the Seas
-An Underwater Tour of the World
-
-JULES VERNE
-
-
-Translated from the Original French by F. P. Walter
-
-Copyright (C) 1999, Frederick Paul Walter.
-
-
-A complete, unabridged translation of Vingt mille lieues sous les mers
-by Jules Verne, based on the original French texts published in Paris
-by J. Hetzel et Cie. over the period 1869-71.
-
-The paintings of Illinois watercolorist Milo Winter (1888-1956) first
-appeared in a 1922 juvenile edition published by Rand McNally &
-Company.
-
-
-VERNE’S TITLE
-
-The French title of this novel is Vingt mille lieues sous les
-mers. This is accurately translated as Twenty Thousand Leagues Under
-the SEAS—rather than the SEA, as with many English editions. Verne’s
-novel features a tour of the major oceans, and the term Leagues in its
-title is used as a measure not of depth but distance. Ed.
-
-
-Contents
-
-Introduction
-Units of Measure
-
-FIRST PART
-
-1. A Runaway Reef
-2. The Pros and Cons
-3. As Master Wishes
-4. Ned Land
-5. At Random!
-6. At Full Steam
-7. A Whale of Unknown Species
-8. “Mobilis in Mobili”
-9. The Tantrums of Ned Land
-10. The Man of the Waters
-11. The Nautilus
-12. Everything through Electricity
-13. Some Figures
-14. The Black Current
-15. An Invitation in Writing
-16. Strolling the Plains
-17. An Underwater Forest
-18. Four Thousand Leagues Under the Pacific
-19. Vanikoro
-20. The Torres Strait
-21. Some Days Ashore
-22. The Lightning Bolts of Captain Nemo
-23. “Aegri Somnia”
-24. The Coral Realm
-
-SECOND PART
-
-1. The Indian Ocean
-2. A New Proposition from Captain Nemo
-3. A Pearl Worth Ten Million
-4. The Red Sea
-5. Arabian Tunnel
-6. The Greek Islands
-7. The Mediterranean in Forty-Eight Hours
-8. The Bay of Vigo
-9. A Lost Continent
-10. The Underwater Coalfields
-11. The Sargasso Sea
-12. Sperm Whales and Baleen Whales
-13. The Ice Bank
-14. The South Pole
-15. Accident or Incident?
-16. Shortage of Air
-17. From Cape Horn to the Amazon
-18. The Devilfish
-19. The Gulf Stream
-20. In Latitude 47° 24’ and Longitude 17° 28’
-21. A Mass Execution
-22. The Last Words of Captain Nemo
-23. Conclusion
-
-
-Introduction
-
 “The deepest parts of the ocean are totally unknown to us,” admits
 Professor Aronnax early in this novel. “What goes on in those distant
 depths? What creatures inhabit, or could inhabit, those regions twelve
@@ -259,59 +135,6 @@ seas keep their secrets. We’ve seen progress in sonar, torpedoes, and
 other belligerent machinery, but sailors and scientists—to say nothing
 of tourists—have yet to voyage in a submarine with the luxury and
 efficiency of the Nautilus.
-
-F. P. WALTER University of Houston
-
-
-Units of Measure
-
-CABLE LENGTH In Verne’s context, 600 feet
-
-CENTIGRADE 0 degrees centigrade = freezing water
-
-37 degrees centigrade = human body temperature
-
-100 degrees centigrade = boiling water
-
-FATHOM 6 feet
-
-GRAM Roughly 1/28 of an ounce
-
-- MILLIGRAM Roughly 1/28,000 of an ounce
-
-- KILOGRAM (KILO) Roughly 2.2 pounds
-
-HECTARE Roughly 2.5 acres
-
-KNOT 1.15 miles per hour
-
-LEAGUE In Verne’s context, 2.16 miles
-
-LITER Roughly 1 quart
-
-METER Roughly 1 yard, 3 inches
-
-- MILLIMETER Roughly 1/25 of an inch
-
-- CENTIMETER Roughly 2/5 of an inch
-
-- DECIMETER Roughly 4 inches
-
-- KILOMETER Roughly 6/10 of a mile
-
-- MYRIAMETER Roughly 6.2 miles
-
-TON, METRIC Roughly 2,200 pounds viii
-
-
-
-FIRST PART
-
-
-CHAPTER 1
-
-A Runaway Reef
-
 
 THE YEAR 1866 was marked by a bizarre development, an unexplained and
 downright inexplicable phenomenon that surely no one has
@@ -568,12 +391,6 @@ various continents had become more and more dangerous, the public
 spoke up and demanded straight out that, at all cost, the seas be
 purged of this fearsome cetacean.
 
-
-CHAPTER 2
-
-The Pros and Cons
-
-
 DURING THE PERIOD in which these developments were occurring, I had
 returned from a scientific undertaking organized to explore the
 Nebraska badlands in the United States. In my capacity as Assistant
@@ -808,12 +625,6 @@ individual vessel.
 
   J. B. HOBSON,
   Secretary of the Navy.
-
-
-CHAPTER 3
-
-As Master Wishes
-
 
 THREE SECONDS before the arrival of J. B. Hobson’s letter, I no more
 dreamed of chasing the unicorn than of trying for the Northwest
@@ -1055,12 +866,6 @@ the frigate skirted the flat, yellow coast of Long Island; and at
 eight o’clock in the evening, after the lights of Fire Island had
 vanished into the northwest, we ran at full steam onto the dark waters
 of the Atlantic.
-
-
-CHAPTER 4
-
-Ned Land
-
 
 COMMANDER FARRAGUT was a good seaman, worthy of the frigate he
 commanded. His ship and he were one. He was its very soul. On the
@@ -1345,12 +1150,6 @@ business; to harpoon it called for sighting it—which was the crew’s
 business; and to sight it called for encountering it—which was a
 chancy business.
 
-
-CHAPTER 5
-
-At Random!
-
-
 FOR SOME WHILE the voyage of the Abraham Lincoln was marked by no
 incident. But one circumstance arose that displayed Ned Land’s
 marvelous skills and showed just how much confidence we could place in
@@ -1594,12 +1393,6 @@ the general silence, a voice became audible. It was Ned Land’s voice,
 and it shouted:
 
 “Ahoy! There’s the thing in question, abreast of us to leeward!”
-
-
-CHAPTER 6
-
-At Full Steam
-
 
 AT THIS SHOUT the entire crew rushed toward the harpooner—commander,
 officers, mates, sailors, cabin boys, down to engineers leaving their
@@ -1993,12 +1786,6 @@ their lashings.
 A hideous collision occurred, and thrown over the rail with no time to
 catch hold of it, I was hurled into the sea.
 
-
-CHAPTER 7
-
-A Whale of Unknown Species
-
-
 ALTHOUGH I WAS startled by this unexpected descent, I at least have a
 very clear recollection of my sensations during it.
 
@@ -2337,12 +2124,6 @@ gave a bizarre yell, and instantly disappeared.
 A few moments later, eight strapping fellows appeared silently, their
 faces like masks, and dragged us down into their fearsome machine.
 
-
-CHAPTER 8
-
-“Mobilis in Mobili”
-
-
 THIS BRUTALLY EXECUTED capture was carried out with lightning
 speed. My companions and I had no time to collect ourselves. I don’t
 know how they felt about being shoved inside this aquatic prison, but
@@ -2680,12 +2461,6 @@ breathing, just as fearsome . . . ! Then my mind grew calmer, my
 imagination melted into hazy drowsiness, and I soon fell into an
 uneasy slumber.
 
-
-CHAPTER 9
-
-The Tantrums of Ned Land
-
-
 I HAVE NO IDEA how long this slumber lasted; but it must have been a
 good while, since we were completely over our exhaustion. I was the
 first one to wake up. My companions weren’t yet stirring and still lay
@@ -2987,12 +2762,6 @@ half-suffocated victim, and I had gone to join in the rescue, when I
 was abruptly nailed to the spot by these words pronounced in French:
 
 “Calm down, Mr. Land! And you, professor, kindly listen to me!”
-
-
-CHAPTER 10
-
-The Man of the Waters
-
 
 IT WAS THE ship’s commander who had just spoken.
 
@@ -3379,12 +3148,6 @@ me:
 “Now, professor,” he said, “if you’d like to inspect the Nautilus, I’m
 yours to command.”
 
-
-CHAPTER 11
-
-The Nautilus
-
-
 CAPTAIN NEMO stood up. I followed him. Contrived at the rear of the
 dining room, a double door opened, and I entered a room whose
 dimensions equaled the one I had just left.
@@ -3695,12 +3458,6 @@ Captain Nemo showed me to a bench.
 
 I sat, and he began speaking as follows:
 
-
-CHAPTER 12
-
-Everything through Electricity
-
-
 “SIR,” CAPTAIN NEMO SAID, showing me the instruments hanging on the
 walls of his stateroom, “these are the devices needed to navigate the
 Nautilus. Here, as in the lounge, I always have them before my eyes,
@@ -3992,12 +3749,6 @@ hesitation, “since you’ll never leave this underwater boat. Come into
 the lounge. It’s actually our work room, and there you’ll learn the
 full story about the Nautilus!”
 
-
-CHAPTER 13
-
-Some Figures
-
-
 A MOMENT LATER we were seated on a couch in the lounge, cigars between
 our lips. The captain placed before my eyes a working drawing that
 gave the ground plan, cross section, and side view of the
@@ -4276,12 +4027,6 @@ ten-billion-franc French national debt!”
 
 I gaped at the bizarre individual who had just spoken these words. Was
 he playing on my credulity? Time would tell.
-
-
-CHAPTER 14
-
-The Black Current
-
 
 THE PART OF THE planet earth that the seas occupy has been assessed at
 3,832,558 square myriameters, hence more than 38,000,000,000
@@ -4770,12 +4515,6 @@ overtook me, I stretched out on my eelgrass mattress, and I fell into
 a deep slumber, while the Nautilus glided through the swiftly flowing
 Black Current.
 
-
-CHAPTER 15
-
-An Invitation in Writing
-
-
 THE NEXT DAY, November 9, I woke up only after a long, twelve-hour
 slumber. Conseil, a creature of habit, came to ask “how master’s night
 went,” and to offer his services. He had left his Canadian friend
@@ -5142,12 +4881,6 @@ us.
 Then we arrived at a cell located within easy access of the engine
 room; in this cell we were to get dressed for our stroll.
 
-
-CHAPTER 16
-
-Strolling the Plains
-
-
 THIS CELL, properly speaking, was the Nautilus’s arsenal and
 wardrobe. Hanging from its walls, a dozen diving outfits were waiting
 for anybody who wanted to take a stroll.
@@ -5393,12 +5126,6 @@ pointed a finger at some dark masses outlined in the shadows a short
 distance away.
 
 “It’s the forest of Crespo Island,” I thought; and I was not mistaken.
-
-
-CHAPTER 17
-
-An Underwater Forest
-
 
 WE HAD FINALLY arrived on the outskirts of this forest, surely one of
 the finest in Captain Nemo’s immense domains. He regarded it as his
@@ -5661,12 +5388,6 @@ There our diving suits were removed, not without difficulty; and
 utterly exhausted, faint from lack of food and rest, I repaired to my
 stateroom, full of wonder at this startling excursion on the bottom of
 the sea.
-
-
-CHAPTER 18
-
-Four Thousand Leagues Under the Pacific
-
 
 BY THE NEXT MORNING, November 18, I was fully recovered from my
 exhaustion of the day before, and I climbed onto the platform just as
@@ -5985,12 +5706,6 @@ Meanwhile, turning, the Nautilus made a circle around the sinking
 ship, and for an instant I could read the board on its stern:
 
 The Florida Sunderland, England
-
-
-CHAPTER 19
-
-Vanikoro
-
 
 THIS DREADFUL SIGHT was the first of a whole series of maritime
 catastrophes that the Nautilus would encounter on its run. When it
@@ -6398,12 +6113,6 @@ handwriting of King Louis XVI!
 coral grave is a tranquil grave, and may Heaven grant that my
 companions and I rest in no other!”
 
-
-CHAPTER 20
-
-The Torres Strait
-
-
 DURING THE NIGHT of December 27-28, the Nautilus left the waterways of
 Vanikoro behind with extraordinary speed. Its heading was
 southwesterly, and in three days it had cleared the 750 leagues that
@@ -6749,12 +6458,6 @@ special creations.”
 By 8:30 the Nautilus’s skiff had just run gently aground on a sandy
 strand, after successfully clearing the ring of coral that surrounds
 Gueboroa Island.
-
-
-CHAPTER 21
-
-Some Days Ashore
-
 
 STEPPING ASHORE had an exhilarating effect on me. Ned Land tested the
 soil with his foot, as if he were laying claim to it. Yet it had been
@@ -7262,12 +6965,6 @@ weren’t quite as clearheaded as one could wish.
 
 Just then a stone whizzed toward us, landed at our feet, and cut short
 the harpooner’s proposition.
-
-
-CHAPTER 22
-
-The Lightning Bolts of Captain Nemo
-
 
 WITHOUT STANDING UP, we stared in the direction of the forest, my hand
 stopping halfway to my mouth, Ned Land’s completing its assignment.
@@ -7781,14 +7478,6 @@ majesty. Gathering speed little by little, the ship navigated on the
 surface of the ocean, and safe and sound, it left behind the dangerous
 narrows of the Torres Strait.
 
-
-CHAPTER 23
-
-“Aegri Somnia”*
-
-
-*Latin: “troubled dreams.” Ed.
-
 THE FOLLOWING DAY, January 10, the Nautilus resumed its travels in
 midwater but at a remarkable speed that I estimated to be at least
 thirty-five miles per hour. The propeller was going so fast I could
@@ -8144,12 +7833,6 @@ couldn’t raise them. A morbid sleep, full of hallucinations, seized my
 whole being. Then the visions disappeared and left me in utter
 oblivion.
 
-
-CHAPTER 24
-
-The Coral Realm
-
-
 THE NEXT DAY I woke up with my head unusually clear. Much to my
 surprise, I was in my stateroom. No doubt my companions had been put
 back in their cabin without noticing it any more than I had. Like me,
@@ -8504,19 +8187,6 @@ surface of the waves!”
 reach of sharks!”
 
 “Yes, sir,” Captain Nemo replied solemnly, “of sharks and men!”
-
-
-END OF THE FIRST PART
-
-
-
-SECOND PART
-
-
-CHAPTER 1
-
-The Indian Ocean
-
 
 NOW WE BEGIN the second part of this voyage under the seas. The first
 ended in that moving scene at the coral cemetery, which left a
@@ -8903,12 +8573,6 @@ Near midnight the sea suddenly resumed its usual hue, but behind us
 all the way to the horizon, the skies kept mirroring the whiteness of
 those waves and for a good while seemed imbued with the hazy glow of
 an aurora borealis.
-
-
-CHAPTER 2
-
-A New Proposition from Captain Nemo
-
 
 ON JANUARY 28, in latitude 9 degrees 4’ north, when the Nautilus
 returned at noon to the surface of the sea, it lay in sight of land
@@ -9356,12 +9020,6 @@ Good for you, I thought.
 
 “If master faces these sharks,” Conseil said, “I think his loyal
 manservant should face them with him!”
-
-
-CHAPTER 3
-
-A Pearl Worth Ten Million
-
 
 NIGHT FELL. I went to bed. I slept pretty poorly. Man-eaters played a
 major role in my dreams. And I found it more or less appropriate that
@@ -9831,12 +9489,6 @@ touched with emotion:
 “That Indian, professor, lives in the land of the oppressed, and I am
 to this day, and will be until my last breath, a native of that same
 land!”
-
-
-CHAPTER 4
-
-The Red Sea
-
 
 DURING THE DAY of January 29, the island of Ceylon disappeared below
 the horizon, and at a speed of twenty miles per hour, the Nautilus
@@ -10361,12 +10013,6 @@ existed between the two seas. I searched for it with my Nautilus, I
 discovered it, I ventured into it; and soon, professor, you also will
 have cleared my Arabic tunnel!”
 
-
-CHAPTER 5
-
-Arabian Tunnel
-
-
 THE SAME DAY, I reported to Conseil and Ned Land that part of the
 foregoing conversation directly concerning them. When I told them we
 would be lying in Mediterranean waters within two days, Conseil
@@ -10757,12 +10403,6 @@ At 10:35 Captain Nemo left the steering wheel and turned to me:
 
 In less than twenty minutes, swept along by the torrent, the Nautilus
 had just cleared the Isthmus of Suez.
-
-
-CHAPTER 6
-
-The Greek Islands
-
 
 AT SUNRISE the next morning, February 12, the Nautilus rose to the
 surface of the waves.
@@ -11261,12 +10901,6 @@ The next day, February 16, we left this basin, which tallies depths of
 Cerigo Island after doubling Cape Matapan, the Nautilus left the Greek
 Islands behind.
 
-
-CHAPTER 7
-
-The Mediterranean in Forty-Eight Hours
-
-
 THE MEDITERRANEAN, your ideal blue sea: to Greeks simply “the sea,” to
 Hebrews “the great sea,” to Romans mare nostrum.* Bordered by orange
 trees, aloes, cactus, and maritime pine trees, perfumed with the scent
@@ -11643,12 +11277,6 @@ passageway. For an instant I could glimpse the wonderful ruins of the
 Temple of Hercules, buried undersea, as Pliny and Avianus have
 mentioned, together with the flat island they stand on; and a few
 minutes later, we were floating on the waves of the Atlantic.
-
-
-CHAPTER 8
-
-The Bay of Vigo
-
 
 THE ATLANTIC! A vast expanse of water whose surface area is 25,000,000
 square miles, with a length of 9,000 miles and an average width of
@@ -12073,12 +11701,6 @@ And now I knew where Captain Nemo had delivered those millions, when
 the Nautilus navigated the waters where Crete was in rebellion against
 the Ottoman Empire!
 
-
-CHAPTER 9
-
-A Lost Continent
-
-
 THE NEXT MORNING, February 19, I beheld the Canadian entering my
 stateroom. I was expecting this visit. He wore an expression of great
 disappointment.
@@ -12485,12 +12107,6 @@ We went swiftly down the mountain. Once past the petrified forest, I
 could see the Nautilus’s beacon twinkling like a star. The captain
 walked straight toward it, and we were back on board just as the first
 glimmers of dawn were whitening the surface of the ocean.
-
-
-CHAPTER 10
-
-The Underwater Coalfields
-
 
 THE NEXT DAY, February 20, I overslept. I was so exhausted from the
 night before, I didn’t get up until eleven o’clock. I dressed
@@ -12928,12 +12544,6 @@ Be that as it may, by the next day the Nautilus had left its home port
 and was navigating well out from any shore, a few meters beneath the
 waves of the Atlantic.
 
-
-CHAPTER 11
-
-The Sargasso Sea
-
-
 THE NAUTILUS didn’t change direction. For the time being, then, we had
 to set aside any hope of returning to European seas. Captain Nemo kept
 his prow pointing south. Where was he taking us? I was afraid to
@@ -13286,12 +12896,6 @@ the watery mass. Not a single detail was visible. In four minutes it
 had cleared the four vertical leagues separating it from the surface
 of the ocean, and after emerging like a flying fish, it fell back into
 the sea, making the waves leap to prodigious heights.
-
-
-CHAPTER 12
-
-Sperm Whales and Baleen Whales
-
 
 DURING THE NIGHT of March 13-14, the Nautilus resumed its southward
 heading. Once it was abreast of Cape Horn, I thought it would strike
@@ -13794,12 +13398,6 @@ From that day on, I noted with some uneasiness that Ned Land’s
 attitudes toward Captain Nemo grew worse and worse, and I decided to
 keep a close watch on the Canadian’s movements and activities.
 
-
-CHAPTER 13
-
-The Ice Bank
-
-
 THE NAUTILUS resumed its unruffled southbound heading. It went along
 the 50th meridian with considerable speed. Would it go to the pole? I
 didn’t think so, because every previous attempt to reach this spot on
@@ -14288,12 +13886,6 @@ Finally, at six o’clock in the morning on that memorable day of March
 19, the lounge door opened. Captain Nemo appeared.
 
 “Open sea!” he told me.
-
-
-CHAPTER 14
-
-The South Pole
-
 
 I RUSHED UP onto the platform. Yes, open sea! Barely a few sparse
 floes, some moving icebergs; a sea stretching into the distance; hosts
@@ -14823,12 +14415,6 @@ rays were licking at the sea’s horizon:
 beneath this open sea, and let six months of night spread their
 shadows over my new domains!”
 
-
-CHAPTER 15
-
-Accident or Incident?
-
-
 THE NEXT DAY, March 22, at six o’clock in the morning, preparations
 for departure began. The last gleams of twilight were melting into
 night. The cold was brisk. The constellations were glittering with
@@ -15180,12 +14766,6 @@ Just then the captain entered the lounge. I went to him.
 “We’re boxed in?”
 
 “Yes.”
-
-
-CHAPTER 16
-
-Shortage of Air
-
 
 CONSEQUENTLY, above, below, and around the Nautilus, there were
 impenetrable frozen walls. We were the Ice Bank’s prisoners! The
@@ -15604,12 +15184,6 @@ ice beneath its weight.
 The hatches were opened—or torn off, if you prefer—and waves of clean
 air were admitted into every part of the Nautilus.
 
-
-CHAPTER 17
-
-From Cape Horn to the Amazon
-
-
 HOW I GOT ONTO the platform I’m unable to say. Perhaps the Canadian
 transferred me there. But I could breathe, I could inhale the
 life-giving sea air. Next to me my two companions were getting tipsy
@@ -16012,12 +15586,6 @@ comparable to the green turtle.
 
 This fishing ended our stay in the waterways of the Amazon, and that
 evening the Nautilus took to the high seas once more.
-
-
-CHAPTER 18
-
-The Devilfish
-
 
 FOR SOME DAYS the Nautilus kept veering away from the American
 coast. It obviously didn’t want to frequent the waves of the Gulf of
@@ -16484,12 +16052,6 @@ Red with blood, motionless by the beacon, Captain Nemo stared at the
 sea that had swallowed one of his companions, and large tears streamed
 from his eyes.
 
-
-CHAPTER 19
-
-The Gulf Stream
-
-
 THIS DREADFUL SCENE on April 20 none of us will ever be able to
 forget. I wrote it up in a state of intense excitement. Later I
 reviewed my narrative. I read it to Conseil and the Canadian. They
@@ -16931,12 +16493,6 @@ But once there, what tranquility we found, what silence, what peace
 all around us! Who would have known that a dreadful hurricane was then
 unleashed on the surface of this ocean?
 
-
-CHAPTER 20
-
-In Latitude 47° 24’ and Longitude 17° 28’
-
-
 IN THE AFTERMATH of this storm, we were thrown back to the east. Away
 went any hope of escaping to the landing places of New York or the
 St. Lawrence. In despair, poor Ned went into seclusion like Captain
@@ -17254,12 +16810,6 @@ live the Republic!’”
 
 “Yes, sir! The Avenger! A splendid name!” Captain Nemo murmured,
 crossing his arms.
-
-
-CHAPTER 21
-
-A Mass Execution
-
 
 THE WAY HE SAID THIS, the unexpectedness of this scene, first the
 biography of this patriotic ship, then the excitement with which this
@@ -17651,12 +17201,6 @@ portrait of a still-youthful woman with two little children. Captain
 Nemo stared at them for a few moments, stretched out his arms to them,
 sank to his knees, and melted into sobs.
 
-
-CHAPTER 22
-
-The Last Words of Captain Nemo
-
-
 THE PANELS CLOSED over this frightful view, but the lights didn’t go
 on in the lounge. Inside the Nautilus all was gloom and silence. It
 left this place of devastation with prodigious speed, 100 feet beneath
@@ -17952,12 +17496,6 @@ stone from a sling into the midst of the vortex.
 My head struck against an iron timber, and with this violent shock I
 lost consciousness.
 
-
-CHAPTER 23
-
-Conclusion
-
-
 WE COME TO the conclusion of this voyage under the seas. What happened
 that night, how the skiff escaped from the Maelstrom’s fearsome
 eddies, how Ned Land, Conseil, and I got out of that whirlpool, I’m
@@ -18006,371 +17544,3 @@ encompassed it myself? Didn’t I lead ten months of this otherworldly
 existence? Thus to that question asked 6,000 years ago in the Book of
 Ecclesiastes—“Who can fathom the soundless depths?”—two men out of all
 humanity have now earned the right to reply. Captain Nemo and I.
-
-
-END OF THE SECOND PART
-
-
-
-
-
-        
-            *** END OF THE PROJECT GUTENBERG EBOOK TWENTY THOUSAND LEAGUES UNDER THE SEAS: AN UNDERWATER TOUR OF THE WORLD ***
-        
-
-    
-
-Updated editions will replace the previous one—the old editions will
-be renamed.
-
-Creating the works from print editions not protected by U.S. copyright
-law means that no one owns a United States copyright in these works,
-so the Foundation (and you!) can copy and distribute it in the United
-States without permission and without paying copyright
-royalties. Special rules, set forth in the General Terms of Use part
-of this license, apply to copying and distributing Project
-Gutenberg™ electronic works to protect the PROJECT GUTENBERG™
-concept and trademark. Project Gutenberg is a registered trademark,
-and may not be used if you charge for an eBook, except by following
-the terms of the trademark license, including paying royalties for use
-of the Project Gutenberg trademark. If you do not charge anything for
-copies of this eBook, complying with the trademark license is very
-easy. You may use this eBook for nearly any purpose such as creation
-of derivative works, reports, performances and research. Project
-Gutenberg eBooks may be modified and printed and given away—you may
-do practically ANYTHING in the United States with eBooks not protected
-by U.S. copyright law. Redistribution is subject to the trademark
-license, especially commercial redistribution.
-
-
-START: FULL LICENSE
-
-THE FULL PROJECT GUTENBERG LICENSE
-
-PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
-
-To protect the Project Gutenberg™ mission of promoting the free
-distribution of electronic works, by using or distributing this work
-(or any other work associated in any way with the phrase “Project
-Gutenberg”), you agree to comply with all the terms of the Full
-Project Gutenberg™ License available with this file or online at
-www.gutenberg.org/license.
-
-Section 1. General Terms of Use and Redistributing Project Gutenberg™
-electronic works
-
-1.A. By reading or using any part of this Project Gutenberg™
-electronic work, you indicate that you have read, understand, agree to
-and accept all the terms of this license and intellectual property
-(trademark/copyright) agreement. If you do not agree to abide by all
-the terms of this agreement, you must cease using and return or
-destroy all copies of Project Gutenberg™ electronic works in your
-possession. If you paid a fee for obtaining a copy of or access to a
-Project Gutenberg™ electronic work and you do not agree to be bound
-by the terms of this agreement, you may obtain a refund from the person
-or entity to whom you paid the fee as set forth in paragraph 1.E.8.
-
-1.B. “Project Gutenberg” is a registered trademark. It may only be
-used on or associated in any way with an electronic work by people who
-agree to be bound by the terms of this agreement. There are a few
-things that you can do with most Project Gutenberg™ electronic works
-even without complying with the full terms of this agreement. See
-paragraph 1.C below. There are a lot of things you can do with Project
-Gutenberg™ electronic works if you follow the terms of this
-agreement and help preserve free future access to Project Gutenberg™
-electronic works. See paragraph 1.E below.
-
-1.C. The Project Gutenberg Literary Archive Foundation (“the
-Foundation” or PGLAF), owns a compilation copyright in the collection
-of Project Gutenberg™ electronic works. Nearly all the individual
-works in the collection are in the public domain in the United
-States. If an individual work is unprotected by copyright law in the
-United States and you are located in the United States, we do not
-claim a right to prevent you from copying, distributing, performing,
-displaying or creating derivative works based on the work as long as
-all references to Project Gutenberg are removed. Of course, we hope
-that you will support the Project Gutenberg™ mission of promoting
-free access to electronic works by freely sharing Project Gutenberg™
-works in compliance with the terms of this agreement for keeping the
-Project Gutenberg™ name associated with the work. You can easily
-comply with the terms of this agreement by keeping this work in the
-same format with its attached full Project Gutenberg™ License when
-you share it without charge with others.
-This particular work is one of the few individual works protected
-by copyright law in the United States and most of the remainder of the
-world, included in the Project Gutenberg collection with the
-permission of the copyright holder. Information on the copyright owner
-for this particular work and the terms of use imposed by the copyright
-holder on this work are set forth at the beginning of this work.
-
-
-1.D. The copyright laws of the place where you are located also govern
-what you can do with this work. Copyright laws in most countries are
-in a constant state of change. If you are outside the United States,
-check the laws of your country in addition to the terms of this
-agreement before downloading, copying, displaying, performing,
-distributing or creating derivative works based on this work or any
-other Project Gutenberg™ work. The Foundation makes no
-representations concerning the copyright status of any work in any
-country other than the United States.
-
-1.E. Unless you have removed all references to Project Gutenberg:
-
-1.E.1. The following sentence, with active links to, or other
-immediate access to, the full Project Gutenberg™ License must appear
-prominently whenever any copy of a Project Gutenberg™ work (any work
-on which the phrase “Project Gutenberg” appears, or with which the
-phrase “Project Gutenberg” is associated) is accessed, displayed,
-performed, viewed, copied or distributed:
-
-    This eBook is for the use of anyone anywhere in the United States and most
-    other parts of the world at no cost and with almost no restrictions
-    whatsoever. You may copy it, give it away or re-use it under the terms
-    of the Project Gutenberg License included with this eBook or online
-    at www.gutenberg.org. If you
-    are not located in the United States, you will have to check the laws
-    of the country where you are located before using this eBook.
-  
-1.E.2. If an individual Project Gutenberg™ electronic work is
-derived from texts not protected by U.S. copyright law (does not
-contain a notice indicating that it is posted with permission of the
-copyright holder), the work can be copied and distributed to anyone in
-the United States without paying any fees or charges. If you are
-redistributing or providing access to a work with the phrase “Project
-Gutenberg” associated with or appearing on the work, you must comply
-either with the requirements of paragraphs 1.E.1 through 1.E.7 or
-obtain permission for the use of the work and the Project Gutenberg™
-trademark as set forth in paragraphs 1.E.8 or 1.E.9.
-
-1.E.3. If an individual Project Gutenberg™ electronic work is posted
-with the permission of the copyright holder, your use and distribution
-must comply with both paragraphs 1.E.1 through 1.E.7 and any
-additional terms imposed by the copyright holder. Additional terms
-will be linked to the Project Gutenberg™ License for all works
-posted with the permission of the copyright holder found at the
-beginning of this work.
-
-1.E.4. Do not unlink or detach or remove the full Project Gutenberg™
-License terms from this work, or any files containing a part of this
-work or any other work associated with Project Gutenberg™.
-
-1.E.5. Do not copy, display, perform, distribute or redistribute this
-electronic work, or any part of this electronic work, without
-prominently displaying the sentence set forth in paragraph 1.E.1 with
-active links or immediate access to the full terms of the Project
-Gutenberg™ License.
-
-1.E.6. You may convert to and distribute this work in any binary,
-compressed, marked up, nonproprietary or proprietary form, including
-any word processing or hypertext form. However, if you provide access
-to or distribute copies of a Project Gutenberg™ work in a format
-other than “Plain Vanilla ASCII” or other format used in the official
-version posted on the official Project Gutenberg™ website
-(www.gutenberg.org), you must, at no additional cost, fee or expense
-to the user, provide a copy, a means of exporting a copy, or a means
-of obtaining a copy upon request, of the work in its original “Plain
-Vanilla ASCII” or other form. Any alternate format must include the
-full Project Gutenberg™ License as specified in paragraph 1.E.1.
-
-1.E.7. Do not charge a fee for access to, viewing, displaying,
-performing, copying or distributing any Project Gutenberg™ works
-unless you comply with paragraph 1.E.8 or 1.E.9.
-
-1.E.8. You may charge a reasonable fee for copies of or providing
-access to or distributing Project Gutenberg™ electronic works
-provided that:
-
-    • You pay a royalty fee of 20% of the gross profits you derive from
-        the use of Project Gutenberg™ works calculated using the method
-        you already use to calculate your applicable taxes. The fee is owed
-        to the owner of the Project Gutenberg™ trademark, but he has
-        agreed to donate royalties under this paragraph to the Project
-        Gutenberg Literary Archive Foundation. Royalty payments must be paid
-        within 60 days following each date on which you prepare (or are
-        legally required to prepare) your periodic tax returns. Royalty
-        payments should be clearly marked as such and sent to the Project
-        Gutenberg Literary Archive Foundation at the address specified in
-        Section 4, “Information about donations to the Project Gutenberg
-        Literary Archive Foundation.”
-    
-    • You provide a full refund of any money paid by a user who notifies
-        you in writing (or by e-mail) within 30 days of receipt that s/he
-        does not agree to the terms of the full Project Gutenberg™
-        License. You must require such a user to return or destroy all
-        copies of the works possessed in a physical medium and discontinue
-        all use of and all access to other copies of Project Gutenberg™
-        works.
-    
-    • You provide, in accordance with paragraph 1.F.3, a full refund of
-        any money paid for a work or a replacement copy, if a defect in the
-        electronic work is discovered and reported to you within 90 days of
-        receipt of the work.
-    
-    • You comply with all other terms of this agreement for free
-        distribution of Project Gutenberg™ works.
-    
-
-1.E.9. If you wish to charge a fee or distribute a Project
-Gutenberg™ electronic work or group of works on different terms than
-are set forth in this agreement, you must obtain permission in writing
-from the Project Gutenberg Literary Archive Foundation, the manager of
-the Project Gutenberg™ trademark. Contact the Foundation as set
-forth in Section 3 below.
-
-1.F.
-
-1.F.1. Project Gutenberg volunteers and employees expend considerable
-effort to identify, do copyright research on, transcribe and proofread
-works not protected by U.S. copyright law in creating the Project
-Gutenberg™ collection. Despite these efforts, Project Gutenberg™
-electronic works, and the medium on which they may be stored, may
-contain “Defects,” such as, but not limited to, incomplete, inaccurate
-or corrupt data, transcription errors, a copyright or other
-intellectual property infringement, a defective or damaged disk or
-other medium, a computer virus, or computer codes that damage or
-cannot be read by your equipment.
-
-1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the “Right
-of Replacement or Refund” described in paragraph 1.F.3, the Project
-Gutenberg Literary Archive Foundation, the owner of the Project
-Gutenberg™ trademark, and any other party distributing a Project
-Gutenberg™ electronic work under this agreement, disclaim all
-liability to you for damages, costs and expenses, including legal
-fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
-LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
-PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
-TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
-LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
-INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
-DAMAGE.
-
-1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
-defect in this electronic work within 90 days of receiving it, you can
-receive a refund of the money (if any) you paid for it by sending a
-written explanation to the person you received the work from. If you
-received the work on a physical medium, you must return the medium
-with your written explanation. The person or entity that provided you
-with the defective work may elect to provide a replacement copy in
-lieu of a refund. If you received the work electronically, the person
-or entity providing it to you may choose to give you a second
-opportunity to receive the work electronically in lieu of a refund. If
-the second copy is also defective, you may demand a refund in writing
-without further opportunities to fix the problem.
-
-1.F.4. Except for the limited right of replacement or refund set forth
-in paragraph 1.F.3, this work is provided to you ‘AS-IS’, WITH NO
-OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
-
-1.F.5. Some states do not allow disclaimers of certain implied
-warranties or the exclusion or limitation of certain types of
-damages. If any disclaimer or limitation set forth in this agreement
-violates the law of the state applicable to this agreement, the
-agreement shall be interpreted to make the maximum disclaimer or
-limitation permitted by the applicable state law. The invalidity or
-unenforceability of any provision of this agreement shall not void the
-remaining provisions.
-
-1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
-trademark owner, any agent or employee of the Foundation, anyone
-providing copies of Project Gutenberg™ electronic works in
-accordance with this agreement, and any volunteers associated with the
-production, promotion and distribution of Project Gutenberg™
-electronic works, harmless from all liability, costs and expenses,
-including legal fees, that arise directly or indirectly from any of
-the following which you do or cause to occur: (a) distribution of this
-or any Project Gutenberg™ work, (b) alteration, modification, or
-additions or deletions to any Project Gutenberg™ work, and (c) any
-Defect you cause.
-
-Section 2. Information about the Mission of Project Gutenberg™
-
-Project Gutenberg™ is synonymous with the free distribution of
-electronic works in formats readable by the widest variety of
-computers including obsolete, old, middle-aged and new computers. It
-exists because of the efforts of hundreds of volunteers and donations
-from people in all walks of life.
-
-Volunteers and financial support to provide volunteers with the
-assistance they need are critical to reaching Project Gutenberg™’s
-goals and ensuring that the Project Gutenberg™ collection will
-remain freely available for generations to come. In 2001, the Project
-Gutenberg Literary Archive Foundation was created to provide a secure
-and permanent future for Project Gutenberg™ and future
-generations. To learn more about the Project Gutenberg Literary
-Archive Foundation and how your efforts and donations can help, see
-Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
-
-Section 3. Information about the Project Gutenberg Literary Archive Foundation
-
-The Project Gutenberg Literary Archive Foundation is a non-profit
-501(c)(3) educational corporation organized under the laws of the
-state of Mississippi and granted tax exempt status by the Internal
-Revenue Service. The Foundation’s EIN or federal tax identification
-number is 64-6221541. Contributions to the Project Gutenberg Literary
-Archive Foundation are tax deductible to the full extent permitted by
-U.S. federal laws and your state’s laws.
-
-The Foundation’s business office is located at 809 North 1500 West,
-Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
-to date contact information can be found at the Foundation’s website
-and official page at www.gutenberg.org/contact
-
-Section 4. Information about Donations to the Project Gutenberg
-Literary Archive Foundation
-
-Project Gutenberg™ depends upon and cannot survive without widespread
-public support and donations to carry out its mission of
-increasing the number of public domain and licensed works that can be
-freely distributed in machine-readable form accessible by the widest
-array of equipment including outdated equipment. Many small donations
-($1 to $5,000) are particularly important to maintaining tax exempt
-status with the IRS.
-
-The Foundation is committed to complying with the laws regulating
-charities and charitable donations in all 50 states of the United
-States. Compliance requirements are not uniform and it takes a
-considerable effort, much paperwork and many fees to meet and keep up
-with these requirements. We do not solicit donations in locations
-where we have not received written confirmation of compliance. To SEND
-DONATIONS or determine the status of compliance for any particular state
-visit www.gutenberg.org/donate.
-
-While we cannot and do not solicit contributions from states where we
-have not met the solicitation requirements, we know of no prohibition
-against accepting unsolicited donations from donors in such states who
-approach us with offers to donate.
-
-International donations are gratefully accepted, but we cannot make
-any statements concerning tax treatment of donations received from
-outside the United States. U.S. laws alone swamp our small staff.
-
-Please check the Project Gutenberg web pages for current donation
-methods and addresses. Donations are accepted in a number of other
-ways including checks, online payments and credit card donations. To
-donate, please visit: www.gutenberg.org/donate.
-
-Section 5. General Information About Project Gutenberg™ electronic works
-
-Professor Michael S. Hart was the originator of the Project
-Gutenberg™ concept of a library of electronic works that could be
-freely shared with anyone. For forty years, he produced and
-distributed Project Gutenberg™ eBooks with only a loose network of
-volunteer support.
-
-Project Gutenberg™ eBooks are often created from several printed
-editions, all of which are confirmed as not protected by copyright in
-the U.S. unless a copyright notice is included. Thus, we do not
-necessarily keep eBooks in compliance with any particular paper
-edition.
-
-Most people start at our website which has the main PG search
-facility: www.gutenberg.org.
-
-This website includes information about Project Gutenberg™,
-including how to make donations to the Project Gutenberg Literary
-Archive Foundation, how to help produce our new eBooks, and how to
-subscribe to our email newsletter to hear about new eBooks.
-
-
-

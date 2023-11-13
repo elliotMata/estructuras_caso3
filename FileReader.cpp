@@ -13,7 +13,7 @@ void FileReader::calculateTotalParagraphs()
     file.seekg(0, std::ios::beg);
 
     amountToCheck = (fileSize * PERCENTAGE) / PARAGRAPH_SIZE;
-    numberParagraphs = fileSize / PARAGRAPH_SIZE;
+    numberParagraphs = (fileSize / PARAGRAPH_SIZE) - 1;
 }
 
 void FileReader::calculatePositions()
@@ -28,9 +28,11 @@ void FileReader::calculatePositions()
         if (!(find(paragraphPositions->begin(), paragraphPositions->end(), position) != paragraphPositions->end()) && position * PARAGRAPH_SIZE <= fileSize)
         {
             paragraphPositions->push_back(position);
+            cout << position << " ";
             count--;
         }
     }
+    cout << "\n\n";
 }
 
 string FileReader::paragraphCleaner(const string &input)
@@ -56,7 +58,7 @@ void FileReader::processParagraphs(const string &filename)
 
     for (int i = 0; i < paragraphPositions->size(); i++)
     {
-        file.seekg(paragraphPositions->at(i) * PARAGRAPH_SIZE);
+        file.seekg(paragraphPositions->at(i) * PARAGRAPH_SIZE, std::ios::beg);
         char buffer[PARAGRAPH_SIZE + 1];
         file.read(buffer, PARAGRAPH_SIZE);
         buffer[file.gcount()] = '\0';

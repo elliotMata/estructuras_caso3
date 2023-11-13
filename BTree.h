@@ -3,21 +3,22 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
-// Define a structure for the key
 struct Key
 {
-    int integerValue;
-    string stringValue;
+    int *position;
+    string *filename;
+    vector<string> *keywords;
 
-    Key(int intValue, const string &strValue) : integerValue(intValue), stringValue(strValue) {}
-    Key() : integerValue(0), stringValue("") {}
+    Key(int intValue, const string &strValue, vector<string> keysValue) : position(new int(intValue)), filename(new string(strValue)), keywords(new vector<string>(keysValue)) {}
+    Key() : position(0), filename(""), keywords(new vector<string>()) {}
 };
 
 class TreeNode
 {
-    Key *keys; // Replace int* with Key*
+    Key *keys;
     int t;
     TreeNode **C;
     int n;
@@ -25,10 +26,10 @@ class TreeNode
 
 public:
     TreeNode(int temp, bool bool_leaf);
-    void insertNonFull(const Key &k); // Modify the parameter type
+    void insertNonFull(const Key &k);
     void splitChild(int i, TreeNode *y);
     void traverse();
-    TreeNode *search(const Key &k); // Modify the parameter type
+    TreeNode *search(const Key &k);
     friend class BTree;
 };
 
@@ -51,11 +52,11 @@ public:
     }
 
     TreeNode *search(const Key &k)
-    { // Modify the parameter type
+    {
         return (root == NULL) ? NULL : root->search(k);
     }
 
-    void insert(const Key &k); // Modify the parameter type
+    void insert(const Key &k);
 };
 
 TreeNode::TreeNode(int t1, bool leaf1)
@@ -63,7 +64,7 @@ TreeNode::TreeNode(int t1, bool leaf1)
     t = t1;
     leaf = leaf1;
 
-    keys = new Key[2 * t - 1]; // Replace int* with Key*
+    keys = new Key[2 * t - 1];
     C = new TreeNode *[2 * t];
 
     n = 0;
@@ -76,7 +77,7 @@ void TreeNode::traverse()
     {
         if (leaf == false)
             C[i]->traverse();
-        cout << " (" << keys[i].integerValue << ", " << keys[i].stringValue << ")";
+        cout << " (" << keys[i].position << ", " << keys[i].filename << ")";
     }
 
     if (leaf == false)
@@ -86,10 +87,10 @@ void TreeNode::traverse()
 TreeNode *TreeNode::search(const Key &k)
 {
     int i = 0;
-    while (i < n && (k.integerValue > keys[i].integerValue || (k.integerValue == keys[i].integerValue && k.stringValue > keys[i].stringValue)))
+    while (i < n && (k.position > keys[i].position || (k.position == keys[i].position && k.filename > keys[i].filename)))
         i++;
 
-    if (i < n && keys[i].integerValue == k.integerValue && keys[i].stringValue == k.stringValue)
+    if (i < n && keys[i].position == k.position && keys[i].filename == k.filename)
         return this;
 
     if (leaf == true)
@@ -117,7 +118,7 @@ void BTree::insert(const Key &k)
             s->splitChild(0, root);
 
             int i = 0;
-            if ((s->keys[0].integerValue < k.integerValue) || (s->keys[0].integerValue == k.integerValue && s->keys[0].stringValue < k.stringValue))
+            if ((s->keys[0].position < k.position) || (s->keys[0].position == k.position && s->keys[0].filename < k.filename))
                 i++;
             s->C[i]->insertNonFull(k);
 
@@ -134,7 +135,7 @@ void TreeNode::insertNonFull(const Key &k)
 
     if (leaf == true)
     {
-        while (i >= 0 && (keys[i].integerValue > k.integerValue || (keys[i].integerValue == k.integerValue && keys[i].stringValue > k.stringValue)))
+        while (i >= 0 && (keys[i].position > k.position || (keys[i].position == k.position && keys[i].filename > k.filename)))
         {
             keys[i + 1] = keys[i];
             i--;
@@ -145,14 +146,14 @@ void TreeNode::insertNonFull(const Key &k)
     }
     else
     {
-        while (i >= 0 && (keys[i].integerValue > k.integerValue || (keys[i].integerValue == k.integerValue && keys[i].stringValue > k.stringValue)))
+        while (i >= 0 && (keys[i].position > k.position || (keys[i].position == k.position && keys[i].filename > k.filename)))
             i--;
 
         if (C[i + 1]->n == 2 * t - 1)
         {
             splitChild(i + 1, C[i + 1]);
 
-            if ((keys[i + 1].integerValue < k.integerValue) || (keys[i + 1].integerValue == k.integerValue && keys[i + 1].stringValue < k.stringValue))
+            if ((keys[i + 1].position < k.position) || (keys[i + 1].position == k.position && keys[i + 1].filename < k.filename))
                 i++;
         }
         C[i + 1]->insertNonFull(k);
@@ -205,15 +206,15 @@ void TreeNode::splitChild(int i, TreeNode *y)
 
     Key k1(10, "Ten");
     (t.search(k1) != NULL) ? cout << endl
-                                  << "(" << k1.integerValue << ", " << k1.stringValue << ") is found"
+                                  << "(" << k1.position << ", " << k1.filename << ") is found"
                            : cout << endl
-                                  << "(" << k1.integerValue << ", " << k1.stringValue << ") is not Found";
+                                  << "(" << k1.position << ", " << k1.filename << ") is not Found";
 
     Key k2(2, "Two");
     (t.search(k2) != NULL) ? cout << endl
-                                  << "(" << k2.integerValue << ", " << k2.stringValue << ") is found"
+                                  << "(" << k2.position << ", " << k2.filename << ") is found"
                            : cout << endl
-                                  << "(" << k2.integerValue << ", " << k2.stringValue << ") is not Found\n";
+                                  << "(" << k2.position << ", " << k2.filename << ") is not Found\n";
 }
  */
 

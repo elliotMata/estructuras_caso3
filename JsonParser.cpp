@@ -12,7 +12,7 @@ JsonParser::JsonParser()
     this->books = file["books"];
     this->bookInfo = file["bookInfo"];
     this->authors = new unordered_map<string, string>();
-    this->nouns = new unordered_map<string, vector<string> *>();
+    this->nouns = new unordered_map<string, vector<pair<string, int>> *>();
 
     createMaps();
 }
@@ -22,10 +22,11 @@ void JsonParser::createMaps()
     for (string book : books)
     {
         authors->insert(make_pair(book, bookInfo[book]["Author"]));
-        vector<string> *keywords = new vector<string>();
-        for (string word : bookInfo[book]["Keywords"])
+        vector<pair<string, int>> *keywords = new vector<pair<string, int>>();
+        for (auto pair : bookInfo[book]["Keywords"])
         {
-            keywords->push_back(word);
+            keywords->push_back({pair["keyword"], pair["count"]});
+            //  keywords->push_back(word);
         }
         nouns->insert(make_pair(book, keywords));
     }
@@ -45,12 +46,12 @@ string JsonParser::getAuthor(string bookName)
     return authors->at(bookName);
 }
 
-vector<string> *JsonParser::getNouns(string bookName)
+vector<pair<string, int>> *JsonParser::getNouns(string bookName)
 {
     return nouns->at(bookName);
 }
 
-unordered_map<string, vector<string> *> *JsonParser::getNounsHash()
+unordered_map<string, vector<pair<string, int>> *> *JsonParser::getNounsHash()
 {
     return this->nouns;
 }
@@ -60,10 +61,10 @@ JsonParser *JsonParser::instance = nullptr;
 /*int main()
 {
     JsonParser *jsonParser = JsonParser::getInstance();
-    vector<string> *nouns = jsonParser->getNouns("Emma-by-Jane-Austen");
-    for (int i = 0; i < nouns->size(); i++)
+    vector<pair<string, int>> *nouns = jsonParser->getNouns("Emma-by-Jane-Austen");
+    for (auto pair : *nouns)
     {
-        cout << nouns->at(i) << endl;
+        cout << pair.first << " : " << pair.second << endl;
     }
     return 0;
 }*/

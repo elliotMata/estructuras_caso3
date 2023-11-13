@@ -26,21 +26,21 @@ public:
         JsonParser *jsonParser = JsonParser::getInstance();
 
         // Get the list of books
-        std::vector<std::string> books;
+        vector<string> books;
         for (const auto &pair : *(jsonParser->getNounsHash()))
         {
             books.push_back(pair.first);
         }
 
-        for (const std::string &book : books)
+        for (const string &book : books)
         {
             // Get the list of keywords for the book
-            std::vector<std::string> *keywords = jsonParser->getNouns(book);
+            vector<pair<string, int>> *keywords = jsonParser->getNouns(book);
 
-            for (const std::string &keyword : *keywords)
+            for (auto pair : *keywords)
             {
                 // Insert keyword as the key and associate the book name with it
-                avlTree.insert(keyword, book);
+                avlTree.insert(pair.first, book);
             }
         }
     }

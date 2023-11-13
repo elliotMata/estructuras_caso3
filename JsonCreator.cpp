@@ -165,7 +165,7 @@ int main()
 
     vector<string> *filenames = creator->getFilenames();
 
-    string file = folder + "/" + filenames->at(18);
+    string file = folder + "/" + filenames->at(29);
 
     // cout << file << endl;
 

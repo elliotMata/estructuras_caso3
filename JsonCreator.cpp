@@ -186,13 +186,12 @@ int main()
         reader.processParagraphs(file);
         vector<pair<int, string>> *paragraphs = reader.getParagraphs();
 
-        for (auto &paragraph : *paragraphs)
+        for (auto p : *paragraphs)
         {
             // cout << paragraph.first << ". " << paragraph.second << "\n\n";
             creator->minceParagraph(paragraph.second);
             creator->saveToJson(file);
         }
-
         vector<pair<string, int>> *keywords = creator->getKeywords();
         // printKeywords(keywords);
         creator->reset();

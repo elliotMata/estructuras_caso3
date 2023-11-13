@@ -17,5 +17,5 @@ def generate_noun_list():
 if __name__ == "__main__":
     nouns = generate_noun_list()
 
-    with open("common_words.txt", "w") as file:
-        file.write(",\n".join(nouns) + ",")
+    with open("common_nouns.txt", "w") as file:
+        file.write("\n".join(nouns))

@@ -12,7 +12,7 @@ class Comparator
 private:
     int matches, totalWords;
     double matchPercentage;
-    vector<string> base;
+    vector<string> base, paragraphTarget;
     vector<pair<string, int>> target;
 
     void compare()
@@ -47,12 +47,38 @@ private:
         }
     }
 
+    void compareParagraphs()
+    {
+        matches = 0;
+
+        for (const string &item : base)
+        {
+            if (find(target.begin(), target.end(), item) != target.end())
+            {
+                matches++;
+            }
+        }
+
+        matchPercentage = 0.0;
+        if (target.size() > 0)
+        {
+            matchPercentage = (static_cast<double>(matches) / base.size()) * 100.0;
+        }
+    }
+
 public:
     void compareVectors(const vector<string> &vector1, const vector<pair<string, int>> &vector2)
     {
         base = vector1;
         target = vector2;
         compare();
+    }
+
+    void compareVectors(const vector<string> &vector1, const vector<string> &vector2)
+    {
+        base = vector1;
+        paragraphTarget = vector2;
+        compareParagraphs();
     }
 
     double getSimilarity()

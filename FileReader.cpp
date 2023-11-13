@@ -109,10 +109,21 @@ vector<pair<int, vector<string> *>> *FileReader::getParagraphKeywords()
     FileReader reader;
     reader.processParagraphs("./libros/A-Study-in-Scarlet-by-Arthur-Conan-Doyle.txt");
     vector<pair<int, string>> *paragraphs = reader.getParagraphs();
+    vector<pair<int, vector<string> *>> *keywords = reader.getParagraphKeywords();
 
     for (auto p : *paragraphs)
     {
         cout << p.first << ". " << p.second << endl;
+    }
+
+    for (auto p : *keywords)
+    {
+        cout << p.first << ". ";
+        for (string word : *p.second)
+        {
+            cout << word << ", ";
+        }
+        cout << endl;
     }
 
     return 0;

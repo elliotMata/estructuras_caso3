@@ -28,11 +28,11 @@ void FileReader::calculatePositions()
         if (!(find(paragraphPositions->begin(), paragraphPositions->end(), position) != paragraphPositions->end()) && position * PARAGRAPH_SIZE <= fileSize)
         {
             paragraphPositions->push_back(position);
-            cout << position << " ";
+            // cout << position << " ";
             count--;
         }
     }
-    cout << "\n\n";
+    // cout << "\n\n";
 }
 
 string FileReader::paragraphCleaner(const string &input)

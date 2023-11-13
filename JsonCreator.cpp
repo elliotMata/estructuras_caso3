@@ -104,14 +104,33 @@ vector<pair<string, int>> *JsonCreator::getKeywords()
 
 void JsonCreator::saveToJson(string &filename)
 {
+    if (!file.contains("bookInfo"))
+    {
+        file["bookInfo"] = nlohmann::json::object();
+    }
+
     file["books"].push_back(filename);
 
     vector<string> *bookDate = parseFilename(filename);
-    file["bookInfo"].push_back({{"Author", bookDate->at(1)}, {"Title", bookDate->at(0)}});
+    file["bookInfo"]["Author"] = bookDate->at(1);
+    file["bookInfo"]["Title"] = bookDate->at(0);
+
+    if (!file["bookInfo"].contains("Keywords"))
+    {
+        file["bookInfo"]["Keywords"] = nlohmann::json::array();
+    }
+    else
+    {
+        // Clear the existing keywords before adding new ones
+        file["bookInfo"]["Keywords"].clear();
+    }
 
     for (const auto &pair : *keywords)
     {
-        file["bookInfo"]["Keywords"].push_back({{"keyword", pair.first}, {"count", pair.second}});
+        nlohmann::json keywordObject;
+        keywordObject["keyword"] = pair.first;
+        keywordObject["count"] = pair.second;
+        file["bookInfo"]["Keywords"].push_back(keywordObject);
     }
 }
 
@@ -123,7 +142,9 @@ void JsonCreator::createJson(string &jsonName)
 
 void JsonCreator::reset()
 {
+    // cout << keywords->size() << endl;
     keywords->clear();
+    // cout << keywords->size() << endl;
 }
 
 void printKeywords(vector<pair<string, int>> *keywords)
@@ -146,20 +167,20 @@ int main()
 
     string file = folder + "/" + filenames->at(0);
 
-    cout << file << endl;
+    // cout << file << endl;
 
     reader.processParagraphs(file);
     vector<pair<int, string>> *paragraphs = reader.getParagraphs();
 
     for (auto &paragraph : *paragraphs)
     {
-        cout << paragraph.first << ". " << paragraph.second << "\n\n";
+        // cout << paragraph.first << ". " << paragraph.second << "\n\n";
         creator->minceParagraph(paragraph.second);
     }
     vector<pair<string, int>> *keywords = creator->getKeywords();
-    printKeywords(keywords);
+    // printKeywords(keywords);
 
-    /*for (string &file : *filenames)
+    for (string &file : *filenames)
     {
         file = folder + "/" + file;
         reader.processParagraphs(file);
@@ -167,14 +188,14 @@ int main()
 
         for (auto &paragraph : *paragraphs)
         {
-            cout << paragraph.first << ". " << paragraph.second << "\n\n";
+            // cout << paragraph.first << ". " << paragraph.second << "\n\n";
             creator->minceParagraph(paragraph.second);
-            // creator->saveToJson(file);
+            creator->saveToJson(file);
         }
 
         vector<pair<string, int>> *keywords = creator->getKeywords();
-        printKeywords(keywords);
+        // printKeywords(keywords);
         creator->reset();
-    }*/
-    // creator->createJson(outputFile);
+    }
+    creator->createJson(outputFile);
 }

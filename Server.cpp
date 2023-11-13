@@ -14,13 +14,13 @@ void handle_match_making(const httplib::Request &req, httplib::Response &res)
     if (req_phrase != "")
     {
         MatchMaker *matchMaker = new MatchMaker(req_phrase);
-        vector<string> topThree;
+        vector<string> top;
 
         matchMaker->findSimilarities();
-        topThree = matchMaker->getTopThree();
+        top = matchMaker->getTop();
 
         nlohmann::json response_json = nlohmann::json::array();
-        for (const string &item : topThree)
+        for (const string &item : top)
         {
             response_json.push_back(item);
         }

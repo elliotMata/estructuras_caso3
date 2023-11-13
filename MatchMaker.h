@@ -54,19 +54,19 @@ public:
         }
     }
 
-    vector<string> getTopThree()
+    vector<string> getTop()
     {
         multimap<double, string>::iterator iterator;
-        vector<string> topThree;
+        vector<string> top;
         for (iterator = ranking.begin(); iterator != ranking.end(); iterator++)
         {
-            topThree.push_back(iterator->second);
-            if (topThree.size() == 3)
+            top.push_back(iterator->second);
+            if (top.size() == 10)
             {
-                return topThree;
+                return top;
             }
         }
-        return topThree;
+        return top;
     }
 };
 

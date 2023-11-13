@@ -61,7 +61,7 @@ private:
         matchPercentage = 0.0;
         if (paragraphTarget.size() > 0)
         {
-            matchPercentage = (static_cast<double>(matches) / paragraphTarget.size()) * 100.0;
+            matchPercentage = (static_cast<double>(matches) / base.size()) * 100.0;
         }
     }
 

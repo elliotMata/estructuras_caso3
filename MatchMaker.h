@@ -64,9 +64,9 @@ public:
             {
                 comparator->compareVectors(*nouns, *jsonParser->getNouns(book));
                 ranking.insert(make_pair(comparator->getSimilarity(), book));
-                TreeNode *node = bTree->search(book);
+                /* TreeNode *node = bTree->search(book);
                 comparator->compareVectors(*nouns, *node->getKeywords());
-                paragraphRanking[book].insert(make_pair(comparator->getSimilarity(), fileReader.readParagraph(*node->getPosition(), book)));
+                paragraphRanking[book].insert(make_pair(comparator->getSimilarity(), fileReader.readParagraph(*node->getPosition(), book))); */
             }
         }
     }

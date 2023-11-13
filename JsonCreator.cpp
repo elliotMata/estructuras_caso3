@@ -165,7 +165,7 @@ int main()
 
     vector<string> *filenames = creator->getFilenames();
 
-    string file = folder + "/" + filenames->at(0);
+    string file = folder + "/" + filenames->at(18);
 
     // cout << file << endl;
 
@@ -176,8 +176,9 @@ int main()
     {
         // cout << paragraph.first << ". " << paragraph.second << "\n\n";
         creator->minceParagraph(paragraph.second);
+        creator->saveToJson(file);
     }
-    vector<pair<string, int>> *keywords = creator->getKeywords();
+    /* vector<pair<string, int>> *keywords = creator->getKeywords();
     // printKeywords(keywords);
 
     for (string &file : *filenames)
@@ -195,6 +196,6 @@ int main()
         vector<pair<string, int>> *keywords = creator->getKeywords();
         // printKeywords(keywords);
         creator->reset();
-    }
+    } */
     creator->createJson(outputFile);
 }

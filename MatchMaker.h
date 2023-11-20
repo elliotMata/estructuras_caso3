@@ -18,7 +18,6 @@ private:
     multimap<double, string, greater<int>> ranking;
     unordered_map<string, multimap<double, string, greater<int>>> paragraphRanking;
     BookIndexer<string> indexer;
-    BTree *bTree;
     Comparator *comparator;
     PhraseParser *parser;
     JsonParser *jsonParser;
@@ -34,21 +33,20 @@ public:
         parser = new PhraseParser;
         nouns = parser->getKeywords(phrase);
         jsonParser = JsonParser::getInstance();
-        bTree = new BTree(5);
         jsonCreator = new JsonCreator("./libros");
         vector<string> *filenames = jsonCreator->getFilenames();
+        unordered_map<string, BTree *> *books = new unordered_map<string, BTree *>();
         for (const auto &file : *filenames)
         {
-            // file = "./libros/" + file;
+            if (books->find(file) == books->end())
+                (*books)[file] = new BTree();
             fileReader.processParagraphs("./libros/" + file);
-            vector<pair<int, vector<string> *>> *paragraphs = fileReader.getParagraphKeywords();
-
-            for (const auto &pair : *paragraphs)
+            unordered_map<string, vector<int> *> *keywordParagraphs = fileReader.getKeywordParagraphs();
+            for (const auto &pair : *keywordParagraphs)
             {
-                bTree->insert(Key(pair.first, file, *pair.second));
+                (*books)[file]->insert(new Key(pair.first, pair.second));
             }
         }
-        // bTree->traverse();
     }
 
     void findSimilarities()

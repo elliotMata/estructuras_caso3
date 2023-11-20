@@ -32,7 +32,7 @@ public:
     vector<int> *getPositions();
     vector<pair<int, string>> *getParagraphs();
     vector<pair<int, vector<string> *>> *getParagraphKeywords();
-    unordered_map<string, vector<int> *> *getkeywordParagraphs();
+    unordered_map<string, vector<int> *> *getKeywordParagraphs();
     string readParagraph(const int &pos, const string &filename);
 };
 

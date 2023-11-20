@@ -12,8 +12,10 @@ const int DEGREE = 3;
 // Structure representing the key
 struct Key
 {
-    vector<int> positions; // Contiene la posicion de los parrafos
-    string keyword;        // Contiene la keyword con la que se indexo el parrafo
+    vector<int> *positions; // Contiene la posicion de los parrafos
+    string *keyword;        // Contiene la keyword con la que se indexo el parrafo
+
+    Key(string pKeyword, vector<int> *pPositions) : keyword(&pKeyword), positions(pPositions) {}
 };
 
 // B-tree node structure
@@ -53,7 +55,7 @@ private:
         int index = node->numKeys - 1; // inicializa el indice asumiendo que la keyword buscada es "mayor" que las almacenadas
         while (index >= 0)
         {
-            int result = keyword.compare(node->keys[index]->keyword); // compara keyword de la key "mayor" con la buscada
+            int result = keyword.compare(*(node->keys[index]->keyword)); // compara keyword de la key "mayor" con la buscada
             if (result >= 0)
             {
                 if (result == 0)
@@ -87,9 +89,9 @@ public:
                 newRoot->children[0] = root;
                 splitChild(newRoot, 0);
                 int i = 0;
-                if (newRoot->keys[0]->keyword.compare(newKey->keyword) < 0)
+                if (newRoot->keys[0]->keyword->compare(*(newKey->keyword)) < 0)
                     i++;
-                newRoot->children[i]->insertNonFull(newRoot, newKey);
+                insertNonFull(newRoot->children[i], newKey);
                 root = newRoot;
             }
             else
@@ -99,22 +101,31 @@ public:
         }
     }
 
-    void insertNonFull(BTreeNode *node, Key *key)
+    void insertNonFull(BTreeNode *node, Key *newKey)
     {
         int insertionIndex = node->numKeys - 1; // usa numKeys - 1 porque numKeys es la cantidad y la indexacion empieza en 0
         if (node->isLeaf)
         {
-            while (insertionIndex >= 0 && newKey->keyword.compare(node->keys[insertionIndex]->keyword) < 0) // compara lexicograficamente los keywords y se detiene en el indice 0
+            while (insertionIndex >= 0 && newKey->keyword->compare(*(node->keys[insertionIndex]->keyword)) < 0) // compara lexicograficamente los keywords y se detiene en el indice 0
             {
                 node->keys[insertionIndex + 1] = node->keys[insertionIndex--]; // hace corrimiento de los keys para dejar espacio para el nuevo key
             }
-
-            node->keys[insertionIndex + 1] = newKey; // inserta en la posicion correspondiente
-            node->numKeys++;
+            if (newKey->keyword->compare(*(node->keys[insertionIndex]->keyword)) == 0)
+            {
+                for (const int &pos : *newKey->positions)
+                {
+                    node->keys[insertionIndex]->positions->push_back(pos);
+                }
+            }
+            else
+            {
+                node->keys[insertionIndex + 1] = newKey; // inserta en la posicion correspondiente
+                node->numKeys++;
+            }
         }
         else
         {
-            while (insertionIndex >= 0 && newKey->keyword.compare(node->keys[insertionIndex]->keyword) < 0) // busca el indice en el que buscar el hijo
+            while (insertionIndex >= 0 && newKey->keyword->compare(*(node->keys[insertionIndex]->keyword)) < 0) // busca el indice en el que buscar el hijo
             {
                 insertionIndex--;
             }
@@ -123,7 +134,7 @@ public:
             {
                 splitChild(node, insertionIndex);
 
-                if (newKey->keyword.compare(node->keys[insertionIndex]->keyword) > 0)
+                if (newKey->keyword->compare(*(node->keys[insertionIndex]->keyword)) > 0)
                 {
                     insertionIndex++;
                 }
@@ -136,7 +147,7 @@ public:
     void splitChild(BTreeNode *parentNode, int index)
     {
         BTreeNode *child = parentNode->children[index];
-        BTreeNode *newChild = new BtreeNode();
+        BTreeNode *newChild = new BTreeNode();
         newChild->isLeaf = child->isLeaf; // prepara el nuevo nodo
         newChild->numKeys = DEGREE - 1;   // prepara el nuevo nodo
 

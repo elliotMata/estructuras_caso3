@@ -87,11 +87,11 @@ void FileReader::addKeywords(int position, string paragraph)
     position = position * PARAGRAPH_SIZE;
     vector<string> *keywords = parser.getKeywords(paragraph);
     paragraphKeywords->push_back({position, keywords});
-    for (const string &keyword : keywords)
+    for (const string &keyword : *keywords)
     {
-        if (keywordPargraphs->find(keyword) == keywordParagraphs->end())
-            keywordParagraphs[keyword] = new vector<int>();
-        keywordParagraphs[key]->push_back(position);
+        if (keywordParagraphs->find(keyword) == keywordParagraphs->end())
+            (*keywordParagraphs)[keyword] = new vector<int>();
+        (*keywordParagraphs)[keyword]->push_back(position);
     }
 }
 

@@ -6,187 +6,175 @@
 #include <vector>
 using namespace std;
 
+// Define the degree of the B-tree
+const int DEGREE = 3;
+
+// Structure representing the key
 struct Key
 {
-    int *position;
-    string *filename;
-    vector<string> *keywords;
-
-    Key(int intValue, const string &strValue, vector<string> keysValue) : position(new int(intValue)), filename(new string(strValue)), keywords(new vector<string>(keysValue)) {}
-    Key() : position(0), filename(new string()), keywords(new vector<string>()) {}
+    vector<int> positions; // Contiene la posicion de los parrafos
+    string keyword;        // Contiene la keyword con la que se indexo el parrafo
 };
 
-class TreeNode
+// B-tree node structure
+struct BTreeNode
 {
-    Key *keys;
-    int t;
-    TreeNode **C;
-    int n;
-    bool leaf;
+    int numKeys;                     // Number of keys currently stored in the node
+    bool isLeaf;                     // Indicates if the node is a leaf node
+    Key *keys[2 * DEGREE - 1];       // Array to hold keys (pointers to Key objects)
+    BTreeNode *children[2 * DEGREE]; // Array to hold child pointers
 
-public:
-    TreeNode(int temp, bool bool_leaf);
-    void insertNonFull(const Key &k);
-    void splitChild(int i, TreeNode *y);
-    void traverse();
-    TreeNode *search(const string &filename);
-    vector<string> *getKeywords() { return this->keys->keywords; }
-    int *getPosition() { return this->keys->position; }
-    friend class BTree;
+    // Constructor to initialize a node
+    BTreeNode()
+    {
+        numKeys = 0;
+        isLeaf = true;
+        for (int i = 0; i < 2 * DEGREE; ++i)
+        {
+            children[i] = nullptr;
+            if (i < 2 * DEGREE - 1)
+            {
+                keys[i] = nullptr;
+            }
+        }
+    }
 };
 
 class BTree
 {
-    TreeNode *root;
-    int t;
+private:
+    BTreeNode *root;
+
+    vector<int> *searchAux(const string &keyword, BTreeNode *node)
+    {
+        if (!node)
+            return nullptr;
+
+        int index = node->numKeys - 1; // inicializa el indice asumiendo que la keyword buscada es "mayor" que las almacenadas
+        while (index >= 0)
+        {
+            int result = keyword.compare(node->keys[index]->keyword); // compara keyword de la key "mayor" con la buscada
+            if (result >= 0)
+            {
+                if (result == 0)
+                    return node->keys[index]->positions;                                         // si son iguales retorna el vector de posiciones de parrafos con esa keyword
+                return (node->isLeaf) ? nullptr : searchAux(keyword, node->children[index + 1]); /* si es una hoja retorna nullptr porque no existe la palabra en el arbol
+                                                                                                    si no es hoja retorna el resultado de la busqueda en el hijo derecho */
+            }
+            index--;
+        }
+        return (node->isLeaf) ? nullptr : searchAux(keyword, node->children[index + 1]); /* si recorrio todos los hijos retorna null si es hoja o el resultado de la busqueda
+                                                                                            en el hijo "menor" si no es hoja*/
+    }
 
 public:
-    BTree(int temp)
+    BTree() : root(nullptr) {}
+
+    void insert(Key *newKey)
     {
-        root = NULL;
-        t = temp;
-    }
-
-    void traverse()
-    {
-        if (root != NULL)
-            root->traverse();
-    }
-
-    TreeNode *search(const string &filename)
-    {
-        return (root == NULL) ? NULL : root->search(filename);
-    }
-
-    void insert(const Key &k);
-};
-
-TreeNode::TreeNode(int t1, bool leaf1)
-{
-    t = t1;
-    leaf = leaf1;
-
-    keys = new Key[2 * t - 1];
-    C = new TreeNode *[2 * t];
-
-    n = 0;
-}
-
-void TreeNode::traverse()
-{
-    int i;
-    for (i = 0; i < n; i++)
-    {
-        if (leaf == false)
-            C[i]->traverse();
-        cout << " (" << *keys[i].position << ", " << *keys[i].filename << ")" << endl;
-    }
-
-    if (leaf == false)
-        C[i]->traverse();
-}
-
-TreeNode *TreeNode::search(const string &filename)
-{
-    int i = 0;
-    while (i < n && (filename > *keys[i].filename))
-        i++;
-
-    if (i < n && *keys[i].filename == filename)
-        return this;
-
-    if (leaf == true)
-        return NULL;
-
-    return C[i]->search(filename);
-}
-
-void BTree::insert(const Key &k)
-{
-    if (root == NULL)
-    {
-        root = new TreeNode(t, true);
-        root->keys[0] = k;
-        root->n = 1;
-    }
-    else
-    {
-        if (root->n == 2 * t - 1)
+        if (root == nullptr)
         {
-            TreeNode *s = new TreeNode(t, false);
-
-            s->C[0] = root;
-
-            s->splitChild(0, root);
-
-            int i = 0;
-            if ((s->keys[0].position < k.position) || (s->keys[0].position == k.position && s->keys[0].filename < k.filename))
-                i++;
-            s->C[i]->insertNonFull(k);
-
-            root = s;
+            root = new BTreeNode();
+            root->keys[0] = newKey;
+            root->numKeys = 1;
         }
         else
-            root->insertNonFull(k);
-    }
-}
-
-void TreeNode::insertNonFull(const Key &k)
-{
-    int i = n - 1;
-
-    if (leaf == true)
-    {
-        while (i >= 0 && (*keys[i].filename > *k.filename || (*keys[i].filename == *k.filename && *keys[i].position > *k.position)))
         {
-            keys[i + 1] = keys[i];
-            i--;
+            if (root->numKeys == 2 * DEGREE - 1)
+            {
+                BTreeNode *newRoot = new BTreeNode();
+                newRoot->isLeaf = false;
+                newRoot->children[0] = root;
+                splitChild(newRoot, 0);
+                int i = 0;
+                if (newRoot->keys[0]->keyword.compare(newKey->keyword) < 0)
+                    i++;
+                newRoot->children[i]->insertNonFull(newRoot, newKey);
+                root = newRoot;
+            }
+            else
+            {
+                insertNonFull(root, newKey);
+            }
+        }
+    }
+
+    void insertNonFull(BTreeNode *node, Key *key)
+    {
+        int insertionIndex = node->numKeys - 1; // usa numKeys - 1 porque numKeys es la cantidad y la indexacion empieza en 0
+        if (node->isLeaf)
+        {
+            while (insertionIndex >= 0 && newKey->keyword.compare(node->keys[insertionIndex]->keyword) < 0) // compara lexicograficamente los keywords y se detiene en el indice 0
+            {
+                node->keys[insertionIndex + 1] = node->keys[insertionIndex--]; // hace corrimiento de los keys para dejar espacio para el nuevo key
+            }
+
+            node->keys[insertionIndex + 1] = newKey; // inserta en la posicion correspondiente
+            node->numKeys++;
+        }
+        else
+        {
+            while (insertionIndex >= 0 && newKey->keyword.compare(node->keys[insertionIndex]->keyword) < 0) // busca el indice en el que buscar el hijo
+            {
+                insertionIndex--;
+            }
+
+            if (node->children[++insertionIndex]->numKeys == 2 * DEGREE - 1) // verifica si la hoja esta llena
+            {
+                splitChild(node, insertionIndex);
+
+                if (newKey->keyword.compare(node->keys[insertionIndex]->keyword) > 0)
+                {
+                    insertionIndex++;
+                }
+            }
+
+            insertNonFull(node->children[insertionIndex], newKey); // inserta en la hoja
+        }
+    }
+
+    void splitChild(BTreeNode *parentNode, int index)
+    {
+        BTreeNode *child = parentNode->children[index];
+        BTreeNode *newChild = new BtreeNode();
+        newChild->isLeaf = child->isLeaf; // prepara el nuevo nodo
+        newChild->numKeys = DEGREE - 1;   // prepara el nuevo nodo
+
+        for (int i = 0; i < DEGREE - 1; i++)
+        {
+            newChild->keys[i] = child->keys[i + DEGREE]; // copia la segunda mitad de keys del nodo
         }
 
-        keys[i + 1] = k;
-        n = n + 1;
-    }
-    else
-    {
-        while (i >= 0 && (*keys[i].filename > *k.filename || (*keys[i].filename == *k.filename && *keys[i].position > *k.position)))
-            i--;
-
-        if (C[i + 1]->n == 2 * t - 1)
+        if (!child->isLeaf)
         {
-            splitChild(i + 1, C[i + 1]);
-
-            if (*keys[i + 1].filename < *k.filename || (*keys[i + 1].filename == *k.filename && *keys[i + 1].position < *k.position))
-                i++;
+            for (int i = 0; i < DEGREE; i++)
+            {
+                newChild->children[i] = child->children[i + DEGREE]; // copia la seguna mitad de hijos del nodo
+            }
         }
-        C[i + 1]->insertNonFull(k);
+
+        child->numKeys = DEGREE - 1; // actualiza la nueva cantidad de keys del nodo
+
+        for (int i = parentNode->numKeys; i > index; i--)
+        {
+            parentNode->children[i + 1] = parentNode->children[i]; // corre los hijos del nodo para la insercion del nuevo hijo
+        }
+
+        parentNode->children[index + 1] = newChild; // inserta el nuevo hijo a la derecha de la nueva key
+
+        for (int i = parentNode->numKeys - 1; i >= index; i--)
+        {
+            parentNode->keys[i + 1] = parentNode->keys[i]; // corre las keys para la insercion de la key que sale del hijo
+        }
+
+        parentNode->keys[index] = child->keys[DEGREE - 1]; // inserta la key mediana del hijo (que ahora cuenta como basura porque la cantidad indica que no hay nada en ese indice)
+        parentNode->numKeys++;                             // actualiza cantidad de keys
     }
-}
 
-void TreeNode::splitChild(int i, TreeNode *y)
-{
-    TreeNode *z = new TreeNode(y->t, y->leaf);
-    z->n = t - 1;
-
-    for (int j = 0; j < t - 1; j++)
-        z->keys[j] = y->keys[j + t];
-
-    if (y->leaf == false)
+    vector<int> *search(const string &keyword)
     {
-        for (int j = 0; j < t; j++)
-            z->C[j] = y->C[j + t];
+        return searchAux(keyword, root);
     }
-
-    y->n = t - 1;
-    for (int j = n; j >= i + 1; j--)
-        C[j + 1] = C[j];
-
-    C[i + 1] = z;
-
-    for (int j = n - 1; j >= i; j--)
-        keys[j + 1] = keys[j];
-
-    keys[i] = y->keys[t - 1];
-    n = n + 1;
-}
+};
 
 #endif

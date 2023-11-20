@@ -57,6 +57,7 @@ void FileReader::processParagraphs(const string &filename)
 
     paragraphs = new vector<pair<int, string>>();
     paragraphKeywords = new vector<pair<int, vector<string> *>>();
+    keywordParagraphs = new unordered_map<string, vector<int> *>();
 
     for (int i = 0; i < paragraphPositions->size(); i++)
     {
@@ -86,6 +87,12 @@ void FileReader::addKeywords(int position, string paragraph)
     position = position * PARAGRAPH_SIZE;
     vector<string> *keywords = parser.getKeywords(paragraph);
     paragraphKeywords->push_back({position, keywords});
+    for (const string &keyword : keywords)
+    {
+        if (keywordPargraphs->find(keyword) == keywordParagraphs->end())
+            keywordParagraphs[keyword] = new vector<int>();
+        keywordParagraphs[key]->push_back(position);
+    }
 }
 
 vector<int> *FileReader::getPositions()
@@ -102,6 +109,11 @@ vector<pair<int, string>> *FileReader::getParagraphs()
 vector<pair<int, vector<string> *>> *FileReader::getParagraphKeywords()
 {
     return this->paragraphKeywords;
+}
+
+unordered_map<string, vector<int> *> *FileReader::getKeywordParagraphs()
+{
+    return this->keywordParagraphs;
 }
 
 string FileReader::readParagraph(const int &pos, const string &filename)

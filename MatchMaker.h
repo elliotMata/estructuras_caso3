@@ -24,16 +24,19 @@ private:
     vector<string> *nouns;
     FileReader fileReader;
     JsonCreator *jsonCreator;
+    unordered_map<string, BTree *> *books;
 
 public:
-    MatchMaker(string phrase)
+    MatchMaker(string phrase, unordered_map<string, BTree *> *pBooks, BookIndexer<string> pIndexer)
     {
-        indexer.buildTree();
+        // indexer.buildTree();
         comparator = new Comparator;
         parser = new PhraseParser;
         nouns = parser->getKeywords(phrase);
         jsonParser = JsonParser::getInstance();
-        jsonCreator = new JsonCreator("./libros");
+        books = pBooks;
+        indexer = pIndexer;
+        /* jsonCreator = new JsonCreator("./libros");
         vector<string> *filenames = jsonCreator->getFilenames();
         unordered_map<string, BTree *> *books = new unordered_map<string, BTree *>();
         for (const auto &file : *filenames)
@@ -46,7 +49,7 @@ public:
             {
                 (*books)[file]->insert(new Key(pair.first, pair.second));
             }
-        }
+        } */
     }
 
     void findSimilarities()

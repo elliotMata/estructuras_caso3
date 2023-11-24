@@ -181,8 +181,6 @@ after
 aftermath
 afternoon
 afternoons
-again
-against
 age
 aged
 agencies
@@ -197,7 +195,6 @@ aggressive
 aggressively
 aggressiveness
 agitating
-ago
 agonizing
 agree
 agreed
@@ -206,7 +203,6 @@ agreement
 agreements
 agricultural
 agriculture
-ahead
 aid
 aide
 aided
@@ -1118,6 +1114,7 @@ catcher
 catchers
 catching
 category
+cat
 cats
 caucus
 caucuses

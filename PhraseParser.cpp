@@ -9,6 +9,7 @@ void PhraseParser::mincePhrase(string phrase)
     NounReader *nouns = NounReader::getInstance();
     istringstream ss(phrase);
     string word;
+    totalWords = 0;
 
     while (ss >> word)
     {
@@ -16,6 +17,7 @@ void PhraseParser::mincePhrase(string phrase)
         {
             keywords->push_back(word);
         }
+        totalWords += 1;
     }
 }
 
@@ -35,6 +37,11 @@ vector<string> *PhraseParser::getKeywords(string phrase)
     phrase = phraseCleaner(phrase);
     mincePhrase(phrase);
     return this->keywords;
+}
+
+int PhraseParser::getTotalWords()
+{
+    return this->totalWords;
 }
 
 /*int main()

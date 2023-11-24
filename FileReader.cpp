@@ -58,6 +58,7 @@ void FileReader::processParagraphs(const string &filename)
     paragraphs = new vector<pair<int, string>>();
     paragraphKeywords = new vector<pair<int, vector<string> *>>();
     keywordParagraphs = new unordered_map<string, vector<int> *>();
+    amountWords = new unordered_map<string, vector<pair<int, int>> *>();
 
     for (int i = 0; i < paragraphPositions->size(); i++)
     {
@@ -89,10 +90,37 @@ void FileReader::addKeywords(int position, string paragraph)
     paragraphKeywords->push_back({position, keywords});
     for (const string &keyword : *keywords)
     {
+        int repetitions = countRepetitions(keyword, paragraph);
+        int totalWordsParagraph = parser.getTotalWords();
+        if (amountWords->find(keyword) == amountWords->end())
+        {
+            (*amountWords)[keyword] = new vector<pair<int, int>>();
+        }
+        (*amountWords)[keyword]->push_back({repetitions, totalWordsParagraph});
+
+        cout << "The paragraph is > " << paragraph << endl;
+        cout << "Adding the keyword > " << keyword << " with repetitions " << repetitions << " in " << totalWordsParagraph << endl;
+        cout << endl;
+
         if (keywordParagraphs->find(keyword) == keywordParagraphs->end())
             (*keywordParagraphs)[keyword] = new vector<int>();
         (*keywordParagraphs)[keyword]->push_back(position);
     }
+}
+
+int FileReader::countRepetitions(string keyword, string paragraph)
+{
+    int totalRepetitions = 0;
+    string word;
+    stringstream stream(paragraph);
+    while (stream >> word)
+    {
+        if (word.compare(keyword) == 0)
+        {
+            totalRepetitions += 1;
+        }
+    }
+    return totalRepetitions;
 }
 
 vector<int> *FileReader::getPositions()
@@ -114,27 +142,6 @@ vector<pair<int, vector<string> *>> *FileReader::getParagraphKeywords()
 unordered_map<string, vector<int> *> *FileReader::getKeywordParagraphs()
 {
     return this->keywordParagraphs;
-}
-
-string FileReader::readParagraph(const int &pos, const string &filename)
-{
-    file.open(filename);
-    file.seekg(pos * PARAGRAPH_SIZE, std::ios::beg);
-    char buffer[PARAGRAPH_SIZE + 1];
-    file.read(buffer, PARAGRAPH_SIZE);
-    buffer[file.gcount()] = '\0';
-
-    for (int i = 0; i < file.gcount(); i++)
-    {
-        if (buffer[i] == '\n')
-        {
-            buffer[i] = ' ';
-        }
-    }
-    string paragraph(buffer);
-    paragraph = paragraphCleaner(paragraph);
-    file.close();
-    return paragraph;
 }
 
 /*int main()

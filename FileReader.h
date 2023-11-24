@@ -1,6 +1,7 @@
 #ifndef FILE_READER_H_
 #define FILE_READER_H_
 
+#include <sstream>
 #include <fstream>
 #include <iostream>
 #include <vector>
@@ -21,11 +22,13 @@ private:
     vector<int> *paragraphPositions;
     vector<pair<int, vector<string> *>> *paragraphKeywords;
     unordered_map<string, vector<int> *> *keywordParagraphs; // hash con un vector de las posiciones de los parrafos en los que se encuentra la keyword
+    unordered_map<string, vector<pair<int, int>> *> *amountWords;
 
     void calculateTotalParagraphs();
     void calculatePositions();
     string paragraphCleaner(const string &sentence);
     void addKeywords(int position, string paragraph);
+    int countRepetitions(string word, string paragraph);
 
 public:
     void processParagraphs(const string &filename);
@@ -33,7 +36,7 @@ public:
     vector<pair<int, string>> *getParagraphs();
     vector<pair<int, vector<string> *>> *getParagraphKeywords();
     unordered_map<string, vector<int> *> *getKeywordParagraphs();
-    string readParagraph(const int &pos, const string &filename);
+    int getTotalParagraphsToCheck();
 };
 
 #endif

@@ -79,12 +79,12 @@ int main()
     // Calculate TF-IDF for each term in each paragraph
     for (int i = 0; i < paragraphs.size(); ++i)
     {
-        cout << "TF-IDF for terms in paragraph " << i + 1 << ":" << endl;
+        // cout << "TF-IDF for terms in paragraph " << i + 1 << ":" << endl;
         for (const auto &wordCount : allWordCounts[i])
         {
             const string &term = wordCount.first;
             double tfidf = calculateTFIDF(term, allWordCounts[i], allWordCounts);
-            cout << "Term: " << term << ", TF-IDF: " << tfidf << endl;
+            // cout << "Term: " << term << ", TF-IDF: " << tfidf << endl;
         }
         cout << endl;
     }

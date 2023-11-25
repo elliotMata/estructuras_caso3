@@ -50,7 +50,7 @@ unordered_map<int, double> *createRelevanceMap(vector<pair<int, int>> *amountWor
         if (relevance <= 0)
         {
             relevanceMap->insert({keywordParagraphs->at(position), relevance});
-            cout << "adding par " << keywordParagraphs->at(position) << " with relevance " << relevance << endl;
+            // cout << "adding par " << keywordParagraphs->at(position) << " with relevance " << relevance << endl;
         }
     }
     return relevanceMap;
@@ -70,7 +70,7 @@ int main()
 
     for (const string &file : *filenames)
     {
-        cout << "------------------------ " << file << " ----------------------------" << endl;
+        // cout << "------------------------ " << file << " ----------------------------" << endl;
         if (books->find(file) == books->end())
             (*books)[file] = new BTree();
 
@@ -82,12 +82,19 @@ int main()
 
         for (const auto &pair : *keywordParagraphs)
         {
+            /* if (pair.first == "zone" && file == "The-Divine-Comedy-by-Dante-Alighieri.txt")
+            {
+                for (const int &i : *pair.second)
+                {
+                    cout << i << endl;
+                }
+            } */
             (*books)[file]->insert(new Key(pair.first, pair.second));
         }
 
         for (auto &pair : *keywordParagraphs)
         {
-            cout << "---------- in word " << pair.first << endl;
+            // cout << "---------- in word " << pair.first << endl;
             if (keywordParagraphs->at(pair.first)->size() < fileReader.getTotalParagraphsToCheck())
             {
                 unordered_map<int, double> *relevanceMap = createRelevanceMap(amountWords->at(pair.first), keywordParagraphs->at(pair.first), fileReader.getTotalParagraphsToCheck());
@@ -96,7 +103,11 @@ int main()
         }
         wordRelevance->insert({file, words});
     }
-
+    /* vector<int> *result = (*books)["The-Divine-Comedy-by-Dante-Alighieri.txt"]->search("zone");
+    for (const int &i : *result)
+    {
+        cout << i << endl;
+    } */
     server.Get("/match", handle_match_making);
     try
     {

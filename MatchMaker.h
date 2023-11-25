@@ -30,7 +30,6 @@ private:
 public:
     MatchMaker(string phrase, unordered_map<string, BTree *> *pBooks, BookIndexer<string> pIndexer, unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *pWordRelevance)
     {
-        // indexer.buildTree();
         comparator = new Comparator;
         parser = new PhraseParser;
         nouns = parser->getKeywords(phrase);
@@ -38,20 +37,6 @@ public:
         books = pBooks;
         indexer = pIndexer;
         wordRelevance = pWordRelevance;
-        /* jsonCreator = new JsonCreator("./libros");
-        vector<string> *filenames = jsonCreator->getFilenames();
-        unordered_map<string, BTree *> *books = new unordered_map<string, BTree *>();
-        for (const auto &file : *filenames)
-        {
-            if (books->find(file) == books->end())
-                (*books)[file] = new BTree();
-            fileReader.processParagraphs("./libros/" + file);
-            unordered_map<string, vector<int> *> *keywordParagraphs = fileReader.getKeywordParagraphs();
-            for (const auto &pair : *keywordParagraphs)
-            {
-                (*books)[file]->insert(new Key(pair.first, pair.second));
-            }
-        } */
     }
 
     void findSimilarities()

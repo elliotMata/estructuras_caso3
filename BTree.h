@@ -13,9 +13,9 @@ const int DEGREE = 3;
 struct Key
 {
     vector<int> *positions; // Contiene la posicion de los parrafos
-    string *keyword;        // Contiene la keyword con la que se indexo el parrafo
+    string keyword;         // Contiene la keyword con la que se indexo el parrafo
 
-    Key(string pKeyword, vector<int> *pPositions) : keyword(&pKeyword), positions(pPositions) {}
+    Key(string pKeyword, vector<int> *pPositions) : keyword(pKeyword), positions(pPositions) {}
 };
 
 // B-tree node structure
@@ -55,7 +55,7 @@ private:
         int index = node->numKeys - 1; // inicializa el indice asumiendo que la keyword buscada es "mayor" que las almacenadas
         while (index >= 0)
         {
-            int result = keyword.compare(*(node->keys[index]->keyword)); // compara keyword de la key "mayor" con la buscada
+            int result = keyword.compare(node->keys[index]->keyword); // compara keyword de la key "mayor" con la buscada
             if (result >= 0)
             {
                 if (result == 0)
@@ -67,6 +67,30 @@ private:
         }
         return (node->isLeaf) ? nullptr : searchAux(keyword, node->children[index + 1]); /* si recorrio todos los hijos retorna null si es hoja o el resultado de la busqueda
                                                                                             en el hijo "menor" si no es hoja*/
+    }
+
+    void inOrderHelper(BTreeNode *node)
+    {
+        if (!node)
+        {
+            int i;
+            if (node->isLeaf)
+            {
+                for (i = 0; i < node->numKeys; i++)
+                {
+                    cout << node->keys[i]->keyword << endl;
+                }
+            }
+            else
+            {
+                for (i = 0; i < node->numKeys; i++)
+                {
+                    inOrderHelper(node->children[i]);
+                    cout << node->keys[i]->keyword << endl;
+                }
+                inOrderHelper(node->children[i]);
+            }
+        }
     }
 
 public:
@@ -89,7 +113,7 @@ public:
                 newRoot->children[0] = root;
                 splitChild(newRoot, 0);
                 int i = 0;
-                if (newRoot->keys[0]->keyword->compare(*(newKey->keyword)) < 0)
+                if (newRoot->keys[0]->keyword.compare(newKey->keyword) < 0)
                     i++;
                 insertNonFull(newRoot->children[i], newKey);
                 root = newRoot;
@@ -106,26 +130,17 @@ public:
         int insertionIndex = node->numKeys - 1; // usa numKeys - 1 porque numKeys es la cantidad y la indexacion empieza en 0
         if (node->isLeaf)
         {
-            while (insertionIndex >= 0 && newKey->keyword->compare(*(node->keys[insertionIndex]->keyword)) < 0) // compara lexicograficamente los keywords y se detiene en el indice 0
+            while (insertionIndex >= 0 && newKey->keyword.compare(node->keys[insertionIndex]->keyword) < 0) // compara lexicograficamente los keywords y se detiene en el indice 0
             {
-                node->keys[insertionIndex + 1] = node->keys[insertionIndex--]; // hace corrimiento de los keys para dejar espacio para el nuevo key
+                node->keys[insertionIndex + 1] = node->keys[insertionIndex]; // hace corrimiento de los keys para dejar espacio para el nuevo key
+                insertionIndex--;
             }
-            if (newKey->keyword->compare(*(node->keys[insertionIndex]->keyword)) == 0)
-            {
-                for (const int &pos : *newKey->positions)
-                {
-                    node->keys[insertionIndex]->positions->push_back(pos);
-                }
-            }
-            else
-            {
-                node->keys[insertionIndex + 1] = newKey; // inserta en la posicion correspondiente
-                node->numKeys++;
-            }
+            node->keys[insertionIndex + 1] = newKey; // inserta en la posicion correspondiente
+            node->numKeys++;
         }
         else
         {
-            while (insertionIndex >= 0 && newKey->keyword->compare(*(node->keys[insertionIndex]->keyword)) < 0) // busca el indice en el que buscar el hijo
+            while (insertionIndex >= 0 && newKey->keyword.compare(node->keys[insertionIndex]->keyword) < 0) // busca el indice en el que buscar el hijo
             {
                 insertionIndex--;
             }
@@ -134,7 +149,7 @@ public:
             {
                 splitChild(node, insertionIndex);
 
-                if (newKey->keyword->compare(*(node->keys[insertionIndex]->keyword)) > 0)
+                if (newKey->keyword.compare(node->keys[insertionIndex]->keyword) > 0)
                 {
                     insertionIndex++;
                 }
@@ -185,6 +200,11 @@ public:
     vector<int> *search(const string &keyword)
     {
         return searchAux(keyword, root);
+    }
+
+    void inOrder()
+    {
+        inOrderHelper(root);
     }
 };
 

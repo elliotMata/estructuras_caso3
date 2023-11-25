@@ -15,9 +15,10 @@
 class MatchMaker
 {
 private:
-    multimap<double, string, greater<int>> ranking;
+    multimap<double, string, greater<double>> ranking;
     unordered_map<string, multimap<double, int, greater<double>> *> paragraphRanking;
     unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *wordRelevance;
+    unordered_map<string, double> *booksRelevance;
     BookIndexer<string> indexer;
     Comparator *comparator;
     PhraseParser *parser;
@@ -26,6 +27,27 @@ private:
     FileReader fileReader;
     JsonCreator *jsonCreator;
     unordered_map<string, BTree *> *books;
+
+    void createBooksRelevance(string book, double matchPercentage)
+    {
+        if (booksRelevance->find(book) != nullptr)
+        {
+            booksRelevance->at(book) += matchPercentage;
+        }
+        else
+        {
+            booksRelevance->insert({book, matchPercentage});
+        }
+    }
+
+    void createBooksRanking()
+    {
+        unordered_map<string, double>::iterator iterator;
+        for (iterator = booksRelevance->begin(); iterator != booksRelevance->end(); iterator++)
+        {
+            ranking.insert({iterator->second, iterator->first});
+        }
+    }
 
 public:
     MatchMaker(string phrase, unordered_map<string, BTree *> *pBooks, BookIndexer<string> pIndexer, unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *pWordRelevance)
@@ -37,6 +59,7 @@ public:
         books = pBooks;
         indexer = pIndexer;
         wordRelevance = pWordRelevance;
+        booksRelevance = new unordered_map<string, double>();
     }
 
     void findSimilarities()
@@ -47,17 +70,17 @@ public:
         {
             books = indexer.getBooks(noun);
 
+            cout << "\nCOMPARING FOR " << noun;
             vector<string> bookNouns;
             for (string book : books)
             {
+                cout << " WITH BOOK " << book << endl;
                 comparator->compareVectors(*nouns, *jsonParser->getNouns(book));
-                ranking.insert(make_pair(comparator->getSimilarity(), book));
-                /* TreeNode *node = bTree->search(book);
-                comparator->compareVectors(*nouns, *node->getKeywords());
-                paragraphRanking[book].insert(make_pair(comparator->getSimilarity(), fileReader.readParagraph(*node->getPosition(), book))); */
-                // makeParagraphRanking(book);
+                createBooksRelevance(book, comparator->getSimilarity());
             }
         }
+        createBooksRanking();
+        printMap();
     }
 
     void printMap()
@@ -96,14 +119,24 @@ public:
 
     multimap<double, int, greater<double>> *makeParagraphRanking(string book)
     {
+        book = book.append(".txt");
         multimap<double, int, greater<double>> *ranking = new multimap<double, int, greater<double>>();
         unordered_map<string, vector<int> *> wordParagraphs;
         unordered_map<string, vector<int> *>::iterator iterator;
         double relevance = 0;
+        int amountWords = 0;
+
+        cout << book << endl;
 
         for (string word : *nouns)
         {
-            wordParagraphs.insert({word, books->at(book)->search(word)});
+            cout << "word " << word << endl;
+            vector<int> *positions = books->at(book)->search(word);
+            if (positions != nullptr)
+            {
+                cout << "-> mm size " << positions->size() << endl;
+                wordParagraphs.insert({word, positions});
+            }
         }
 
         for (auto &pair : wordParagraphs)
@@ -111,9 +144,11 @@ public:
             for (int paragraph : *pair.second)
             {
                 relevance = (*(*(*wordRelevance)[book])[pair.first])[paragraph];
+                cout << "relevance " << relevance << endl;
                 ranking->insert({relevance, paragraph});
             }
         }
+        cout << ranking->size() << endl;
         printMap(ranking);
         return ranking;
     }

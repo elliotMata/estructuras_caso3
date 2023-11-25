@@ -6,6 +6,7 @@
 #include <vector>
 #include <stdio.h>
 #include <curl/curl.h>
+#include <iomanip>
 #include "json.hpp"
 
 using namespace std;
@@ -29,16 +30,25 @@ public:
     {
         if (buffer)
         {
+            // Trim non-JSON content
+            const char *jsonStart = reinterpret_cast<const char *>(buffer);
+            while (*jsonStart && !(*jsonStart == '{' || *jsonStart == '['))
+            {
+                ++jsonStart;
+            }
+
             try
             {
-                return json::parse(reinterpret_cast<const char *>(buffer));
+                return json::parse(jsonStart);
             }
             catch (const exception &e)
             {
                 cerr << "Error parsing JSON response: " << e.what() << endl;
+                // Print or log the raw response for further inspection
+                cerr << "Raw Response: " << buffer << endl;
             }
         }
-        return json();
+        return json(); // You might want to return a specific value or handle this case differently
     }
 
 private:
@@ -52,14 +62,43 @@ size_t write_callback(char *ptr, size_t size, size_t nmemb, void *userdata)
     size_t realsize = size * nmemb;
     get_request *req = (get_request *)userdata;
 
-    while (req->buflen < req->len + realsize + 1)
+    // Check if this is the first chunk, where headers might be present
+    if (req->len == 0)
     {
-        req->buffer = (unsigned char *)realloc(req->buffer, req->buflen + CHUNK_SIZE);
-        req->buflen += CHUNK_SIZE;
+        // Check for the Content-Type header
+        const char *contentTypeHeader = "Content-Type: ";
+        const char *contentStart = strstr(ptr, contentTypeHeader);
+
+        if (contentStart)
+        {
+            contentStart += strlen(contentTypeHeader);
+            const char *contentEnd = strchr(contentStart, '\r');
+
+            if (contentEnd)
+            {
+                // Print or log the Content-Type header
+                cout << "Content-Type: " << string(contentStart, contentEnd - contentStart) << endl;
+            }
+        }
     }
+
+    // Allocate enough space for the new data
+    req->buffer = (unsigned char *)realloc(req->buffer, req->buflen + realsize);
     memcpy(&req->buffer[req->len], ptr, realsize);
     req->len += realsize;
-    req->buffer[req->len] = 0;
+
+    cout << "Raw Response: ";
+    for (size_t i = 0; i < req->len; ++i)
+    {
+        if (isprint(req->buffer[i]) || isspace(req->buffer[i]))
+        {
+            cout << req->buffer[i];
+        }
+        else
+        {
+            cout << "\\x" << hex << setw(2) << setfill('0') << (int)req->buffer[i];
+        }
+    }
 
     return realsize;
 }
@@ -68,11 +107,12 @@ class ApiRequest
 {
 private:
     CURL *curl;
+    string apiKey;
 
 public:
-    ApiRequest() : curl(nullptr) {}
+    ApiRequest(const string &apiKey) : curl(nullptr), apiKey(apiKey) {}
 
-    ApiResponse makeGetRequest(const string &url)
+    ApiResponse makePostRequest(const string &url, const string &data)
     {
         get_request req = {.buffer = nullptr, .len = 0, .buflen = 0};
 
@@ -83,13 +123,19 @@ public:
         {
             curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
             curl_easy_setopt(curl, CURLOPT_USERAGENT, "Your User Agent Here");
-            curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "GET");
+            curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "POST");
+            curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data.c_str());
 
             req.buffer = (unsigned char *)malloc(CHUNK_SIZE);
             req.buflen = CHUNK_SIZE;
 
             curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);
             curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&req);
+
+            struct curl_slist *headers = NULL;
+            headers = curl_slist_append(headers, ("Authorization: Bearer " + apiKey).c_str());
+            headers = curl_slist_append(headers, "Content-Type: application/json");
+            curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
 
             CURLcode res = curl_easy_perform(curl);
 
@@ -103,6 +149,8 @@ public:
             {
                 cerr << "curl_easy_perform() failed: " << curl_easy_strerror(res) << endl;
             }
+
+            curl_slist_free_all(headers);
         }
         else
         {
@@ -132,23 +180,5 @@ public:
         }
     }
 };
-
-int main()
-{
-    ApiRequest apiRequest;
-    string apiUrl = "https://your-api-endpoint-here";
-    ApiResponse response = apiRequest.makeGetRequest(apiUrl);
-
-    if (!response.parseJsonResponse().empty())
-    {
-        // Parse the JSON response and work with the data
-        json responseData = response.parseJsonResponse();
-
-        // Now, you have the JSON response data to work with.
-        cout << responseData.dump(4) << endl;
-    }
-
-    return 0;
-}
 
 #endif

@@ -25,26 +25,19 @@ private:
             for (int j = 0; j < target.size(); j++)
             {
                 totalWords += target.at(j).second;
-                if (target.at(j).first.compare(base.at(i)))
+                if (target.at(j).first.compare(base.at(i)) == 0)
                 {
                     matches += target.at(j).second;
                 }
             }
         }
 
-        /*for (const string &item : base)
-        {
-            if (find(target.begin(), target.end(), item) != target.end())
-            {
-                matches++;
-            }
-        }*/
-
         matchPercentage = 0.0;
         if (target.size() > 0)
         {
             matchPercentage = (static_cast<double>(matches) / totalWords) * 100.0;
         }
+        cout << "match percentage " << matchPercentage << endl;
     }
 
     void compareParagraphs()

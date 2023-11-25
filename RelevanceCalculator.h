@@ -11,7 +11,7 @@
 
 using namespace std;
 
-class ParagraphRanking
+class RelevanceCalculator
 {
 private:
     double tfValue, idfValue;

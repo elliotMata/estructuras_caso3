@@ -1,6 +1,6 @@
 #include "httplib.h"
 #include "MatchMaker.h"
-#include "ParagraphRanking.h"
+#include "RelevanceCalculator.h"
 #include "json.hpp"
 #include <unordered_map>
 
@@ -16,7 +16,7 @@ void handle_match_making(const httplib::Request &req, httplib::Response &res)
 
     if (req_phrase != "")
     {
-        MatchMaker *matchMaker = new MatchMaker(req_phrase, books, indexer);
+        MatchMaker *matchMaker = new MatchMaker(req_phrase, books, indexer, wordRelevance);
         vector<string> top;
 
         matchMaker->findSimilarities();
@@ -39,7 +39,7 @@ void handle_match_making(const httplib::Request &req, httplib::Response &res)
 
 unordered_map<int, double> *createRelevanceMap(vector<pair<int, int>> *amountWords, vector<int> *keywordParagraphs, int totalParagraphs)
 {
-    ParagraphRanking ranking;
+    RelevanceCalculator ranking;
     unordered_map<int, double> *relevanceMap = new unordered_map<int, double>();
     for (int position = 0; position < keywordParagraphs->size(); position++)
     {

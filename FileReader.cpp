@@ -98,10 +98,6 @@ void FileReader::addKeywords(int position, string paragraph)
         }
         (*amountWords)[keyword]->push_back({repetitions, totalWordsParagraph});
 
-        cout << "The paragraph is > " << paragraph << endl;
-        cout << "Adding the keyword > " << keyword << " with repetitions " << repetitions << " in " << totalWordsParagraph << endl;
-        cout << endl;
-
         if (keywordParagraphs->find(keyword) == keywordParagraphs->end())
             (*keywordParagraphs)[keyword] = new vector<int>();
         (*keywordParagraphs)[keyword]->push_back(position);
@@ -142,6 +138,16 @@ vector<pair<int, vector<string> *>> *FileReader::getParagraphKeywords()
 unordered_map<string, vector<int> *> *FileReader::getKeywordParagraphs()
 {
     return this->keywordParagraphs;
+}
+
+unordered_map<string, vector<pair<int, int>> *> *FileReader::getAmountWords()
+{
+    return this->amountWords;
+}
+
+int FileReader::getTotalParagraphsToCheck()
+{
+    return this->amountToCheck;
 }
 
 /*int main()

@@ -36,6 +36,7 @@ public:
     vector<pair<int, string>> *getParagraphs();
     vector<pair<int, vector<string> *>> *getParagraphKeywords();
     unordered_map<string, vector<int> *> *getKeywordParagraphs();
+    unordered_map<string, vector<pair<int, int>> *> *getAmountWords();
     int getTotalParagraphsToCheck();
 };
 

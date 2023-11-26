@@ -2965,6 +2965,10 @@
       "Title": "A Study in Scarlet",
       "Keywords": [
         {
+          "count": 8,
+          "keyword": "horror"
+        },
+        {
           "count": 7,
           "keyword": "rather"
         },
@@ -8098,6 +8102,10 @@
       "Author": "Fyodor Dostoyevsky",
       "Title": "Crime and Punishment",
       "Keywords": [
+        {
+          "count": 27,
+          "keyword": "horror"
+        },
         {
           "count": 4,
           "keyword": "government"
@@ -17501,6 +17509,10 @@
       "Title": "Dracula",
       "Keywords": [
         {
+          "count": 37,
+          "keyword": "horror"
+        },
+        {
           "count": 38,
           "keyword": "friend"
         },
@@ -25879,6 +25891,10 @@
       "Title": "Emma",
       "Keywords": [
         {
+          "count": 10,
+          "keyword": "horror"
+        },
+        {
           "count": 296,
           "keyword": "have"
         },
@@ -33498,6 +33514,10 @@
       "Keywords": [
         {
           "count": 2,
+          "keyword": "horror"
+        },
+        {
+          "count": 2,
           "keyword": "accomplished"
         },
         {
@@ -40979,6 +40999,10 @@
       "Title": "Frankenstein",
       "Keywords": [
         {
+          "count": 51,
+          "keyword": "horror"
+        },
+        {
           "count": 1,
           "keyword": "chiefly"
         },
@@ -47756,6 +47780,10 @@
       "Author": "Louisa May Alcott",
       "Title": "Little Women",
       "Keywords": [
+        {
+          "count": 3,
+          "keyword": "horror"
+        },
         {
           "count": 453,
           "keyword": "she"
@@ -57438,6 +57466,10 @@
       "Author": "Herman Melville",
       "Title": "Moby Dick",
       "Keywords": [
+        {
+          "count": 17,
+          "keyword": "horror"
+        },
         {
           "count": 108,
           "keyword": "are"
@@ -68585,6 +68617,10 @@
       "Title": "Pride and Prejudice",
       "Keywords": [
         {
+          "count": 5,
+          "keyword": "horror"
+        },
+        {
           "count": 302,
           "keyword": "that"
         },
@@ -75688,6 +75724,10 @@
       "Keywords": [
         {
           "count": 18,
+          "keyword": "horror"
+        },
+        {
+          "count": 18,
           "keyword": "his"
         },
         {
@@ -79670,6 +79710,10 @@
       "Author": "Arthur Conan Doyle",
       "Title": "The Adventures of Sherlock Holmes",
       "Keywords": [
+        {
+          "count": 13,
+          "keyword": "horror"
+        },
         {
           "count": 87,
           "keyword": "were"
@@ -87349,6 +87393,10 @@
       "Title": "The Adventures of Tom Sawyer",
       "Keywords": [
         {
+          "count": 7,
+          "keyword": "horror"
+        },
+        {
           "count": 16,
           "keyword": "can"
         },
@@ -93430,6 +93478,10 @@
       "Author": "Alexander Dumas and Auguste Maquet",
       "Title": "The Count of Monte Cristo",
       "Keywords": [
+        {
+          "count": 23,
+          "keyword": "horror"
+        },
         {
           "count": 385,
           "keyword": "her"
@@ -107582,6 +107634,10 @@
       "Keywords": [
         {
           "count": 4,
+          "keyword": "horror"
+        },
+        {
+          "count": 4,
           "keyword": "sees"
         },
         {
@@ -114274,6 +114330,10 @@
       "Author": "H.P. Lovecraft",
       "Title": "The Dunwich Horror",
       "Keywords": [
+        {
+          "count": 26,
+          "keyword": "horror"
+        },
         {
           "count": 1,
           "keyword": "warm"
@@ -122455,6 +122515,10 @@
       "Title": "The Hound of the Baskervilles",
       "Keywords": [
         {
+          "count": 12,
+          "keyword": "horror"
+        },
+        {
           "count": 78,
           "keyword": "not"
         },
@@ -128036,6 +128100,10 @@
       "Author": "Homer",
       "Title": "The Iliad",
       "Keywords": [
+        {
+          "count": 38,
+          "keyword": "horror"
+        },
         {
           "count": 2,
           "keyword": "ace"
@@ -149115,6 +149183,10 @@
       "Title": "The Picture of Dorian Gray",
       "Keywords": [
         {
+          "count": 24,
+          "keyword": "horror"
+        },
+        {
           "count": 61,
           "keyword": "said"
         },
@@ -161161,6 +161233,10 @@
       "Title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
       "Keywords": [
         {
+          "count": 13,
+          "keyword": "horror"
+        },
+        {
           "count": 2,
           "keyword": "foresee"
         },
@@ -164702,6 +164778,10 @@
       "Author": "Robert Louis Stevenson",
       "Title": "Treasure Island",
       "Keywords": [
+        {
+          "count": 7,
+          "keyword": "horror"
+        },
         {
           "count": 134,
           "keyword": "his"
@@ -170344,6 +170424,10 @@
       "Author": "Jules Verne",
       "Title": "Twenty Thousand Leagues Under the Seas: An Underwater Tour of the World",
       "Keywords": [
+        {
+          "count": 11,
+          "keyword": "horror"
+        },
         {
           "count": 21,
           "keyword": "since"
@@ -180382,6 +180466,10 @@
       "Author": "Leo Tolstoy",
       "Title": "War and Peace",
       "Keywords": [
+        {
+          "count": 3,
+          "keyword": "horror"
+        },
         {
           "count": 109,
           "keyword": "was"

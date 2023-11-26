@@ -142,9 +142,7 @@ void JsonCreator::createJson(string &jsonName)
 
 void JsonCreator::reset()
 {
-    // cout << keywords->size() << endl;
     keywords->clear();
-    // cout << keywords->size() << endl;
 }
 
 void printKeywords(vector<pair<string, int>> *keywords)

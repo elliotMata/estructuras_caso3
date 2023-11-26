@@ -37,7 +37,6 @@ private:
         {
             matchPercentage = (static_cast<double>(matches) / totalWords) * 100.0;
         }
-        cout << "match percentage " << matchPercentage << endl;
     }
 
     void compareParagraphs()

@@ -12,11 +12,13 @@
 #include "JsonCreator.cpp"
 #include "BTree.h"
 
+#define PARAGRAPHS_PER_PAGE 8
+
 class MatchMaker
 {
 private:
     multimap<double, string, greater<double>> bookRaking;
-    multimap<int, pair<string, vector<string> *>> *paragraphRanking;
+    multimap<int, pair<string, vector<pair<int, string>> *>> *paragraphRanking;
     unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *wordRelevance;
     unordered_map<string, unordered_map<int, string> *> *bookParagraphs;
     unordered_map<string, double> *booksRelevance;
@@ -113,15 +115,19 @@ private:
     void createResults()
     {
         results = new vector<string>();
-        multimap<int, pair<string, vector<string> *>>::iterator iterator;
+        multimap<int, pair<string, vector<pair<int, string>> *>>::iterator iterator;
         for (iterator = paragraphRanking->begin(); iterator != paragraphRanking->end(); iterator++)
         {
             string title = replace(iterator->second.first, '-', ' ');
             int dotPosition = title.find('.');
             title = title.substr(0, dotPosition);
             results->push_back(title);
-            for (string paragraph : *iterator->second.second)
+
+            for (auto pair : *iterator->second.second)
             {
+                int page = (pair.first / PARAGRAPH_SIZE) / PARAGRAPHS_PER_PAGE;
+                string pageNumber = to_string(page) + ". ";
+                string paragraph = pageNumber + pair.second;
                 results->push_back(paragraph);
             }
         }
@@ -148,13 +154,13 @@ private:
 
     void printRanking()
     {
-        multimap<int, pair<string, vector<string> *>>::iterator iterator;
+        multimap<int, pair<string, vector<pair<int, string>> *>>::iterator iterator;
         for (iterator = paragraphRanking->begin(); iterator != paragraphRanking->end(); iterator++)
         {
             cout << iterator->first << ". " << iterator->second.first << endl;
-            for (string paragraph : *iterator->second.second)
+            for (auto pair : *iterator->second.second)
             {
-                cout << "  -> " << paragraph << "\n\n";
+                cout << "  -> " << pair.second << "\n\n";
             }
             cout << endl;
         }
@@ -185,7 +191,7 @@ public:
         wordRelevance = pWordRelevance;
         topTen = new vector<string>();
         booksRelevance = new unordered_map<string, double>();
-        paragraphRanking = new multimap<int, pair<string, vector<string> *>>();
+        paragraphRanking = new multimap<int, pair<string, vector<pair<int, string>> *>>();
         bookParagraphs = pBookParagraphs;
     }
 
@@ -218,12 +224,12 @@ public:
         for (string book : *topTen)
         {
             multimap<double, int, greater<double>> *ranking = createParagraphRelevance(book);
-            vector<string> *topThree = new vector<string>();
+            vector<pair<int, string>> *topThree = new vector<pair<int, string>>();
             multimap<double, int>::iterator iterator;
             int amount = 0;
             for (iterator = ranking->begin(); iterator != ranking->end() && amount < 3; iterator++)
             {
-                topThree->push_back(((*(*bookParagraphs)[book]))[iterator->second]);
+                topThree->push_back({iterator->second, ((*(*bookParagraphs)[book]))[iterator->second]});
                 amount++;
             }
             paragraphRanking->insert({index, make_pair(book, topThree)});
@@ -236,7 +242,7 @@ public:
         return this->topTen;
     }
 
-    multimap<int, pair<string, vector<string> *>> *getRanking()
+    multimap<int, pair<string, vector<pair<int, string>> *>> *getRanking()
     {
         return this->paragraphRanking;
     }

@@ -85,7 +85,7 @@ public:
                 label = "positive";
             if (label.compare("neg") == 0)
                 label = "negative";
-            sentiment = "The sentiment is " + label + " with a porcentage of " + to_string(probability);
+            sentiment = "The sentiment is " + label + " with a percentage of " + to_string(probability);
         }
         return sentiment;
     }

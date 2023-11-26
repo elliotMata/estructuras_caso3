@@ -9,8 +9,8 @@
 #include "PhraseParser.h"
 #include "Comparator.h"
 #include "FileReader.h"
-#include "JsonCreator.cpp"
 #include "SynonymAPI.h"
+#include "SentimentAPI.h"
 #include "BTree.h"
 
 #define PARAGRAPHS_PER_PAGE 8
@@ -25,22 +25,22 @@ private:
     unordered_map<string, double> *booksRelevance;
     vector<string> *topTen;
     vector<string> *results;
+    string userPhrase;
 
+    unordered_map<string, BTree *> *books;
     vector<string> *userInput;
     BookIndexer<string> indexer;
     Comparator *comparator;
     PhraseParser *parser;
     JsonParser *jsonParser;
     vector<string> *nouns;
-    FileReader fileReader;
-    JsonCreator *jsonCreator;
-    SynonymAPI api;
-    unordered_map<string, BTree *> *books;
+    SynonymAPI synonymAPI;
+    SentimentAPI sentimentAPI;
 
     void addSynonyms(string noun)
     {
         nouns->push_back(noun);
-        vector<string> *synonyms = api.getSynonyms(noun);
+        vector<string> *synonyms = synonymAPI.getSynonyms(noun);
         for (string word : *synonyms)
         {
             nouns->push_back(word);
@@ -131,6 +131,12 @@ private:
     void createResults()
     {
         results = new vector<string>();
+
+        userPhrase = "The phrase was \"" + userPhrase + "\"";
+        results->push_back(userPhrase);
+        string phraseSentiment = sentimentAPI.getSentiment(userPhrase);
+        results->push_back(phraseSentiment);
+
         multimap<int, pair<string, vector<pair<int, string>> *>>::iterator iterator;
         for (iterator = paragraphRanking->begin(); iterator != paragraphRanking->end(); iterator++)
         {
@@ -198,6 +204,7 @@ private:
 public:
     MatchMaker(string phrase, unordered_map<string, BTree *> *pBooks, BookIndexer<string> pIndexer, unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *pWordRelevance, unordered_map<string, unordered_map<int, string> *> *pBookParagraphs)
     {
+        userPhrase = phrase;
         comparator = new Comparator;
         parser = new PhraseParser;
         userInput = parser->getKeywords(phrase);

@@ -6,6 +6,7 @@
 #include "BookIndexer.h"
 #include "PhraseParser.h"
 #include "MatchMaker.h"
+#include "JsonCreator.h"
 #include "RelevanceCalculator.h"
 
 unordered_map<string, BTree *> *books;
@@ -94,7 +95,14 @@ int main()
     vector<string> *results = matchMaker->getResults();
     int position = 1;
 
-    for (int index = 0; index < results->size();)
+    for (int index = 0; index < 2; index++)
+    {
+        cout << results->at(index) << endl;
+    }
+
+    cout << endl;
+
+    for (int index = 2; index < results->size();)
     {
         cout << (position++) << ". " << results->at(index++) << endl;
         cout << "  -> " << results->at(index++) << "\n\n";

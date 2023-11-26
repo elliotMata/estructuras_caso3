@@ -82,7 +82,7 @@ void printKeywords(vector<pair<string, int>> *keywords)
     cout << "\n\n";
 }
 
-int main()
+/*int main()
 {
     PhraseParser *parser = new PhraseParser();
     FileReader reader;
@@ -98,4 +98,4 @@ int main()
     printKeywords(keywords);
 
     return 0;
-}
+}*/

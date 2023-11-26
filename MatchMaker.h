@@ -16,10 +16,12 @@ class MatchMaker
 {
 private:
     multimap<double, string, greater<double>> bookRaking;
-    multimap<int, pair<string, vector<int> *>> *paragraphRanking;
+    multimap<int, pair<string, vector<string> *>> *paragraphRanking;
     unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *wordRelevance;
+    unordered_map<string, unordered_map<int, string> *> *bookParagraphs;
     unordered_map<string, double> *booksRelevance;
     vector<string> *topTen;
+    vector<string> *results;
 
     BookIndexer<string> indexer;
     Comparator *comparator;
@@ -129,19 +131,34 @@ private:
 
     void printRanking()
     {
-        multimap<int, pair<string, vector<int> *>>::iterator iterator;
+        multimap<int, pair<string, vector<string> *>>::iterator iterator;
         for (iterator = paragraphRanking->begin(); iterator != paragraphRanking->end(); iterator++)
         {
             cout << iterator->first << ". " << iterator->second.first << endl;
-            for (int position : *iterator->second.second)
+            for (string paragraph : *iterator->second.second)
             {
-                cout << "  -> " << position << endl;
+                cout << "  -> " << paragraph << "\n\n";
+            }
+            cout << endl;
+        }
+    }
+
+    void createResults()
+    {
+        results = new vector<string>();
+        multimap<int, pair<string, vector<string> *>>::iterator iterator;
+        for (iterator = paragraphRanking->begin(); iterator != paragraphRanking->end(); iterator++)
+        {
+            results->push_back(iterator->second.first);
+            for (string paragraph : *iterator->second.second)
+            {
+                results->push_back(paragraph);
             }
         }
     }
 
 public:
-    MatchMaker(string phrase, unordered_map<string, BTree *> *pBooks, BookIndexer<string> pIndexer, unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *pWordRelevance)
+    MatchMaker(string phrase, unordered_map<string, BTree *> *pBooks, BookIndexer<string> pIndexer, unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *pWordRelevance, unordered_map<string, unordered_map<int, string> *> *pBookParagraphs)
     {
         comparator = new Comparator;
         parser = new PhraseParser;
@@ -152,7 +169,8 @@ public:
         wordRelevance = pWordRelevance;
         topTen = new vector<string>();
         booksRelevance = new unordered_map<string, double>();
-        paragraphRanking = new multimap<int, pair<string, vector<int> *>>();
+        paragraphRanking = new multimap<int, pair<string, vector<string> *>>();
+        bookParagraphs = pBookParagraphs;
     }
 
     void findSimilarities()
@@ -184,18 +202,17 @@ public:
         for (string book : *topTen)
         {
             multimap<double, int, greater<double>> *ranking = createParagraphRelevance(book);
-            vector<int> *topThree = new vector<int>();
+            vector<string> *topThree = new vector<string>();
             multimap<double, int>::iterator iterator;
             int amount = 0;
             for (iterator = ranking->begin(); iterator != ranking->end() && amount < 3; iterator++)
             {
-                topThree->push_back(iterator->second);
+                topThree->push_back(((*(*bookParagraphs)[book]))[iterator->second]);
                 amount++;
             }
             paragraphRanking->insert({index, make_pair(book, topThree)});
             index++;
         }
-        printRanking();
     }
 
     vector<string> *getTopBooks()
@@ -203,9 +220,15 @@ public:
         return this->topTen;
     }
 
-    multimap<int, pair<string, vector<int> *>> *getRanking()
+    multimap<int, pair<string, vector<string> *>> *getRanking()
     {
         return this->paragraphRanking;
+    }
+
+    vector<string> *getResults()
+    {
+        createResults();
+        return this->results;
     }
 };
 

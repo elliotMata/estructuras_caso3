@@ -11,19 +11,7 @@
 unordered_map<string, BTree *> *books;
 BookIndexer<string> indexer;
 unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *wordRelevance;
-
-/*string replace(string s, char current, char replace)
-{
-    int length = s.length();
-    for (int i = 0; i < length; i++)
-    {
-        if (s[i] == current)
-        {
-            s[i] = replace;
-        }
-    }
-    return s;
-}*/
+unordered_map<string, unordered_map<int, string> *> *bookParagraphs;
 
 unordered_map<int, double> *createRelevanceMap(vector<pair<int, int>> *amountWords, vector<int> *keywordParagraphs, int totalParagraphs)
 {
@@ -43,6 +31,16 @@ unordered_map<int, double> *createRelevanceMap(vector<pair<int, int>> *amountWor
     return relevanceMap;
 }
 
+unordered_map<int, string> *createParagraphsMap(vector<pair<int, string>> *paragraphs)
+{
+    unordered_map<int, string> *paragraphsMap = new unordered_map<int, string>();
+    for (auto pair : *paragraphs)
+    {
+        paragraphsMap->insert({pair.first, pair.second});
+    }
+    return paragraphsMap;
+}
+
 int main()
 {
     cout << "Iniciando" << endl;
@@ -52,6 +50,7 @@ int main()
     vector<string> *filenames = jsonCreator->getFilenames();
     books = new unordered_map<string, BTree *>();
     wordRelevance = new unordered_map<string, unordered_map<string, unordered_map<int, double> *> *>();
+    bookParagraphs = new unordered_map<string, unordered_map<int, string> *>();
 
     for (const string &file : *filenames)
     {
@@ -78,14 +77,42 @@ int main()
             }
         }
         wordRelevance->insert({file, words});
+
+        unordered_map<int, string> *paragraphsMap = createParagraphsMap(fileReader.getParagraphs());
+        bookParagraphs->insert({file, paragraphsMap});
     }
 
     cout << "\"Servidor\"" << endl;
-    MatchMaker *matchMaker = new MatchMaker("horror monster dark mistery", books, indexer, wordRelevance);
+    MatchMaker *matchMaker = new MatchMaker("horror monster dark mistery", books, indexer, wordRelevance, bookParagraphs);
     vector<string> *top;
 
     matchMaker->findSimilarities();
     matchMaker->createParagraphRaking();
 
+    vector<string> *results = matchMaker->getResults();
+    int position = 1;
+
+    for (int index = 0; index < results->size();)
+    {
+        cout << (position++) << ". " << results->at(index++) << endl;
+        cout << "  -> " << results->at(index++) << "\n\n";
+        cout << "  -> " << results->at(index++) << "\n\n";
+        cout << "  -> " << results->at(index++) << "\n\n";
+        cout << endl;
+    }
+
     return 0;
 }
+
+/*string replace(string s, char current, char replace)
+{
+    int length = s.length();
+    for (int i = 0; i < length; i++)
+    {
+        if (s[i] == current)
+        {
+            s[i] = replace;
+        }
+    }
+    return s;
+}*/

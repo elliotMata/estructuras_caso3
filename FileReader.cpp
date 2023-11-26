@@ -75,7 +75,7 @@ void FileReader::processParagraphs(const string &filename)
         string paragraph(buffer);
         paragraph = paragraphCleaner(paragraph);
         addKeywords(paragraphPositions->at(i), paragraph);
-        paragraphs->push_back({paragraphPositions->at(i), paragraph});
+        paragraphs->push_back({paragraphPositions->at(i) * PARAGRAPH_SIZE, paragraph});
     }
     file.close();
 }

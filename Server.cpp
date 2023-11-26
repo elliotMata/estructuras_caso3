@@ -9,6 +9,7 @@ using namespace std;
 unordered_map<string, BTree *> *books;
 BookIndexer<string> indexer;
 unordered_map<string, unordered_map<string, unordered_map<int, double> *> *> *wordRelevance;
+unordered_map<string, unordered_map<int, string> *> *bookParagraphs;
 
 void handle_match_making(const httplib::Request &req, httplib::Response &res)
 {
@@ -16,15 +17,15 @@ void handle_match_making(const httplib::Request &req, httplib::Response &res)
 
     if (req_phrase != "")
     {
-        MatchMaker *matchMaker = new MatchMaker(req_phrase, books, indexer, wordRelevance);
-        vector<string> *top;
+        MatchMaker *matchMaker = new MatchMaker(req_phrase, books, indexer, wordRelevance, bookParagraphs);
+        vector<string> *ranking;
 
         matchMaker->findSimilarities();
-        top = matchMaker->getTopBooks();
-        // llamar al ranking de parrafos
+        matchMaker->createParagraphRaking();
+        ranking = matchMaker->getResults();
 
         nlohmann::json response_json = nlohmann::json::array();
-        for (const string &item : *top)
+        for (const string &item : *ranking)
         {
             response_json.push_back(item);
         }
@@ -56,6 +57,16 @@ unordered_map<int, double> *createRelevanceMap(vector<pair<int, int>> *amountWor
     return relevanceMap;
 }
 
+unordered_map<int, string> *createParagraphsMap(vector<pair<int, string>> *paragraphs)
+{
+    unordered_map<int, string> *paragraphsMap = new unordered_map<int, string>();
+    for (auto pair : *paragraphs)
+    {
+        paragraphsMap->insert({pair.first, pair.second});
+    }
+    return paragraphsMap;
+}
+
 int main()
 {
     httplib::Server server;
@@ -67,6 +78,7 @@ int main()
     vector<string> *filenames = jsonCreator->getFilenames();
     books = new unordered_map<string, BTree *>();
     wordRelevance = new unordered_map<string, unordered_map<string, unordered_map<int, double> *> *>();
+    bookParagraphs = new unordered_map<string, unordered_map<int, string> *>();
 
     for (const string &file : *filenames)
     {
@@ -93,6 +105,9 @@ int main()
             }
         }
         wordRelevance->insert({file, words});
+
+        unordered_map<int, string> *paragraphsMap = createParagraphsMap(fileReader.getParagraphs());
+        bookParagraphs->insert({file, paragraphsMap});
     }
 
     server.Get("/match", handle_match_making);

@@ -45,9 +45,11 @@ int main()
 {
     cout << "Iniciando" << endl;
     indexer.buildTree();
+
     FileReader fileReader;
     JsonCreator *jsonCreator = new JsonCreator("./libros");
     vector<string> *filenames = jsonCreator->getFilenames();
+
     books = new unordered_map<string, BTree *>();
     wordRelevance = new unordered_map<string, unordered_map<string, unordered_map<int, double> *> *>();
     bookParagraphs = new unordered_map<string, unordered_map<int, string> *>();

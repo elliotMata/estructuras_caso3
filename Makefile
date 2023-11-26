@@ -1,8 +1,8 @@
 all:
-	g++ main.cpp NounReader.cpp JsonParser.cpp PhraseParser.cpp FileReader.cpp -o main
+	g++ main.cpp NounReader.cpp JsonParser.cpp PhraseParser.cpp FileReader.cpp -o main -lcurl
 
 server:
-	g++ Server.cpp PhraseParser.cpp JsonParser.cpp NounReader.cpp FileReader.cpp -o server
+	g++ Server.cpp PhraseParser.cpp JsonParser.cpp NounReader.cpp FileReader.cpp -o server -lcurl
 
 temp:
 	g++ temp.cpp NounReader.cpp FileReader.cpp -o temp

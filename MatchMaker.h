@@ -10,6 +10,7 @@
 #include "Comparator.h"
 #include "FileReader.h"
 #include "JsonCreator.cpp"
+#include "SynonymAPI.h"
 #include "BTree.h"
 
 #define PARAGRAPHS_PER_PAGE 8
@@ -25,6 +26,7 @@ private:
     vector<string> *topTen;
     vector<string> *results;
 
+    vector<string> *userInput;
     BookIndexer<string> indexer;
     Comparator *comparator;
     PhraseParser *parser;
@@ -32,7 +34,18 @@ private:
     vector<string> *nouns;
     FileReader fileReader;
     JsonCreator *jsonCreator;
+    SynonymAPI api;
     unordered_map<string, BTree *> *books;
+
+    void addSynonyms(string noun)
+    {
+        nouns->push_back(noun);
+        vector<string> *synonyms = api.getSynonyms(noun);
+        for (string word : *synonyms)
+        {
+            nouns->push_back(word);
+        }
+    }
 
     void createBooksRelevance(string book, double matchPercentage)
     {
@@ -91,8 +104,11 @@ private:
                         }
                     }
                 }
-                double end = relevance / amountWords;
-                ranking->insert({end, paragraph});
+                double finalRelevance = relevance / amountWords;
+                if (ranking->find(finalRelevance) == ranking->end())
+                {
+                    ranking->insert({finalRelevance, paragraph});
+                }
             }
         }
         return ranking;
@@ -126,7 +142,7 @@ private:
             for (auto pair : *iterator->second.second)
             {
                 int page = (pair.first / PARAGRAPH_SIZE) / PARAGRAPHS_PER_PAGE;
-                string pageNumber = to_string(page) + ". ";
+                string pageNumber = "pag. " + to_string(page) + " - ";
                 string paragraph = pageNumber + pair.second;
                 results->push_back(paragraph);
             }
@@ -184,7 +200,7 @@ public:
     {
         comparator = new Comparator;
         parser = new PhraseParser;
-        nouns = parser->getKeywords(phrase);
+        userInput = parser->getKeywords(phrase);
         jsonParser = JsonParser::getInstance();
         books = pBooks;
         indexer = pIndexer;
@@ -193,6 +209,12 @@ public:
         booksRelevance = new unordered_map<string, double>();
         paragraphRanking = new multimap<int, pair<string, vector<pair<int, string>> *>>();
         bookParagraphs = pBookParagraphs;
+        nouns = new vector<string>();
+
+        for (int position = 0; position < userInput->size(); position++)
+        {
+            addSynonyms(userInput->at(position));
+        }
     }
 
     void findSimilarities()

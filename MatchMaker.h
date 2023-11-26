@@ -96,6 +96,37 @@ private:
         return ranking;
     }
 
+    void *createTopBooks()
+    {
+        multimap<double, string>::iterator iterator;
+        for (iterator = bookRaking.begin(); iterator != bookRaking.end(); iterator++)
+        {
+            topTen->push_back(iterator->second);
+            if (topTen->size() == 10)
+            {
+                break;
+            }
+        }
+        return topTen;
+    }
+
+    void createResults()
+    {
+        results = new vector<string>();
+        multimap<int, pair<string, vector<string> *>>::iterator iterator;
+        for (iterator = paragraphRanking->begin(); iterator != paragraphRanking->end(); iterator++)
+        {
+            string title = replace(iterator->second.first, '-', ' ');
+            int dotPosition = title.find('.');
+            title = title.substr(0, dotPosition);
+            results->push_back(title);
+            for (string paragraph : *iterator->second.second)
+            {
+                results->push_back(paragraph);
+            }
+        }
+    }
+
     void printMap()
     {
         multimap<double, string>::iterator iterator;
@@ -115,20 +146,6 @@ private:
         cout << "---------------------------------------------------------" << endl;
     }
 
-    void *createTopBooks()
-    {
-        multimap<double, string>::iterator iterator;
-        for (iterator = bookRaking.begin(); iterator != bookRaking.end(); iterator++)
-        {
-            topTen->push_back(iterator->second);
-            if (topTen->size() == 10)
-            {
-                break;
-            }
-        }
-        return topTen;
-    }
-
     void printRanking()
     {
         multimap<int, pair<string, vector<string> *>>::iterator iterator;
@@ -143,18 +160,17 @@ private:
         }
     }
 
-    void createResults()
+    string replace(string s, char current, char replace)
     {
-        results = new vector<string>();
-        multimap<int, pair<string, vector<string> *>>::iterator iterator;
-        for (iterator = paragraphRanking->begin(); iterator != paragraphRanking->end(); iterator++)
+        int length = s.length();
+        for (int i = 0; i < length; i++)
         {
-            results->push_back(iterator->second.first);
-            for (string paragraph : *iterator->second.second)
+            if (s[i] == current)
             {
-                results->push_back(paragraph);
+                s[i] = replace;
             }
         }
+        return s;
     }
 
 public:

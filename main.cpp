@@ -103,16 +103,3 @@ int main()
 
     return 0;
 }
-
-/*string replace(string s, char current, char replace)
-{
-    int length = s.length();
-    for (int i = 0; i < length; i++)
-    {
-        if (s[i] == current)
-        {
-            s[i] = replace;
-        }
-    }
-    return s;
-}*/

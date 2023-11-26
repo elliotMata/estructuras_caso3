@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Buscar Libros</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .search-form {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      input[type="text"] {
+        width: 60%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .results {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+      }
+      .result {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+      }
+      .result img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+      .result h3 {
+        margin-top: 0;
+        color: #333;
+      }
+      .result p {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Buscar Libros</h1>
+      <form class="search-form" id="searchForm">
+        <input type="text" id="searchInput" placeholder="Ingrese la frase" />
+        <input type="submit" value="Buscar" onclick="searchBooks(event)" />
+      </form>
+      <div class="results" id="resultsContainer">
+        <!-- Los resultados se mostrarán aquí dinámicamente -->
+      </div>
+    </div>
+
+    <script>
+      async function searchBooks(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const searchPhrase = document.getElementById("searchInput").value;
+
+        try {
+          debugger;
+          const response = await fetch(
+            `http://localhost:65000/match?req_phrase=${searchPhrase}`
+          );
+          const data = await response.json();
+
+          // Handle the response data and display results dynamically
+          const resultsContainer = document.getElementById("resultsContainer");
+          resultsContainer.innerHTML = ""; // Clear previous results
+
+          data.forEach((item) => {
+            const resultElement = document.createElement("div");
+            resultElement.classList.add("result");
+            resultElement.textContent = item;
+            resultsContainer.appendChild(resultElement);
+          });
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      }
+    </script>
+  </body>
+</html>

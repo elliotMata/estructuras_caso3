@@ -15,6 +15,8 @@ void handle_match_making(const httplib::Request &req, httplib::Response &res)
 {
     string req_phrase = req.get_param_value("req_phrase");
 
+    res.set_header("Access-Control-Allow-Origin", "*");
+
     if (req_phrase != "")
     {
         MatchMaker *matchMaker = new MatchMaker(req_phrase, books, indexer, wordRelevance, bookParagraphs);
@@ -111,6 +113,14 @@ int main()
     }
 
     server.Get("/match", handle_match_making);
+    server.Options("/(.*)",
+			[&](const httplib::Request &req, httplib::Response &res) {
+			res.set_header("Access-Control-Allow-Methods", " POST, GET, OPTIONS");
+			res.set_header("Content-Type", "application/json");
+			res.set_header("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, Accept");
+			res.set_header("Access-Control-Allow-Origin", "*");
+			res.set_header("Connection", "close");
+		});
     try
     {
         cout << "Activando servidor" << endl;

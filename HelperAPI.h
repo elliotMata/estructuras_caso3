@@ -8,6 +8,7 @@
 #include "json.hpp"
 
 using namespace std;
+using json = nlohmann::json;
 
 #define CHUNK_SIZE 2048
 

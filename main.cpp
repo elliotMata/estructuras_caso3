@@ -95,14 +95,14 @@ int main()
     vector<string> *results = matchMaker->getResults();
     int position = 1;
 
-    for (int index = 0; index < 2; index++)
+    for (int index = 0; index < 3; index++)
     {
         cout << results->at(index) << endl;
     }
 
     cout << endl;
 
-    for (int index = 2; index < results->size();)
+    for (int index = 3; index < results->size();)
     {
         cout << (position++) << ". " << results->at(index++) << endl;
         cout << "  -> " << results->at(index++) << "\n\n";

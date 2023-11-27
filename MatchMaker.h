@@ -10,7 +10,8 @@
 #include "Comparator.h"
 #include "FileReader.h"
 #include "SynonymAPI.h"
-#include "SentimentAPI.h"
+#include "OpenAIAPI.h"
+// #include "SentimentAPI.h"
 #include "BTree.h"
 
 #define PARAGRAPHS_PER_PAGE 8
@@ -35,7 +36,8 @@ private:
     JsonParser *jsonParser;
     vector<string> *nouns;
     SynonymAPI synonymAPI;
-    SentimentAPI sentimentAPI;
+    // SentimentAPI sentimentAPI;
+    OpenAIAPI *openAIAPI;
 
     void addSynonyms(string noun)
     {
@@ -131,15 +133,25 @@ private:
     void createResults()
     {
         results = new vector<string>();
-
-        userPhrase = "The phrase was \"" + userPhrase + "\"";
         results->push_back(userPhrase);
-        string phraseSentiment = sentimentAPI.getSentiment(userPhrase);
+
+        string phraseSentiment = openAIAPI->getSentiment(userPhrase);
         results->push_back(phraseSentiment);
+        // string phraseSentiment = sentimentAPI.getSentiment(userPhrase);
+        // results->push_back(phraseSentiment);
+
+        // bool first = true;
 
         multimap<int, pair<string, vector<pair<int, string>> *>>::iterator iterator;
         for (iterator = paragraphRanking->begin(); iterator != paragraphRanking->end(); iterator++)
         {
+            /*if (first)
+            {
+                string imageUrl = openAIAPI->getImage(iterator->second.second->at(0).second);
+                results->push_back(imageUrl);
+                first = false;
+            }*/
+
             string title = replace(iterator->second.first, '-', ' ');
             int dotPosition = title.find('.');
             title = title.substr(0, dotPosition);
@@ -217,6 +229,8 @@ public:
         paragraphRanking = new multimap<int, pair<string, vector<pair<int, string>> *>>();
         bookParagraphs = pBookParagraphs;
         nouns = new vector<string>();
+        string apiKey = "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";
+        openAIAPI = new OpenAIAPI(apiKey);
 
         for (int position = 0; position < userInput->size(); position++)
         {
